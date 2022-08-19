@@ -4,5 +4,42 @@
   "@id": "ftp://ftp.awi.de/secret/sneuhaus/GLOMICON-INTERCOMP/GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0008_000000000-C27WW_RV-AWI1_S20_L001_R2_001.fastq.gz.zip",
   "name": "GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0008_000000000-C27WW_RV-AWI1_S20_L001_R2_001",
   "description": "18S rRNA sample from Fram Strait collected for the GLOMICON intercomparison project",
-  "url": "ftp://ftp.awi.de/secret/sneuhaus/GLOMICON-INTERCOMP/GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0008_000000000-C27WW_RV-AWI1_S20_L001_R2_001.fastq.gz.zip"
+  "url": "ftp://ftp.awi.de/secret/sneuhaus/GLOMICON-INTERCOMP/GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0008_000000000-C27WW_RV-AWI1_S20_L001_R2_001.fastq.gz.zip",
+  "keywords": [
+      "Observation", 
+      "18S rRNA", 
+      "amplicon sequencing", 
+      "GLOMICON", 
+      "Fram Strait", 
+      "Arctic", 
+      "Method comparison"
+  ],
+  "measurementTechnique":"https://docs.google.com/document/d/1EP-07hOmLjg7OITtNcvz0TLNaTETMuQRxKR1iQgwBQM/edit?usp=sharing",
+  "variableMeasured": [
+      {
+      "@type": "PropertyValue", 
+      "name": "DNA sequence", 
+      "description": "number and order of nucleotides of the V4 region of the 18S rRNA gene in a DNA sequence"
+      }, 
+      {
+      "@type": "PropertyValue", 
+      "name": "Quality value", 
+      "description": "Probability that the corresponding base call is incorrect"
+      }
+  ],
+  "temporalCoverage": "2018-07-24/2018-07-24",
+  "spatialCoverage": "Fram strait", 
+  "provider": [
+      {
+      "@id": "https://oceanexpert.org/institution/4953",
+      "@type": "Organization",
+      "legalName": "Alfred Wegener Institut, Helmholtz-Zentrum für Polar- und Meeresforschung",
+      "name": "Alfred Wegener Institut, Helmholtz-Zentrum für Polar- und Meeresforschung",
+      "url": [
+         "https://oceanexpert.org/institution/4953", 
+         "https://www.awi.de"
+         ]
+      }
+  ]
+   
 }
