@@ -1,0 +1,8 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Dataset",
+  "@id": "ftp://ftp.awi.de/secret/sneuhaus/GLOMICON-INTERCOMP/GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0008_000000000-C27WW_RV-AWI1_S20_L001_R2_001.fastq.gz.zip",
+  "name": "GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0008_000000000-C27WW_RV-AWI1_S20_L001_R2_001",
+  "description": "18S rRNA sample from Fram Strait collected for the GLOMICON intercomparison project",
+  "url": "ftp://ftp.awi.de/secret/sneuhaus/GLOMICON-INTERCOMP/GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0008_000000000-C27WW_RV-AWI1_S20_L001_R2_001.fastq.gz.zip"
+}
