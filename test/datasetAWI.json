@@ -27,10 +27,10 @@
    "hasPart": [
      {
        "@type": "Dataset",
-       "@id": "https://nextcloud.awi.de/s/R8wBnMrArGkscPG",
-       "name": "GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0008_000000000-C27WW_RV-AWI1_S20_L001_R2_001",
+       "@id": "https://nextcloud.awi.de/s/6A6BHKka7NGR67r",
+       "name": "GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0049_000000000-CRH8D_GLOMICON-AWI-1-PS114_S68_L001_R1_001",
        "description": "18S rRNA sample from Fram Strait collected for the GLOMICON intercomparison project",
-       "url": "https://nextcloud.awi.de/s/R8wBnMrArGkscPG",
+       "url": "https://nextcloud.awi.de/s/6A6BHKka7NGR67r",
        "keywords": [
          "Observation", 
          "18S rRNA",
