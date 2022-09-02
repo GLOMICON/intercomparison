@@ -5,9 +5,9 @@
   "name": "GLOMICON-INTERCOMP_Framstrait_01_AWI_M03457_0008_000000000-C27WW_RV-AWI1_S20_L001_R2_001",
   "description": "18S rRNA sample from Fram Strait collected for the GLOMICON intercomparison project",
   "url": "https://nextcloud.awi.de/s/R8wBnMrArGkscPG",
-  "subjectOf": "TO_BE_ADDED, IRI to metadata"
+  "subjectOf": "TO_BE_ADDED, IRI to metadata",
   "license": "TO_BE_ADDED, assume tat this will be CC-BY, but this needs to be decided together with the partners",
-  "version": "0.1"
+  "version": "0.1",
   "keywords": [
       "Observation", 
       "18S rRNA", 
@@ -30,7 +30,7 @@
       "description": "Probability that the corresponding base call is incorrect"
       }
   ],
-  "includedInDataCatalog": "TO_BE_ADDED, will later be populated with the INSDC resource which will host the data"
+  "includedInDataCatalog": "TO_BE_ADDED, will later be populated with the INSDC resource which will host the data",
   "temporalCoverage": "2018-07-24/2018-07-24",
   "spatialCoverage": "Fram strait", 
   "provider": [
