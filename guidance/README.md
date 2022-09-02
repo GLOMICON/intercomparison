@@ -1,4 +1,4 @@
-This folder contains the guidance documentation to support the management of data and metadata associated with the GLOMICON intercomparison project.
+**This folder contains the guidance documentation to support the management of data and metadata associated with the GLOMICON intercomparison project.**
 
 This consists of guidance on 
 1. how to format, host, and share the metadata collected 
