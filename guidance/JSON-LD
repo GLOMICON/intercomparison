@@ -1,0 +1,23 @@
+Dear GLOMICON partners,
+
+Below, please find some supporting guidance on how to provide JSON-LD files linking out to all the other resources (raw data, ASV tables, metadata, protocol). Please note that this step is optional for the partners, and will otherwise be provided through the AWI partner.
+
+---
+
+## Formatting
+We will be following the guidance from the [Ocean InfoHub Project](https://book.oceaninfohub.org/index.html) and will be using their thematic patterns for [Documents](https://book.oceaninfohub.org/thematics/docs/README.html#) (for protocols) and for [Datasets](https://book.oceaninfohub.org/thematics/dataset/index.html) (for metadata, raw data, ASV tables). Please have a look at their introduction to [Structured Data on the Web](https://book.oceaninfohub.org/content.html#) for some background information.
+
+As described, we will use the JSON-LD format in combination with the [schema.org](http://schema.org/) vocabulary. 
+
+## Hosting
+Please follow the following naming convention for the JSON-LD files: 
+- 
+
+The JSON-LD files will be hosted in the Github repository:
+- folder name: will host all JSON-LD files including information on the metadata
+- folder name: will host all JSON-LD files including information on the protocols 
+- folder name: will host all JSON-LD files including information on the raw data 
+- folder name: will host all JSON-LD files including information on the ASV tables
+
+## Sharing
+As the JSON-LD files will be hosted in this Github repository, no additional steps will need to be taken to share them with the partners.
