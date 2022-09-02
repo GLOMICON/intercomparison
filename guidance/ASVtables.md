@@ -1,0 +1,16 @@
+Dear GLOMICON partners,
+
+Below, please find some supporting guidance on how to provide your raw sequence data outputs in preparation for the cross-observatory analysis.
+
+---
+
+## Data format
+Please use the GSC-endorsed file format for sharing ASV tables: the BIOM format. This format allows the easy exchange and space-efficient storage of large sparse tables.
+Note, that this data format can additionally include metadata tables and taxonomic information. If possible, please provide all three in this
+
+Please see the [BIOM website](http://biom-format.org/index.html) for detailed guidance on how to use the file format, and the accompanying [publication](https://doi.org/10.1186%2F2047-217X-1-7) for more background information.
+
+## Hosting
+All files will need permanent identifiers (PIDs). Ideally, the data should be uploaded to a dedicated stable and trusted repository, however, no dedicated repository for ASV tables exists yet. Thus, please host the data on zenodo (restrict access as needed), or to use your institutional server with long term archiving.
+
+## Sharing
