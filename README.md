@@ -1,7 +1,7 @@
 # The project
 
 ## Aim
-To compare different procedures for microbial community observations from sampling to annotation. Answering questions such as:
+To compare different procedures for microbial community observations from sampling to annotation; answering questions such as:
 - How well do results with different pipelines agree?
 - At which taxonomic levels are cross-observatory comparisons meaningful without common methods?
 - Do we see indications that procedures are aligned to site / community characteristics?
