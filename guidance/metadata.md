@@ -8,6 +8,16 @@ We will support this process and are happy to validate the metadata records and 
 
 ---
 
+1. As a first step, please email simple CSVs / tables to Raïssa Meyer, these will be added to GitHub as they are. 
+
+2. In a second step, please standardise the metadata according to the Minimum Information about any (x) Sequence (MIxS) checklists (see guidance below). Please do so either on this GitHub repository, or do so on your local machine and email a simple CSV / table to Raïssa Meyer. As noted in the guidance on ASV tables, the standardised metadata can also be added to the BIOM file.
+
+3. In a third step, the standardised metadata will be converted into JSON-LD by us. 
+
+---
+
+**For the MIxS-compliant standardisation process, please see the guidance below:**
+
 [Understanding the MIxS checklist](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#understanding-the-mixs-checklist)
 - [Tab 1: README](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-1-readme)
 - [Tab 2: MIxS core](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-2-mixs-core)
