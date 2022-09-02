@@ -10,7 +10,7 @@ Below, please find some supporting guidance on how to provide your raw sequence 
 Please use the standard data formats for raw sequencing data: FASTA or FASTQ.
 
 ## Hosting
-All files will need permanent identifiers (PIDs). Ideally, the data should be uploaded to one of the INSDC resources (ENA, GenBank, DDBJ), however, until the publishing of this project, the data can also be hosted on restricted-access servers. Possible options would be to host the data on zenodo and restrict access, or to use your institutional server with long term archiving.
+All files will need permanent identifiers (PIDs). Ideally, the data should be uploaded to one of the INSDC resources (ENA, GenBank, DDBJ), however, until the publishing of this project, the data can also be hosted on restricted-access servers. Possible options would be to host the data on zenodo (restrict access as needed), or to use your institutional server with long term archiving.
 
 ## Sharing
 Once you have found a long term and stable home for your raw data, please share the PIDs to the data in 
