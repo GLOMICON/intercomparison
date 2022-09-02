@@ -9,12 +9,12 @@ To compare different procedures for microbial community observations from sampli
 
 ## Focus 
 18S rDNA based investigations of unicellular eukaryotes
-Analyses with pipelines in place at the different institutions
-In additions central bioinformatics analyses at Ribocon or at one partner
+- Analyses with pipelines in place at the different institutions
+- In additions central bioinformatics analyses at Ribocon or at one partner
 
 ## Samples (always 5 replicates):
-Environmental samples (filtered surface water) from intercomparison participants’ pet-sites’
-mock community DNA extracts with balanced (‘evenMock’) and non-balanced composition (‘bloomMock’)
+- Environmental samples (filtered surface water) from intercomparison participants’ pet-sites’
+- mock community DNA extracts with balanced (‘evenMock’) and non-balanced composition (‘bloomMock’)
 
 ## Participants:
 AWI, MBARI, NOAA, NOC, UDalhousie, Station Biologique Roscoff
