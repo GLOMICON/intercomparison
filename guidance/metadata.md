@@ -25,7 +25,7 @@ Using the MIxS checklist
 --- 
 
 ## Understanding the MIxS checklist
-Our metadata guidelines are based on the MIxS checklist. To support your work, we have prepared metadata tables for each partner organisation in which relevant fields for this sample exchange are highlighted and which contain examples appropriate to your work (please see here and use the file which has your institution’s name in the title). 
+Our metadata guidelines are based on the MIxS checklist. To support your work, we have prepared metadata tables for each partner organisation in which relevant fields for this sample exchange are highlighted and which contain examples appropriate to your work (please see [here](https://drive.google.com/drive/folders/16e5EKksO6G4TSGs-XX-KoWC6z5QGGHiO?usp=sharing) and use the file which has your institution’s name in the title). 
 
 The metadata spreadsheet contains three tabs:
 1. Tab 1: README
@@ -77,7 +77,54 @@ Based on the information you have already shared, we have prepared lists of pote
 Please let us know if none of these terms are applicable/you have done something else. [Here](https://github.com/EnvironmentOntology/envo/wiki/ENVO-annotations-for-MIxS-v5) is also some dedicated guidance on using ENVO terms to fill in metadata. If you don’t find the term you are looking for in ENVO, please let us know and we’ll add them.
 
 If you would like additional help browsing ontologies please contact us. 
- 
+
+#### experimental_factor
+
+Consider using the following [OBI](https://www.ebi.ac.uk/ols/ontologies/obi) or [EFO](https://www.ebi.ac.uk/ols/ontologies/efo) terms: 
+- [methodological variation design](https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004669&viewMode=All&siblings=true) [EFO:EFO_0004669]
+  - [optimization design](https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0001773&viewMode=All&siblings=true) [EFO:EFO_0001773]
+  - [hardware variation design](https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0001767&viewMode=All&siblings=true) [EFO:EFO_0001767]
+  - [software variation design](https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0001778&viewMode=All&siblings=true) [EFO:EFO_0001778]
+- [calibration](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000818&viewMode=All&siblings=true) [OBI:OBI_0000818]
+- [paired-end library preparation](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001852&viewMode=All&siblings=true) [OBI:OBI_0001852]
+  - if you did not perform paired-end library preparation, [library preparation](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000711&viewMode=All&siblings=true) [OBI:OBI_0000711] may be more appropriate for you
+- [multiplexed nucleotide library sequencing](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001959&viewMode=All&siblings=true) [OBI:OBI_0001959]
+
+#### geo_loc_name
+Consider using the following [GAZ](https://www.ebi.ac.uk/ols/ontologies/gaz) ontology terms or terms from the [INSDC country list](http://insdc.org/country.html):
+- Dalhousie: Atlantic Ocean [GAZ:GAZ_00000344];Northwest Atlantic Ocean [GAZ:GAZ_00013760];Bedford Basin [GAZ:GAZ_00002972]
+- FRAM: Atlantic Ocean [GAZ:GAZ_00000344];Greenland Sea [GAZ:GAZ_00008644];Fram Strait [GAZ:GAZ_00000060]
+- MBARI: Pacific Ocean [GAZ:GAZ_00000360];North East Pacific Ocean coastal waters of California [GAZ:GAZ_00051136];MBARI time series station on the shelf break
+- NOAA: Pacific Ocean [GAZ:GAZ_00000360];North East Pacific Ocean coastal waters of California [GAZ:GAZ_00051136];Scripps Institution of Oceanography pier
+- NOC: Atlantic Ocean [GAZ:GAZ_00000344];English Channel coastal waters of England [GAZ:GAZ_00144353];Coastal Station L4 [GAZ:GAZ_00187526]
+- SBR: Atlantic Ocean [GAZ:GAZ_00000344];English Channel coastal waters of France [GAZ:GAZ_00144352];Roscoff-Astan observatory site/SOMLIT-Astan long-term observatory site
+
+#### env_[broad_scale/local_scale/medium]
+Consider using the following [ENVO](https://www.ebi.ac.uk/ols/ontologies/envo) terms:
+
+Broad:
+- [marine environment](https://www.ebi.ac.uk/ols/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_01000320&viewMode=All&siblings=true) [ENVO:ENVO_01000320]
+- [oceanic epipelagic zone biome](https://www.ebi.ac.uk/ols/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_01000035&viewMode=All&siblings=false) [ENVO:ENVO_01000035]
+
+Local:
+- [sea surface layer](https://www.ebi.ac.uk/ols/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_01001581) [ENVO:ENVO_01001581]
+- [seasonal marine thermocline](https://www.ebi.ac.uk/ols/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_01000107) [ENVO:ENVO_01000107]
+
+Medium:
+- [sea water](https://www.ebi.ac.uk/ols/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00002149) [ENVO:ENVO_00002149]
+- [coastal sea water](https://www.ebi.ac.uk/ols/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00002150) [ENVO:ENVO_00002150]
+
+#### samp_mat_processing
+Consider using the following [OBI](https://www.ebi.ac.uk/ols/ontologies/obi) terms:
+- [environmental material collection process](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0600012&viewMode=All&siblings=true) [OBI:OBI_0600012]
+- [filtration](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0302885&viewMode=All&siblings=true) [OBI:OBI_0302885]
+- [freezing storage](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000915&viewMode=All&siblings=true) [OBI:OBI_0000915]
+- [DNA extraction](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000257&viewMode=All&siblings=true) [OBI:OBI_0000257]
+- [polymerase chain reaction](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000415&viewMode=All&siblings=true) [OBI_OBI_0000415]
+- [paired-end library preparation](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001852&viewMode=All&siblings=true) [OBI:OBI_0001852]
+- [amplicon sequencing assay](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002767&viewMode=All&siblings=true) [OBI:OBI_0002767]
+- [sequence annotation](https://www.ebi.ac.uk/ols/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001944&viewMode=All&siblings=true) [OBI:OBI_0001944]
+
  
  
  
