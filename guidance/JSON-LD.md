@@ -1,3 +1,5 @@
+🚧 **Please note that this page is currently under construction and may be subject to change** 🚧
+
 Dear GLOMICON partners,
 
 Below, please find some supporting guidance on how to provide JSON-LD files linking out to all the other resources (raw data, ASV tables, metadata, protocol). Please note that this step is optional for the partners, and will otherwise be provided through the AWI partner.
