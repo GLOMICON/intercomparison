@@ -8,19 +8,19 @@ We will support this process and are happy to validate the metadata records and 
 
 ---
 
-Understanding the MIxS checklist
-- Tab 1: README
-- Tab 2: MIxS core
-- Tab 3: water environmental_packages
+[Understanding the MIxS checklist](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#understanding-the-mixs-checklist)
+- [Tab 1: README](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-1-readme)
+- [Tab 2: MIxS core](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-2-mixs-core)
+- [Tab 3: water environmental_packages](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-3-water-environmental_packages)
   
-Using the MIxS checklist
-- Value syntax and units
-- Missing values
-- Ontology terms (relevant only for MIxS core)
-  - experimental_factor
-  - geo_loc_name
-  - env_[broad_scale/local_scale/medium]
-  - samp_mat_processing
+[Using the MIxS checklist](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#using-the-mixs-checklist)
+- [Value syntax and units](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#value-syntax-and-units)
+- [Missing values](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#missing-values)
+- [Ontology terms](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#ontology-terms-relevant-only-for-mixs-core) (relevant only for MIxS core)
+  - [experimental_factor](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#experimental_factor)
+  - [geo_loc_name](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#geo_loc_name)
+  - [env_[broad_scale/local_scale/medium]](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#env_broad_scalelocal_scalemedium)
+  - [samp_mat_processing](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#samp_mat_processing)
 
 --- 
 
@@ -28,9 +28,9 @@ Using the MIxS checklist
 Our metadata guidelines are based on the MIxS checklist. To support your work, we have prepared metadata tables for each partner organisation in which relevant fields for this sample exchange are highlighted and which contain examples appropriate to your work (please see [here](https://drive.google.com/drive/folders/16e5EKksO6G4TSGs-XX-KoWC6z5QGGHiO?usp=sharing) and use the file which has your institution’s name in the title). 
 
 The metadata spreadsheet contains three tabs:
-1. Tab 1: README
-2. Tab 2: MIxS core  
-3. Tab 3: environmental_packages
+1. [Tab 1: README](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-1-readme)
+2. [Tab 2: MIxS core](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-2-mixs-core)
+3. [Tab 3: water environmental_packages](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-3-water-environmental_packages)
 
 ### Tab 1: README
 The README provides general information on how the spreadsheets are organised, as well as some general guidance to approach and use the standard.
