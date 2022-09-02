@@ -70,7 +70,7 @@ When entering entries in the sheets, please consider the following:
 - restricted access - information exists but can not be released openly because of privacy concerns
 
 ### Ontology terms (relevant only for MIxS core)
-**Please be sure to use ontology terms wherever requested. **
+**Please be sure to use ontology terms wherever requested.**
 
 Based on the information you have already shared, we have prepared lists of potentially relevant ontology terms (see below). 
 
