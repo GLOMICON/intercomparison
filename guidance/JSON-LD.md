@@ -24,7 +24,7 @@ The [JSON-LD Playground](https://json-ld.org/playground/) is a great tool to che
 
 ## Hosting
 Please follow the following naming convention for the JSON-LD files: 
-- 
+- ...
 
 The JSON-LD files will be hosted in the Github repository:
 - folder name: will host all JSON-LD files including information on the metadata
