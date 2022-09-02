@@ -1,0 +1,60 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "CreativeWork",
+  "@id": "TO_BE_ADDED, this is like an IRI for the JSON-LD itself",
+  "name": "Protocol for 18S sequencing AWI",
+  "description": "Methodological document providing a step by step description of 18S rRNA sequencing as carried out by the AWI partner for the GLOMICON intercomparison project",
+  "url": "TO_BE_ADDED",
+  "subjectOf": "TO_BE_ADDED, IRI to output of this protocol (e.g. raw sequence data)",
+  "license": "TO_BE_ADDED, assume tat this will be CC-BY, but this needs to be decided together with the partners",
+  "version": "0.1",
+  "contributor": {
+    "@type": "organisation",
+    "@id": "https://oceanexpert.org/institution/4953",
+    "legalName": "Alfred Wegener Institut, Helmholtz-Zentrum für Polar- und Meeresforschung"
+  },
+  "author": [
+    {
+      "@id": "OCEANEXPERT_ID_OR_ORCID_OF_AUTHOR1",
+      "@type": "person", 
+      "name": "NAME_OF_AUTHOR1",
+      "givenName": "FIRST_NAME_OF_AUTHOR1",
+      "familyName": "LAST_NAME_OF_AUTHOR1",
+      "url": "OCEANEXPERT_ID_OR_ORCID_OF_AUTHOR1"
+    },
+    {
+      "@id": "OCEANEXPERT_ID_OR_ORCID_OF_AUTHOR2",
+      "@type": "person", 
+      "name": "NAME_OF_AUTHOR2",
+      "givenName": "FIRST_NAME_OF_AUTHOR2",
+      "familyName": "LAST_NAME_OF_AUTHOR2",
+      "url": "OCEANEXPERT_ID_OR_ORCID_OF_AUTHOR2"
+    }
+  ],
+  "identifier": {
+    "@id": "FULL_DOI_OF_PROTOCOL",
+    "@type": "propertyValue",
+    "propertyID": "https://registry.identifiers.org/registry/doi",
+    "value": "doi:ADD_DOI",
+    "url": "FULL_DOI_ OF_PROTOCOL"
+  },
+  "keywords": [
+      "Observation", 
+      "18S rRNA", 
+      "amplicon sequencing", 
+      "GLOMICON", 
+      "Fram Strait", 
+      "Arctic", 
+      "Method comparison"
+  ],
+  "provider": {
+      "@id": "https://oceanexpert.org/institution/4953",
+      "@type": "Organization",
+      "legalName": "Alfred Wegener Institut, Helmholtz-Zentrum für Polar- und Meeresforschung",
+      "name": "Alfred Wegener Institut, Helmholtz-Zentrum für Polar- und Meeresforschung",
+      "url": [
+         "https://oceanexpert.org/institution/4953", 
+         "https://www.awi.de"
+        ]
+  }  
+}
