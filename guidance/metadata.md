@@ -60,7 +60,7 @@ We’ve structured the spreadsheet for MIxS core and the MIxS environmental_pack
 When entering entries in the sheets, please consider the following:
 
 ### Value syntax and units
-**Please follow the value syntax** (given in tab MIxS, column E) **and the preferred unit** (if noted in MIxS, column S)
+**Please follow the value syntax** (given in tab [MIxS, column E](https://docs.google.com/spreadsheets/d/1iT2DBokrXKkf25EWrUSNeXJXXd1e46um/edit#gid=937998399&range=E:E)) **and the preferred unit** (if noted in [MIxS, column S](https://docs.google.com/spreadsheets/d/1iT2DBokrXKkf25EWrUSNeXJXXd1e46um/edit#gid=937998399&range=S:S))
 
 ### Missing values
 **If a value is missing, please follow the [INSDC missing value vocabulary](https://ena-docs.readthedocs.io/en/latest/submit/samples/missing-values.html)**
@@ -92,12 +92,12 @@ Consider using the following [OBI](https://www.ebi.ac.uk/ols/ontologies/obi) or 
 
 #### geo_loc_name
 Consider using the following [GAZ](https://www.ebi.ac.uk/ols/ontologies/gaz) ontology terms or terms from the [INSDC country list](http://insdc.org/country.html):
-- Dalhousie: Atlantic Ocean [GAZ:GAZ_00000344];Northwest Atlantic Ocean [GAZ:GAZ_00013760];Bedford Basin [GAZ:GAZ_00002972]
-- FRAM: Atlantic Ocean [GAZ:GAZ_00000344];Greenland Sea [GAZ:GAZ_00008644];Fram Strait [GAZ:GAZ_00000060]
-- MBARI: Pacific Ocean [GAZ:GAZ_00000360];North East Pacific Ocean coastal waters of California [GAZ:GAZ_00051136];MBARI time series station on the shelf break
-- NOAA: Pacific Ocean [GAZ:GAZ_00000360];North East Pacific Ocean coastal waters of California [GAZ:GAZ_00051136];Scripps Institution of Oceanography pier
-- NOC: Atlantic Ocean [GAZ:GAZ_00000344];English Channel coastal waters of England [GAZ:GAZ_00144353];Coastal Station L4 [GAZ:GAZ_00187526]
-- SBR: Atlantic Ocean [GAZ:GAZ_00000344];English Channel coastal waters of France [GAZ:GAZ_00144352];Roscoff-Astan observatory site/SOMLIT-Astan long-term observatory site
+- Dalhousie: [Atlantic Ocean](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00000344&lang=en&viewMode=All&siblings=false) [GAZ:GAZ_00000344];[Northwest Atlantic Ocean](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00013760&lang=en&viewMode=All&siblings=false) [GAZ:GAZ_00013760];[Bedford Basin](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00002972) [GAZ:GAZ_00002972]
+- FRAM: [Atlantic Ocean](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00000344&lang=en&viewMode=All&siblings=false) [GAZ:GAZ_00000344];[Greenland Sea](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00008644) [GAZ:GAZ_00008644];[Fram Strait](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00000060) [GAZ:GAZ_00000060]
+- MBARI: [Pacific Ocean](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00000360&lang=en&viewMode=All&siblings=false) [GAZ:GAZ_00000360];[North East Pacific Ocean coastal waters of California](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00051136) [GAZ:GAZ_00051136];MBARI time series station on the shelf break
+- NOAA: [Pacific Ocean](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00000360&lang=en&viewMode=All&siblings=false) [GAZ:GAZ_00000360];[North East Pacific Ocean coastal waters of California](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00051136) [GAZ:GAZ_00051136];[Scripps pier](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00002545) [GAZ:GAZ_00002545]
+- NOC: [Atlantic Ocean](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00000344&lang=en&viewMode=All&siblings=false) [GAZ:GAZ_00000344];[English Channel coastal waters of England](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00144353) [GAZ:GAZ_00144353];[Coastal Station L4](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00187526) [GAZ:GAZ_00187526]
+- SBR: [Atlantic Ocean](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00000344&lang=en&viewMode=All&siblings=false) [GAZ:GAZ_00000344];[English Channel coastal waters of France](https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00144352) [GAZ:GAZ_00144352];Roscoff-Astan observatory site/SOMLIT-Astan long-term observatory site
 
 #### env_[broad_scale/local_scale/medium]
 Consider using the following [ENVO](https://www.ebi.ac.uk/ols/ontologies/envo) terms:
