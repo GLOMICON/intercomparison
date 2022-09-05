@@ -25,14 +25,14 @@ Please let us know if you need any help or support. We would also be happy to of
 - [Tab 2: MIxS core](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#tab-2-mixs-core)
 - [Tab 3: water environmental_packages](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#tab-3-water-environmental_packages)
   
-[Using the MIxS checklist](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#using-the-mixs-checklist)
-- [Value syntax and units](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#value-syntax-and-units)
-- [Missing values](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#missing-values)
-- [Ontology terms](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#ontology-terms-relevant-only-for-mixs-core) (relevant only for MIxS core)
-  - [experimental_factor](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#experimental_factor)
-  - [geo_loc_name](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#geo_loc_name)
-  - [env_[broad_scale/local_scale/medium]](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#env_broad_scalelocal_scalemedium)
-  - [samp_mat_processing](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#samp_mat_processing)
+[Using the MIxS checklist](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#using-the-mixs-checklist)
+- [Value syntax and units](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#value-syntax-and-units)
+- [Missing values](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#missing-values)
+- [Ontology terms](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#ontology-terms-relevant-only-for-mixs-core) (relevant only for MIxS core)
+  - [experimental_factor](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#experimental_factor)
+  - [geo_loc_name](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#geo_loc_name)
+  - [env_[broad_scale/local_scale/medium]](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#env_broad_scalelocal_scalemedium)
+  - [samp_mat_processing](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#samp_mat_processing)
 
 --- 
 
