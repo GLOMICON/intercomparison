@@ -20,6 +20,6 @@ To compare different procedures for microbial community observations from sampli
 AWI, MBARI, NOAA, NOC, UDalhousie, Station Biologique Roscoff
 
 ## About this repository
-In this reporitory, we will share the outputs of the intercomparison project.
+In this reporitory, we will share the outputs of the intercomparison project and guidance for (meta)data management and sharing.
 
 The best way to engage with this project is via its [Issue tracker](https://github.com/GLOMICON/intercomparison/issues).
