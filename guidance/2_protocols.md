@@ -2,6 +2,10 @@ Dear GLOMICON partners,
 
 Below, please find some supporting guidance on how to provide your protocols in preparation for the cross-observatory analysis.
 
+We will support this process and are happy to validate the protocol records and provide feedback.
+
+Please let us know if you need any help or support. We would also be happy to offer a session in which we go through the standardisation of an example protocol together.
+
 ---
 
 ## Formatting
