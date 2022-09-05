@@ -20,6 +20,6 @@ For examples of how the protocol templates are being used, please see the [colle
 All files will need permanent identifiers (PIDs). As noted in the BeBOP README, the protocols can be added to zenodo to receive PIDs and confirm long-term storage.
 
 ## Sharing
-Once the protocols are safely stored in a long term and stable repository, please share the PIDs to the protocols in
-- JSON-LD following the format as given in [LINK], with one JSON-LD per multi-fastq file
-- a csv file which we will then put into the JSON-LD format
+Once the protocols are safely stored in a long term and stable repository, please share the PIDs to the protocols in a csv file either in the dedicated folder in this repository or via email. 
+
+We will then put then prepare JSON-LD files with the PIDs, provenance information and some minimal metadata. 
