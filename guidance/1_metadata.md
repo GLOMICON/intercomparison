@@ -20,7 +20,7 @@ Please let us know if you need any help or support. We would also be happy to of
 
 **For the MIxS-compliant standardisation process, please see the guidance below:**
 
-[Understanding the MIxS checklist](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#understanding-the-mixs-checklist)
+[Understanding the MIxS checklist](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#understanding-the-mixs-checklist)
 - [Tab 1: README](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-1-readme)
 - [Tab 2: MIxS core](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-2-mixs-core)
 - [Tab 3: water environmental_packages](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-3-water-environmental_packages)
