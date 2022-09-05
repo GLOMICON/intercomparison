@@ -22,7 +22,7 @@ Please let us know if you need any help or support. We would also be happy to of
 
 [Understanding the MIxS checklist](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#understanding-the-mixs-checklist)
 - [Tab 1: README](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#tab-1-readme)
-- [Tab 2: MIxS core](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-2-mixs-core)
+- [Tab 2: MIxS core](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#tab-2-mixs-core)
 - [Tab 3: water environmental_packages](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-3-water-environmental_packages)
   
 [Using the MIxS checklist](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#using-the-mixs-checklist)
@@ -41,7 +41,7 @@ Our metadata guidelines are based on the MIxS checklist. To support your work, w
 
 The metadata spreadsheet contains three tabs:
 1. [Tab 1: README](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#tab-1-readme)
-2. [Tab 2: MIxS core](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-2-mixs-core)
+2. [Tab 2: MIxS core](https://github.com/GLOMICON/intercomparison/blob/main/guidance/1_metadata.md#tab-2-mixs-core)
 3. [Tab 3: water environmental_packages](https://github.com/GLOMICON/intercomparison/blob/main/guidance/metadata.md#tab-3-water-environmental_packages)
 
 ### Tab 1: README
