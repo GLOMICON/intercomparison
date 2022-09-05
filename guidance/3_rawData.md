@@ -31,3 +31,5 @@ This metadata is included in the JSON-LD file using schema.org, Dublin Core, or 
 - license
 - version
 - includedInDataCatalog (to be filled once the data is openly available on the INSDC)
+
+Please see [here](https://github.com/GLOMICON/intercomparison/blob/main/rawData/rawDataExample.json) for an example of the metadata needed.
