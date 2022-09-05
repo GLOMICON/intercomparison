@@ -6,6 +6,8 @@ For this project, we’d like a coherent set of metadata to facilitate comparati
 
 We will support this process and are happy to validate the metadata records and provide feedback.
 
+Please let us know if you need any help or support. We would also be happy to offer a session in which we go through the standardisation of an example metadataset together.
+
 ---
 
 1. As a first step, please email the metadata as simple CSVs / tables / spreadsheets to Raïssa Meyer, these will be added to GitHub as they are. 
