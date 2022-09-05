@@ -2,6 +2,8 @@ Dear GLOMICON partners,
 
 Below, please find some supporting guidance on how to provide your raw sequence data outputs in preparation for the cross-observatory analysis.
 
+Please let us know if you need any support. If needed, we would also be happy to offer a session where we go through an example of sharing the ASV tables via BIOM files.
+
 ---
 
 ## Data format
