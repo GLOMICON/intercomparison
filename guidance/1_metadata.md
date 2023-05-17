@@ -10,7 +10,7 @@ Please let us know if you need any help or support. We would also be happy to of
 
 ---
 
-1. As a first step, please email the metadata as simple CSVs / tables / spreadsheets to Raïssa Meyer, these will be added to GitHub as they are. 
+1. As a first step, please email the metadata as simple CSVs / tables / spreadsheets to the AWI team, these will be added to GitHub as they are. 
 
 2. In a second step, please standardise the metadata according to the Minimum Information about any (x) Sequence (MIxS) checklists (see guidance below). Please do so either in this GitHub repository (version control included), or do so on your local machine and email a simple CSV / table to Raïssa Meyer. As noted in the [guidance on ASV tables](https://github.com/GLOMICON/intercomparison/blob/main/guidance/ASVtables.md#data-format), the standardised metadata can also be added to the BIOM file.
 
