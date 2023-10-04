@@ -1,0 +1,603 @@
+---
+title: "GLOMICON_DEICODE"
+author: "Pitz K"
+output: html_document
+date: '2022-08-25'
+---
+
+# Load libraries
+```{r}
+#load libraries
+library(tidyverse) #includes multiple libraries
+library(lubridate) #for date modifications
+library(magrittr) # for the double pipe %<>%
+library(qiime2R) # for importing Qiime results into R
+library(RColorBrewer) #color palettes
+library(viridis) #color palettes
+```
+
+# Set Location to save results
+```{r}
+marker = '18S'
+prefix = 'GLOMICON'
+data_directory = "../data/filtered_seq_data/"
+# Set directory to save plots
+plot_dir <- '../figures/RPCA/'
+results_directory <- '../Qiime_Results/'
+```
+
+# load in data
+```{r}
+#ASV table
+print('ASV table')
+file = paste(prefix,"_",marker,"_otu_filtered.csv", sep='')
+filepath = paste(data_directory, file, sep='')
+print(filepath)
+otu.c <- read_csv(filepath) %>% rename_with(.cols = 1, ~"ASV")
+
+#taxa table
+print('taxa table')
+file = paste(prefix,"_",marker,"_taxa_filtered.csv", sep='')
+filepath = paste(data_directory, file, sep='')
+print(filepath)
+tax.c <- read_csv(filepath) %>% rename_with(.cols = 1, ~"ASV")
+
+#metadata table
+print('metadata table')
+file = paste(prefix,"_",marker,"_meta_filtered.csv", sep='')
+filepath = paste(data_directory, file, sep='')
+print(filepath)
+samp.c <- read_csv(filepath) %>% rename('SampleID' = 'sample_name')
+
+#OTU table long format with percent total reads
+potu.c <- otu.c %>%
+  tidyr::pivot_longer( -ASV, names_to ='SampleID',values_to = 'reads' ) %>%
+  group_by(SampleID) %>%
+  mutate(per_tot = reads / sum(reads) *100) %>%
+  ungroup() %>%
+  arrange(-reads)
+head(potu.c)
+```
+
+
+
+
+# Export tables for DEICODE
+```{r}
+#ASV table
+#"#OTUID"
+filename = paste(results_directory, "Qiime2_asv.tsv", sep='')
+#check filename
+print(filename)
+
+otu.c %>%
+  rename('#OTUID' = ASV) %>%
+  write_delim(filename, delim="\t")
+
+#Taxa table
+#"#OTUID"
+filename = paste(results_directory, "Qiime2_taxa.tsv", sep='')
+#check filename
+print(filename)
+
+tax.c %>%
+  rename('#OTUID' = ASV) %>%
+  write_delim(filename, delim="\t")
+  
+#Metadata Table
+#SampleID
+filename = paste(results_directory, "Qiime2_meta.tsv", sep='')
+#check filename
+print(filename)
+
+samp.c %>%
+  select(SampleID,SAMPLING_cruise, depth ) %>%
+  rename('#SampleID' = SampleID) %>%
+  write_delim(filename, delim="\t")
+
+```
+
+
+## DEICODE PCA
+
+# CHANGE PATH BELOW TO CD TO CORRECT DIRECTORY!!
+
+```{bash engine.opts='-l'}
+# move into the directory where you are going to run the DEICODE script
+cd /Users/kpitz/Projects/GLOMICON/Qiime_Results
+pwd
+
+# Activate the conda qiime2 enviroment - check version
+conda activate qiime2-2021.11
+
+#Make biom file
+biom convert -i ./Qiime2_asv.tsv -o table.from_txt_json.biom --table-type="OTU table" --to-json
+#add metadata files to biom file - change the merged_tax_table_for_biomm.txt and _merged_for_biom.txt files
+biom add-metadata -i table.from_txt_json.biom -o table.w_md.biom --observation-metadata-fp Qiime2_taxa.tsv --sample-metadata-fp Qiime2_meta.tsv
+
+#import into Qiime2 - Change output file
+qiime tools import \
+--input-path table.w_md.biom \
+--output-path Project.biom.qza \
+--type FeatureTable[Frequency]
+
+#run DEICODE - change input table
+qiime deicode rpca \
+--i-table Project.biom.qza \
+--p-n-components 3 \
+--p-min-feature-count 20 \
+--p-min-sample-count 500 \
+--o-biplot ordination.qza \
+--o-distance-matrix distance.qza
+
+## Create biplot - change metadata files
+qiime emperor biplot \
+--i-biplot ordination.qza \
+--m-sample-metadata-file Qiime2_meta.tsv \
+--m-feature-metadata-file Qiime2_taxa.tsv \
+--o-visualization biplot.qzv \
+--p-number-of-features 8
+
+
+
+```
+
+
+
+# PLOT
+
+
+#make seasonal variables
+```{r}
+
+# meta <- samp.c %>% 
+#   mutate(time = mdy_hm(local_time)) %>%
+#   mutate(time_since = as.numeric(time)) %>%
+#   mutate(ESP = case_when(str_detect(SampleID, 'SC')==TRUE ~'ESP',
+#                          str_detect(SampleID, 'Bongo')==TRUE ~'Bongo',
+#                          str_detect(SampleID, '_V')==TRUE ~'ROV',
+#                          TRUE~'CTD')) %>%
+#   mutate(month =  month(time)) %>%
+#   mutate(day =  day(time)) %>%
+#   mutate(year =  year(time)) %>%
+#   mutate(jday = yday(time)) %>%
+#   mutate(month_char = as.character(month)) %>%
+#   mutate(year_char = as.character(year)) %>%
+#   mutate(depth_bin = case_when(depth <=50 ~ "0-50m",
+#                                depth >50 & depth <=100 ~ "50-100m",
+#                                depth >100 & depth <=200 ~ "100-200m",
+#                                depth >200 & depth <=300 ~ "200-300m",
+#                                depth >300 & depth <=400 ~ "300-400m",
+#                                depth >400 & depth <=500 ~ "400-500m",
+#                                depth >400 & depth <=600 ~ "500-600m",
+#                                depth >600 & depth <=750 ~ "600-750m", TRUE ~ "unknown"
+#                                )) 
+```
+
+```{r}
+# library(magrittr)
+#project_meta %<>% rename(SampleID=sample_name)
+```
+
+#import data
+```{r}
+# library(qiime2R)
+
+#Import Qiime2 Results
+file = paste(results_directory,"ordination.qza",sep="")
+print(file)
+pco<-read_qza(file)
+pco$uuid
+#look at data
+head(pco$data$ProportionExplained)
+pco$data$Vectors[1:5, 1:4]
+
+#create proportion explained labels
+label.PC1 <- paste("PC1: ", round(pco$data$ProportionExplained$PC1, 3)*100,"%")
+label.PC1
+label.PC2 <- paste("PC2: ", round(pco$data$ProportionExplained$PC2, 3)*100,"%")
+label.PC2
+label.PC3 <- paste("PC3: ", round(pco$data$ProportionExplained$PC3, 3)*100,"%")
+label.PC3
+
+#Join with sample data
+pcscores <- left_join(pco$data$Vectors, samp.c, by="SampleID")
+
+#format loading scores
+loadings <- as.data.frame(pco$data$Species)
+loadings$ASV <- loadings$FeatureID
+
+#join on OTU, adding taxa info
+loadings <- left_join(loadings, tax.c, by="ASV")
+
+#export pcscores
+file = paste(results_directory, "pcscores_",marker,"_Dada2_Qiime2.csv",sep="")
+print(file)
+write.csv(pcscores, file)
+file = paste(results_directory, "loadings_",marker,"_Dada2_Qiime2.csv",sep="")
+print(file)
+write.csv(loadings, file)
+pcscores[1:5, 1:9]  #long because of sample data
+head(loadings)
+```
+
+#Plot RPCA
+```{r}
+pcscores %<>%
+  mutate(institute = 'unknown') %>%
+  mutate(institute = case_when(str_detect(SampleID,'NOAA')~'NOAA',
+                               str_detect(SampleID,'NOC')~'NOC',
+                               str_detect(SampleID,'CN18')~'MBARI',
+                               str_detect(SampleID,'UDalhousie')~'UDalhousie',
+                               str_detect(SampleID,'BLOOM')~'mock_BLOOM',
+                               str_detect(SampleID,'EVEN')~'mock_EVEN',
+                               TRUE ~ institute))
+```
+
+
+```{r}
+# by project
+p <- pcscores %>%
+  group_by(institute) %>%
+  mutate(mPC1 = mean(PC1)) %>%
+  mutate(mPC2 = mean(PC2)) %>%
+  ungroup() %>%
+  ggplot(aes(PC1,PC2,color=institute)) +
+  geom_point(size=3, alpha=0.6, shape=16) +
+  geom_point(size=7, shape=16, aes(x=mPC1, y=mPC2))
+
+p+labs(x=label.PC1 , y=label.PC2, colour = "Sample Group" )+ ggtitle(marker)+
+  #theme_minimal()+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"),
+        legend.text = element_text(size = 10, colour = "black"),
+        legend.title = element_text(face = "bold", size=12),
+        legend.key = element_rect(fill = FALSE, colour = FALSE),
+        legend.key.size = unit(0.1,"line")
+  )+ guides(color = guide_legend(override.aes = list(size=5, shape=15)))
+
+filename = paste(plot_dir, 'RPCA_',marker,'_PC1PC2_mean_samplegroup.png', sep='')
+filename
+ggsave(filename,height = 5, width =7, units = 'in')
+  
+
+
+```
+#Ait distance
+```{r}
+# Ait distance:
+
+file = paste(results_directory,"distance.qza",sep="")
+print(file)
+ait <-read_qza(file)
+ait
+aitmat <- as.matrix(ait$data)
+aitdist <- as.dist(aitmat)
+
+```
+
+```{r}
+#transform aitchenson distance matrix into format for 
+#plotting distance between depths
+# get into long format to get distance from sample to sample
+# 
+# ait_tib <-as_tibble(aitmat,rownames = "SampleID") %>%
+#   pivot_longer(-SampleID,names_to = "SampleID2", values_to = "distance")
+# 
+# # add in metadata for both 1 and 2:
+# lim_meta <- select(meta,c('SampleID','depth_bin', 'depth', 'diel', 'day', 'time'))
+# ait_tib %<>% left_join(lim_meta, by="SampleID")
+# ait_tib %<>% left_join(lim_meta %>% mutate(SampleID2 = SampleID), by="SampleID2", suffix= (c("1","2"))) %>%
+#   select(-SampleID22) %>%
+#   mutate(interaction_type = paste(diel1,'-',diel2),sep='')
+
+```
+
+### cluster
+```{r}
+library(ggdendro)
+aitclust <- hclust(aitdist, method= "ward.D2")
+plot(aitclust)
+aitdend <- as.dendrogram(aitclust, hang = -1, lwd = 3, lty = 3, sub = "")
+#dend_cols <- select(samp.c,c('SampleID','date'))
+plot(aitdend)
+
+
+#Can plot with ggplot2
+
+dendr <- dendro_data(aitclust, type="rectangle") 
+
+#Define cluster based on similarity percent - good for plotting
+clust <- cutree(aitclust, h = 6)               # find 'cut' clusters (k) or choose level (h) numeric scalar or vector with heights where the tree should be cut.
+clust2 <- cutree(aitclust, h = 2)
+clust3 <- cutree(aitclust, h = 10)  
+clust4 <- cutree(aitclust, h = 16)  
+
+clust.df <- data.frame(label = names(clust), cluster_6 = clust, cluster_2 = clust2, cluster_10 = clust3, cluster_16 = clust4)
+sapply(clust.df, mode)
+clust.df$label <- as.character(clust.df$label)
+clust.df <- clust.df[order(clust.df$label),]
+
+#join sample data with cluster df and simprofCLUSTERS df:
+tree_scores <- as_tibble(clust.df) %>% rename(SampleID = label) %>% left_join(pcscores, by='SampleID')
+tree_data <- as_tibble(dendr$labels) %>% 
+  rename(SampleID = label) %>% 
+  left_join(tree_scores, by='SampleID') 
+  #mutate(local_time = mdy_hm(local_time)) %>%
+  #arrange(depth_bin)
+
+# In PCA space:
+tree_data %>%ggplot(aes(x= PC1, y=PC2, color=cluster_16))+
+  geom_point()
+tree_data %>%ggplot(aes(x= PC1, y=PC2, color=cluster_10))+
+  geom_point()
+tree_data %>%ggplot(aes(x= PC1, y=PC2, color=cluster_2))+
+  geom_point()
+
+#By institute
+ggplot() + 
+  geom_segment(data=segment(dendr), aes(x=x, y=y, xend=xend, yend=yend), size=0.2, color='darkgrey') +
+  #geom_rect(data=tree_data, aes(xmin=x,xmax = x+.01, ymin=y-1,ymax=y-2, color=year_char),alpha=1, size=1)+
+  geom_rect(data=tree_data, aes(xmin=x,xmax = x+.01, ymin=y-1,ymax=y-2, color=institute),alpha=1, size=1)+
+  geom_text(data=tree_data, aes(x=x, y=y, label=institute, hjust=-.4), size=1) +
+  geom_text(data=tree_data, aes(x=x, y=y, label=PlateID, hjust=-6), size=2) +
+  coord_flip() + scale_y_reverse(expand=c(.5, 0)) + 
+  scale_color_brewer(palette='Set1')+
+  theme(axis.line.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.title.y=element_blank(),
+        panel.background=element_rect(fill="white"),
+        panel.grid=element_blank())
+
+filename = paste(plot_dir, 'Aitdist_',marker,'_hclust_institute.png', sep='')
+filename
+ggsave(filename,height = 4, width =6, units = 'in')
+
+# save for later
+cluster_plot <- ggplot() + 
+  geom_segment(data=segment(dendr), aes(x=x, y=y, xend=xend, yend=yend), size=0.2, color='darkgrey') +
+  #geom_rect(data=tree_data, aes(xmin=x,xmax = x+.01, ymin=y-1,ymax=y-2, color=year_char),alpha=1, size=1)+
+  geom_rect(data=tree_data, aes(xmin=x,xmax = x+.01, ymin=y-1,ymax=y-2, color=institute),alpha=1, size=1)+
+  geom_text(data=tree_data, aes(x=x, y=y, label=institute, hjust=-.4), size=1) +
+  geom_text(data=tree_data, aes(x=x, y=y, label=PlateID, hjust=-6), size=2) +
+  coord_flip() + scale_y_reverse(expand=c(.5, 0)) + 
+  scale_color_brewer(palette='Set1')+
+  theme(axis.line.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.title.y=element_blank(),
+        panel.background=element_rect(fill="white"),
+        panel.grid=element_blank())
+```
+
+# For Taxonomy:
+```{r}
+# potu_new2 <- otu_new %>%
+#   rename(ASV = `#OTUID`) %>%
+#   tidyr::pivot_longer( -ASV, names_to ='SampleID',values_to = 'reads' ) %>%
+#   group_by(SampleID) %>%
+#   mutate(per_tot = reads / sum(reads) *100) %>%
+#   ungroup() %>%
+#   arrange(-reads)
+# head(potu_new2)
+# 
+# taxa_new %<>% rename(ASV = `#OTUID`)
+# taxa_new
+```
+
+
+```{r}
+#bar plots
+taxa_level = sym('Class')
+top_taxa <- potu.c %>%
+  full_join(tax.c ) %>%
+  filter(!!taxa_level != 'Unknown') %>%
+  filter(!!taxa_level !='no_hit') %>%
+  filter(!!taxa_level !='unassigned') %>%
+  filter(!!taxa_level !='unknown') %>%
+  filter(!!taxa_level !='s_') %>%
+  filter(!!taxa_level !='g_') %>%
+  #unite(taxa_label, Class, Order, Family, Genus, sep='_') %>%
+  #group_by(taxa_label) %>%
+  group_by(!!taxa_level) %>%
+  mutate(sum_per_tot = sum(per_tot)) %>%
+  distinct(!!taxa_level,.keep_all = TRUE ) %>%
+  arrange(-sum_per_tot) %>%
+  select(!!taxa_level, sum_per_tot) %>%
+  #print(n = Inf) %>%
+  ungroup() %>%
+  select(!!taxa_level, sum_per_tot) %>%
+  top_n(20)
+
+# assign text colour
+library(ggthemes)
+textcol <- "grey40"
+print("Begin plotting...")
+bp_top <- inner_join(potu.c, tree_data,  by = c("SampleID")) %>% #join with metadata
+  inner_join(tax.c ,  by = c("ASV")) %>%  #join with taxonomy
+  #make taxa label
+  #unite(taxa_label, Class, Order, Family, Genus, sep='_') %>%
+  right_join(top_taxa) %>% #limit to top taxa
+  ggplot(aes(x = fct_reorder(SampleID, x), y = per_tot)) +
+  geom_bar(stat = "identity", aes(fill = !!taxa_level))+
+  scale_fill_tableau(palette = "Tableau 20", type = c("regular"), direction = 1)+
+  labs(x="",y="Percent Total Reads")+
+  theme_minimal() +
+  guides(fill=guide_legend(ncol=1)) +
+  coord_flip() +
+  theme(
+    #legend
+    legend.position="right",legend.direction="vertical",
+    legend.text=element_text(colour=textcol,size=7,face="bold"),
+    legend.key.height=grid::unit(0.3,"cm"),
+    legend.key.width=grid::unit(0.3,"cm"),
+    legend.title=element_text(colour=textcol,size=7,face="bold"),
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1,size=3,colour=textcol),
+    #axis.text.x=element_text(size=7,colour=textcol),
+    axis.text.y=element_text(size=6,colour=textcol),
+    axis.title.y = element_text(size=6),
+    plot.background=element_blank(),
+    panel.border=element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(size = .25),
+    plot.margin=margin(0.1,0.1,0.1,0.1,"cm"),
+    plot.title=element_blank())
+
+filename = paste(plot_dir, marker,'_top20',taxa_level,'_bar_comp.png', sep='')
+#print('Plot of top 20 Genus average by month:')
+print(filename)
+ggsave(filename,height = 6, width =10, units = 'in')
+
+#plot cluster groups?
+bp_side <- inner_join(potu.c, tree_data,  by = c("SampleID")) %>% #join with metadata
+  ggplot(aes(x = fct_reorder(SampleID, x), y = 1)) +
+  geom_bar(stat = "identity", aes(fill = cluster_2))+
+  #scale_fill_tableau(palette = "Tableau 20", type = c("regular"), direction = 1)+
+  labs(x="",y="clust")+
+  theme_minimal() +
+  guides(fill=guide_legend(ncol=2)) +
+  coord_flip() +
+  theme(
+    #legend
+    legend.position="bottom",legend.direction="vertical",
+    legend.text=element_text(colour=textcol,size=8,face="bold"),
+    legend.key.height=grid::unit(0.3,"cm"),
+    legend.key.width=grid::unit(0.3,"cm"),
+    legend.title=element_text(colour=textcol,size=8,face="bold"),
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1,size=3,colour=textcol),
+    #axis.text.x=element_text(size=7,colour=textcol),
+    #axis.text.y=element_text(size=6,colour=textcol),
+    #axis.title.y = element_text(size=6),
+    axis.line.y=element_blank(),
+    axis.ticks.y=element_blank(),
+    axis.text.y=element_blank(),
+    axis.title.y=element_blank(),
+    plot.background=element_blank(),
+    panel.border=element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(size = .25),
+    plot.margin=margin(0.1,0.1,0.1,0.1,"cm"),
+    plot.title=element_blank())
+
+filename = paste(plot_dir, marker,'_cluster2_.png', sep='')
+#print('Plot of top 20 Genus average by month:')
+print(filename)
+ggsave(filename,height = 6, width =10, units = 'in')
+
+
+
+bp_side2 <- inner_join(potu.c, tree_data,  by = c("SampleID")) %>% #join with metadata
+  ggplot(aes(x = fct_reorder(SampleID, x), y = 1)) +
+  #geom_bar(stat = "identity", aes(fill = depth))+
+  geom_point(aes(shape=institute,color = institute))+
+  #scale_fill_tableau(palette = "Tableau 20", type = c("regular"), direction = 1)+
+  labs(x="",y="")+
+  theme_minimal() +
+  guides(fill=guide_legend(ncol=1)) +
+  coord_flip() +
+  theme(
+    #legend
+    legend.position="right",legend.direction="vertical",
+    legend.text=element_text(colour=textcol,size=7,face="bold"),
+    legend.key.height=grid::unit(0.3,"cm"),
+    legend.key.width=grid::unit(0.3,"cm"),
+    legend.title=element_text(colour=textcol,size=7,face="bold"),
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1,size=3,colour=textcol),
+    #axis.text.x=element_text(size=7,colour=textcol),
+    #axis.text.y=element_text(size=6,colour=textcol),
+    #axis.title.y = element_text(size=6),
+    axis.line.y=element_blank(),
+    axis.ticks.y=element_blank(),
+    axis.text.y=element_blank(),
+    axis.title.y=element_blank(),
+    plot.background=element_blank(),
+    panel.border=element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(size = .25),
+    plot.margin=margin(0.1,0.1,0.1,0.1,"cm"),
+    plot.title=element_blank())
+
+
+bp_side3 <- inner_join(potu.c, tree_data,  by = c("SampleID")) %>% #join with metadata
+  #mutate(local_time = mdy_hms(local_time)) %>%
+  ggplot(aes(x = fct_reorder(SampleID, x), y = institute)) +
+  #geom_bar(stat = "identity", aes(fill = depth))+
+  geom_point(aes(shape=institute,color = institute))+
+  #scale_fill_tableau(palette = "Tableau 20", type = c("regular"), direction = 1)+
+  labs(x="",y="institute")+
+  theme_minimal() +
+  guides(fill=guide_legend(ncol=1)) +
+  coord_flip() +
+  theme(
+    #legend
+    legend.position="right",legend.direction="vertical",
+    legend.text=element_text(colour=textcol,size=3,face="bold"),
+    legend.key.height=grid::unit(0.3,"cm"),
+    legend.key.width=grid::unit(0.3,"cm"),
+    legend.title=element_text(colour=textcol,size=3,face="bold"),
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1,size=3,colour=textcol),
+    #axis.text.x=element_text(size=7,colour=textcol),
+    #axis.text.y=element_text(size=6,colour=textcol),
+    #axis.title.y = element_text(size=6),
+    axis.line.y=element_blank(),
+    axis.ticks.y=element_blank(),
+    axis.text.y=element_blank(),
+    axis.title.y=element_blank(),
+    plot.background=element_blank(),
+    panel.border=element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(size = .25),
+    plot.margin=margin(0.1,0.1,0.1,0.1,"cm"),
+    plot.title=element_blank())
+
+
+
+#cluster plot  
+cluster_plot <- ggplot() + 
+  #geom_rect(data=tree_data, aes(xmin=x,xmax = x+.01, ymin=y-1,ymax=y-2, color=depth),alpha=1, size=1)+
+  #geom_bar(data=tree_data, aes(xmin=x,xmax = x+.01, ymin=y-1,ymax=y-2, color=depth),alpha=1, size=1) +
+  geom_segment(data=segment(dendr), aes(x=x, y=y, xend=xend, yend=yend), size=0.2, color='darkgrey') +
+  #geom_rect(data=tree_data, aes(xmin=x,xmax = x+.01, ymin=y-1,ymax=y-2, color=year_char),alpha=1, size=1)+
+  #geom_text(data=tree_data, aes(x=x, y=y, label=diel, hjust=-.4), size=1) +
+  #geom_text(data=tree_data, aes(x=x, y=y, label=PlateID, hjust=-6), size=2) +
+  coord_flip() + scale_y_reverse() + 
+  scale_color_viridis(option="viridis")+
+  #scale_color_brewer(palette='Set1')+
+  theme(axis.line=element_blank(),
+        axis.ticks=element_blank(),
+        axis.text=element_blank(),
+        axis.title=element_blank(),
+        panel.background=element_rect(fill="white"),
+        panel.grid=element_blank())
+
+
+library(cowplot)
+#plot_grid(bp_side+guides(fill="none"), bp_top+guides(fill="none"), labels = c('A', 'B'), label_size = 12)
+
+# plot_grid(cluster_plot+guides(fill="none", color="none"),bp_side+guides(fill="none"),bp_side2+guides(fill="none"), bp_top, label_size = 6, align = "h", ncol=4, rel_widths=c(2,0.5,1,5))
+
+plot_grid(cluster_plot+guides(fill="none", color="none"),bp_side+guides(fill="none"), bp_top, label_size = 6, align = "h", ncol=4, rel_widths=c(2,1,5))
+
+filename = paste(plot_dir, marker,'_cluster_top20_institute_Class.png', sep='')
+#print('Plot of top 20 Genus average by month:')
+print(filename)
+ggsave(filename,height = 6, width =10, units = 'in')
+```
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
