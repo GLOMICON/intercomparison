@@ -4,7 +4,7 @@ The goal of this study is to better understand how we can combine information fr
 
 Institutional methods in place will have typically evolved in response to the specific needs (e.g., scientific rationale for observations, characteristics of samples and communities at observatory sites) and will hence differ for good reasons. Instead of attempting to enforce standard methods that may not be equally appropriate, with this study, we try to answer the question **at what level we can draw conclusions from data generated across observatories that all target the eukaryotic microbial community?** This boils down to the question to what degree differences are introduced by methodology (extraction, primers used, sequencing, bioinformatics) and how this influences our estimates of biodiversity. Here we compare replicate samples which all focus on pelagic protists taken from the upper water column. Apart from that, no attempt was made to harmonize the methodologies applied (e.g., in terms of filters, DNA extraction kits, primers, bioinformatics pipelines, reference data bases).
 
-## Initial Targets of Study
+## Targets of Study
 
 The following targets are seen as core components of the overall study
 
