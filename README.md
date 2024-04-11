@@ -44,6 +44,8 @@ To compare different procedures for microbial community observations from sampli
 ## Participants:
 Alfred Wegener Institute (AWI), Monterey Bay Aquarium Research Institute (MBARI), National Oceanic and Atmospheric Administration (NOAA), National Oceanography Centre (NOC), Dalhousie University, Station Biologique Roscoff (SBR)
 
+![GLOMICON_sample_posession_test](https://github.com/GLOMICON/intercomparison/assets/7292507/40ab3e6f-561c-40d7-b97f-46eb8ca694a3)
+
 ## About this repository
 In this repository, we will share the outputs of the intercomparison project and guidance for (meta)data management and sharing.
 
