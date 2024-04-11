@@ -1,0 +1,248 @@
+---
+title: "Script_plots_18s"
+author: "Charlotte Berthelier"
+date: "24/05/2023"
+output: html_document
+---
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "/shared/projects/glomicon/finalresults/finalresults_to_send/")
+```
+
+# Final table
+
+```{r}
+library(data.table)
+library(magrittr)
+library(dplyr)
+library(ggplot2)
+```
+
+## Inport and merge ASV and taxo tables
+# import taxo and parse the taxonomy item
+```{r}
+taxo_BH <- fread("outputs/asv_table/18s_dada2_v1.0.filtered.table.with.taxo.vsearch_BH.tsv.gz") # best-hit
+taxo_idtaxa <- fread("outputs/asv_table/18s_dada2_v1.0.filtered.table.with.taxo.idtaxa.tsv.gz") # idtaxa
+
+head(taxo_BH)
+head(taxo_idtaxa)
+colnames(taxo_idtaxa)
+colnames(taxo_BH)
+
+taxo_BH <- taxo_BH[,.SD,.SDcols=c("amplicon","taxonomy","identity","sequence",
+                                   "total","spread",
+                                   sort(grep("^ROS",colnames(taxo_BH),value=T)))]
+
+setnames(taxo_BH,c("amplicon","taxonomy","identity"),c("BH_amplicon","BH_taxonomy","BH_identity"))
+setnames(taxo_idtaxa,c("amplicon","taxonomy","sequence"),c("IdTaxa_amplicon","IdTaxa_taxonomy","IdTaxa_sequence"))
+setnames(taxo_idtaxa,c("total","spread","confidence"),c("IdTaxa_total","IdTaxa_spread","IdTaxa_identity"))
+```
+
+# Split taxonomic best hit ranks (column "taxonomy")
+## columns names : kingdom domain	phylum class	order	family genus species
+```{r}
+seq_assignement <- data.frame(Representative_sequence=taxo_BH$BH_taxonomy,
+                              kingdom = sapply(strsplit(taxo_BH$BH_taxonomy, split="\\:"), "[", 1),
+                              domain = sapply(strsplit(taxo_BH$BH_taxonomy, split="\\:"), "[", 2),
+                              phylum = sapply(strsplit(taxo_BH$BH_taxonomy, split="\\:"), "[", 3),
+                              class = sapply(strsplit(taxo_BH$BH_taxonomy, split="\\:"), "[", 4),
+                              order = sapply(strsplit(taxo_BH$BH_taxonomy, split="\\:"), "[", 5),
+                              family = sapply(strsplit(taxo_BH$BH_taxonomy, split="\\:"), "[", 6),
+                              genus = sapply(strsplit(taxo_BH$BH_taxonomy, split="\\:"), "[", 7),
+                              species = sapply(strsplit(taxo_BH$BH_taxonomy, split="\\:"), "[", 8),
+                              stringsAsFactors = F)
+seq_assignement2 = apply(seq_assignement, FUN=gsub, MARGIN=2, pattern = ",[a-z]", replacement = "") # remove letter after ","
+seq_assignement2 = apply(seq_assignement2, FUN=gsub, MARGIN=2, pattern = "\\*", replacement = "NA") # empty field ("*") to NA
+
+taxo_split_BH = cbind(taxo_BH,seq_assignement2[,-1]) # to eliminate created column named 'Representative_sequence'
+head(taxo_split_BH)
+
+
+seq_assignement_IdTaxa <- data.frame(Representative_sequence=taxo_idtaxa$IdTaxa_taxonomy,
+                              kingdom = sapply(strsplit(taxo_idtaxa$IdTaxa_taxonomy, split="\\|"), "[", 2),
+                              domain = sapply(strsplit(taxo_idtaxa$IdTaxa_taxonomy, split="\\|"), "[", 3),
+                              phylum = sapply(strsplit(taxo_idtaxa$IdTaxa_taxonomy, split="\\|"), "[", 4),
+                              class = sapply(strsplit(taxo_idtaxa$IdTaxa_taxonomy, split="\\|"), "[", 5),
+                              order = sapply(strsplit(taxo_idtaxa$IdTaxa_taxonomy, split="\\|"), "[", 6),
+                              family = sapply(strsplit(taxo_idtaxa$IdTaxa_taxonomy, split="\\|"), "[", 7),
+                              genus = sapply(strsplit(taxo_idtaxa$IdTaxa_taxonomy, split="\\|"), "[", 8),
+                              species = sapply(strsplit(taxo_idtaxa$IdTaxa_taxonomy, split="\\|"), "[", 9),
+                              stringsAsFactors = F)
+
+taxo_split_idtaxa = cbind(taxo_idtaxa,seq_assignement_IdTaxa[,-1]) # to eliminate created column named 'Representative_sequence'
+head(taxo_split_idtaxa)
+
+```
+
+# Selection based on Sequence Identity, keep all ASVs if identity > 80
+```{r}
+taxo_BH <- taxo_split_BH[taxo_split_BH$BH_identity > 80,]
+taxo_idtaxa <- taxo_split_idtaxa[taxo_split_idtaxa$IdTaxa_identity > 80,]
+
+```
+
+
+# generation of the sample list (usefull for graphs)
+```{r}
+samples <- data.table(sample = grep("^ROS",colnames(taxo_BH),value=T))
+head(samples)
+samples[,nreads:=sapply(sample,function(X) taxo_BH[,sum(get(X))])] # nb of reads per sample (= station_depth_fraction = sum column)
+head(samples)
+```
+
+# Selection of asv present in > 1 samples (column spread) and with an occurence >1 (column total)
+```{r}
+taxo_BH_filtered <- taxo_BH[total>1&spread>1][order(total,decreasing = T)] # sort by alphabetical order
+
+# Ranks: domain	phylum	class	order	family	genus	species	subcluster	clade	subclade
+taxo_final_full_filtered <- taxo_BH_filtered[,.SD,.SDcols=c("BH_amplicon","sequence","BH_taxonomy","domain", "phylum", "class", "order", "genus", "BH_identity","total","spread",sort(grep("^ROS",colnames(taxo_BH_filtered),value=T)))]
+
+```
+
+# Figures
+## Input
+```{r}
+asv_table <- taxo_final_full_filtered
+```
+
+
+## Taxo and palette
+# Most abundant class and order
+```{r}
+# Select class (4) and order (5) for each sample
+taxo_class <- asv_table[,tstrsplit(BH_taxonomy,split=",.:",keep = c(4,5))] # c(4,5)
+taxoplot <- data.table(asv_table[,.(BH_amplicon,BH_identity,total)],taxo_class)
+setnames(taxoplot,c("V1","V2"),c("class","order"))
+taxoplot[order=="*",order:=paste(class,"X",sep="_")]
+
+# selection of 20 most abundant orders
+tmp <- taxoplot[,order] %>% table() %>% sort(decreasing = T)
+tmp <- tmp[1:20]
+
+taxo_palette <- taxoplot[order%in%names(tmp),list(class,order)] |> unique()
+taxo_palette[,unique(class)]
+
+# class palette
+x <- RColorBrewer::brewer.pal(taxo_palette[,length(unique(class))],"Paired") # Set1, Set3
+names(x) <- taxo_palette[,unique(class)]
+
+# stretch the palette
+taxo_palette[,class_col:=x[class]]
+
+taxo_palette[,order_col:={colfunc <- colorRampPalette(c("white",unique(class_col),"black"))
+               tmp <- colfunc(.N+4) # Generate palette de .N=nombre d'ordre + 4
+               tmp[c(-1:-2,-(length(tmp)-1):-length(tmp))]},by=class] # delete first and last two
+
+colman <- taxo_palette[,order_col]
+names(colman) <- taxo_palette[,order]
+colman <- c(colman,Others="grey90")
+
+taxoplot[,orderplot:=order]
+taxoplot[!order%in%names(colman),orderplot:="Others"]
+x <- taxoplot[orderplot!="Others"][order(order)][order(class)][,unique(orderplot)]
+
+# set colour order for legend and figure
+taxoplot[,orderplot:=factor(orderplot,levels=c("Others",x))]
+colman <- c(colman[x],colman["Others"])
+```
+
+
+
+```{r, fig.width=8,fig.align="center",fig.height=4,warning=F}
+p1 <- ggplot(taxoplot,aes(x=BH_identity))+
+  geom_bar(aes(fill=orderplot))+
+  scale_fill_manual(values = colman)+
+  scale_x_binned("% identity")+
+  scale_y_continuous("# ASVs")+
+  theme_classic()
+
+p1.2 <- ggplot(taxoplot,aes(y=BH_identity))+
+  geom_bar(aes(fill=orderplot))+
+  scale_fill_manual(values = colman)+
+  scale_x_continuous("ASV Nb")+
+  scale_y_binned("% Identity")+
+  theme(axis.text.y = element_text(size=7))+
+  guides(fill=guide_legend(title="order"))
+
+p2 <- ggplot(taxoplot,aes(x=BH_identity))+
+  geom_bar(aes(fill=orderplot,weight=total))+
+  scale_fill_manual(values = colman)+
+  scale_x_binned("% identity")+
+  scale_y_continuous("# reads")+
+  theme_classic()
+
+p2.2 <- ggplot(taxoplot,aes(y=BH_identity))+
+  geom_bar(aes(fill=orderplot,weight=total))+
+  scale_fill_manual(values = colman)+
+  scale_x_continuous("Read nb")+
+  scale_y_binned("% Identity")+
+  theme(axis.text.y = element_text(size=7))+
+  guides(fill=guide_legend(title="order"))
+
+p1
+# p1.2
+p2
+# p2.2
+
+#pdf("outputs/graphes/diversity_barplots_18S.pdf",width = 8,height = 5)
+#p1+p2+plot_layout(guides = "collect")
+#dev.off()
+```
+
+```{r}
+head(asv_table)
+
+asv_table_long <- melt(asv_table,measure.vars = samples[,sample],id.vars = "BH_amplicon")
+
+asv_table_long <- asv_table_long[value>0]
+asv_table_long <- merge(asv_table_long,taxoplot[,list(BH_amplicon,orderplot)],by="BH_amplicon")
+asv_table_long[,sampleplot:=paste(variable)] # a garder si on veut changer les noms des stations
+
+asv_table_long_plot <- asv_table_long[,.(nreads=sum(value),nasvs=length(unique(BH_amplicon))),
+                                       by=list(variable,orderplot,sampleplot)]
+
+colnames(asv_table_long_plot)[1] <- "Samples"
+
+# Export table
+fwrite(asv_table_long_plot,"asv_table_long_plot.txt",sep="\t",na="NA")
+
+
+p3 <- ggplot(asv_table_long_plot,aes(x=nreads,y=Samples))+
+  geom_col(aes(fill=orderplot),position = "fill")+
+  scale_fill_manual(values = colman,na.value="black")+
+  scale_x_continuous("Percent Total Reads")+
+  theme(axis.text.y = element_text(size=8))+
+  guides(fill=guide_legend(title="Most abundant class"))
+
+# tout avoir dans la même matrice
+# colonne en + pour cutting
+# faced grid
+
+p3
+
+```
+
+
+```{r}
+library(stats)
+library(vegan)
+library("FactoMineR")
+
+df <- asv_table[,.SD,.SDcols=c(sort(grep("^ROS",colnames(asv_table),value=T)),"BH_amplicon")]
+df <- data.frame(df, row.names = "BH_amplicon")
+df <- t(df)
+
+# abondance relative
+d <- decostand(df, method = "total")
+# Distance matrix
+d2 <- vegdist(d, method="bray", binary=FALSE, diag=FALSE, upper=FALSE, na.rm = FALSE)
+
+# Hierarchical clustering
+hc <- hclust(d2, method ="ward.D2")
+
+# Dendrogram
+plot(as.dendrogram(hc))
+
+vegdist(df, method="bray", binary=FALSE, diag=FALSE, upper=FALSE, na.rm = FALSE)
+```
