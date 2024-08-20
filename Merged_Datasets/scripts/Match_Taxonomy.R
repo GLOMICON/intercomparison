@@ -52,17 +52,20 @@ taxa_tab <- read_csv(filename)
 
 # MBARI ASVs already have NCBI taxonomy -----------------
 
-MBARI_tax <- seq_tab %>% full_join(taxa_tab) %>%
-  filter(Analyzing_Institute=='MBARI') 
-
-other_tax <- seq_tab %>% full_join(taxa_tab) %>%
-  filter(Analyzing_Institute!='MBARI')
+# # run them anyway - comment out
+# MBARI_tax <- seq_tab %>% full_join(taxa_tab) %>%
+#   filter(Analyzing_Institute=='MBARI') 
+# 
+# other_tax <- seq_tab %>% full_join(taxa_tab) %>%
+#   filter(Analyzing_Institute!='MBARI')
 
 
 # Look at Species Level Taxonomy  ---------------------
 # taxize::use_entrez()
 
-GLOMICON_species_key <- other_tax %>%
+
+GLOMICON_species_key <- seq_tab %>%
+  full_join(taxa_tab) %>%
   mutate(Species_edited = Species) %>%
   mutate(Species_edited = str_replace(Species_edited, 'Maxillopoda', 'Hexanauplia')) %>%
   #	Gonyaulax_spinifera - make sure this name survives editing to remove _sp.
@@ -95,8 +98,8 @@ GLOMICON_species <-GLOMICON_species_key %>%
 #batch
 sp1 <- GLOMICON_species$Species_edited[1:600]
 sp2 <- GLOMICON_species$Species_edited[601:900]
-sp3 <- GLOMICON_species$Species_edited[901:1100]
-# sp4 <- GLOMICON_species$Species_edited[1201:1563]
+sp3 <- GLOMICON_species$Species_edited[901:1000]
+sp4 <- GLOMICON_species$Species_edited[1001:1327]
 
 #look up NCBI names
 
@@ -106,7 +109,9 @@ sp3 <- GLOMICON_species$Species_edited[901:1100]
 out1 <- classification(sp1, db = 'ncbi')
 out2 <- classification(sp2, db = 'ncbi')
 out3 <- classification(sp3, db = 'ncbi')
-# out4 <- classification(sp4, db = 'ncbi')
+
+taxize_options(ncbi_sleep = 0.5)
+out4 <- classification(sp4, db = 'ncbi', batch_size=5)
 
 
 # out1
@@ -146,22 +151,22 @@ test_tax_tab3 <- tibble(names = names(out_test), out_test) %>%
   spread(rank, name) %>% 
   select(sci_name = names, kingdom, phylum, class, order, family, genus, species)
 
-# # out4
-# out_test <- out4[!is.na(out4)]
-# tr <- class2tree(out_test)
-# plot(tr, no.margin = TRUE)
-# 
-# test_tax_tab4 <- tibble(names = names(out_test), out_test) %>% 
-#   unnest(cols = c(out_test)) %>% 
-#   filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>% 
-#   select(-id) %>% 
-#   spread(rank, name) %>% 
-#   select(sci_name = names, kingdom, phylum, class, order, family, genus, species)
+# out4
+out_test <- out4[!is.na(out4)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab4 <- tibble(names = names(out_test), out_test) %>%
+  unnest(cols = c(out_test)) %>%
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>%
+  select(-id) %>%
+  spread(rank, name) %>%
+  select(sci_name = names, kingdom, phylum, class, order, family, genus, species)
 
 #merge taxa tibbles - only has species names with matches.
 df <- full_join(test_tax_tab1,test_tax_tab2) %>%
-  full_join(test_tax_tab3) # %>%
-  # full_join(test_tax_tab4)
+  full_join(test_tax_tab3) %>%
+  full_join(test_tax_tab4)
 
 # original names are in column 'sci_name' in df
 # In GLOMICON_species_key, edited species column name is in 'Species_edited'
@@ -186,7 +191,7 @@ GLOMICON_genera_key <- test_unassigned_sp %>%
 GLOMICON_genera <- GLOMICON_genera_key %>%
   distinct(Genus_edited)
 
-gen1 <- GLOMICON_genera$Genus_edited[1:266]
+gen1 <- GLOMICON_genera$Genus_edited[1:312]
 
 
 out1_gen1 <- classification(gen1, db = 'ncbi')
@@ -223,7 +228,7 @@ GLOMICON_family_key <- test_gen_unassigned %>%
 GLOMICON_family <- GLOMICON_family_key %>%
   distinct(Family_edited)
 
-fam1 <- GLOMICON_family$Family_edited[1:94]
+fam1 <- GLOMICON_family$Family_edited[1:263]
 
 
 out1_fam1 <- classification(fam1, db = 'ncbi')
@@ -262,7 +267,7 @@ GLOMICON_order_key <- test_fam_unassigned %>%
 GLOMICON_order <- GLOMICON_order_key %>%
   distinct(Order_edited)
 
-ord1 <- GLOMICON_order$Order_edited[1:61]
+ord1 <- GLOMICON_order$Order_edited[1:108]
 
 
 out1_ord1 <- classification(ord1, db = 'ncbi')
@@ -303,7 +308,7 @@ GLOMICON_class_key <- test_ord_unassigned %>%
 GLOMICON_class <- GLOMICON_class_key %>%
   distinct(Class_edited)
 
-cla1 <- GLOMICON_class$Class_edited[1:34]
+cla1 <- GLOMICON_class$Class_edited[1:61]
 
 
 out1_cla1 <- classification(cla1, db = 'ncbi')
@@ -344,7 +349,7 @@ GLOMICON_phylum_key <- test_ord_unassigned %>%
 GLOMICON_phylum <- GLOMICON_phylum_key %>%
   distinct(Phylum_edited)
 
-phy1 <- GLOMICON_phylum$Phylum_edited[1:25]
+phy1 <- GLOMICON_phylum$Phylum_edited[1:44]
 
 
 out1_phy1 <- classification(phy1, db = 'ncbi')
@@ -381,157 +386,169 @@ merged_df <- test_sp %>%
   arrange(ASV, found) %>%
   distinct(ASV, .keep_all = TRUE)
   
+# export
+filename <- paste(data_directory, 'GLOMICON_taxa_merged_updated_raw.csv', sep='')
+#filename <- '/Users/kpitz/github/GLOMICON/intercomparison/Merged_Datasets/data/taxize_taxonomy/GLOMICON_taxa_merged_updated.csv'
+print(filename)
+write.csv(merged_df, filename)
+
+# Get into right format for taxa table moving forward:
+
+taxa_updated_df <- merged_df %>%
+  select(ASV,kingdom, phylum, class, order, family, genus, species) %>%
+  rename(Kingdom = kingdom, Phylum = phylum, Class = class, Order = order, Family= family, Genus = genus, Species = species)
+
 # Format asv sequence table and taxa table; export -----------------
 
-# need to join back with MBARI data
-
-updated_taxa_tab <- merged_df %>%
-  #select(-sci_name) %>%
-  select(ASV,kingdom, phylum, class, order, family, genus, species) %>%
-  rename(Kingdom = kingdom, Phylum = phylum, Class = class, Order = order, Family= family, Genus = genus, Species = species) %>%
-  bind_rows(MBARI_tax %>% select(-sequence, -Analyzing_Institute, -Domain, -taxonomy, -Supergroup))
-  #full_join(MBARI_tax, by='ASV')
-
-
+# # need to join back with MBARI data
+# 
+# updated_taxa_tab <- merged_df %>%
+#   #select(-sci_name) %>%
+#   select(ASV,kingdom, phylum, class, order, family, genus, species) %>%
+#   rename(Kingdom = kingdom, Phylum = phylum, Class = class, Order = order, Family= family, Genus = genus, Species = species) %>%
+#   bind_rows(MBARI_tax %>% select(-sequence, -Analyzing_Institute, -Domain, -taxonomy, -Supergroup))
+#   #full_join(MBARI_tax, by='ASV')
+# 
+# 
 
 #just check it matches with original seq_tab
-test <- updated_taxa_tab %>% mutate(new_df = 1)%>%full_join(seq_tab, by='ASV')
+test <-taxa_updated_df  %>% mutate(new_df = 1)%>%full_join(seq_tab, by='ASV')
 
 # export
 filename <- paste(data_directory, 'GLOMICON_taxa_merged_updated.csv', sep='')
 #filename <- '/Users/kpitz/github/GLOMICON/intercomparison/Merged_Datasets/data/taxize_taxonomy/GLOMICON_taxa_merged_updated.csv'
 print(filename)
-write.csv(updated_taxa_tab, filename)
+write.csv(taxa_updated_df , filename)
 
-# Prelim look at data --------------
-# combine with seq_tab:
-
-tot_reads = asv_tab %>%
-  tidyr::pivot_longer( -ASV, names_to ='SampleID',values_to = 'reads' ) %>%
-  group_by(ASV) %>%
-  mutate(total_reads = sum(reads,na.rm=TRUE )) %>%
-  ungroup() %>%
-  distinct(ASV, .keep_all = TRUE) %>%
-  select(ASV, total_reads)
-
-test <- asv_tab %>%
-  tidyr::pivot_longer( -ASV, names_to ='SampleID',values_to = 'reads' ) %>%
-  full_join(seq_tab %>%select(ASV, Analyzing_Institute)) %>%
-  mutate(count=1) %>%
-  group_by(Analyzing_Institute) %>%
-  mutate(total_reads = sum(reads,na.rm=TRUE )) %>%
-  mutate(total_ASVs = sum(count, na.rm=TRUE)) %>%
-  ungroup() %>%
-  distinct(Analyzing_Institute, .keep_all = TRUE) %>%
-  select(Analyzing_Institute, total_reads, total_ASVs) %>%
-  mutate(ASVs_per_read = total_ASVs/total_reads)
-
-# look at NOC or UDalhousie where have equal replicates across all three analyzing institutes
-test <- potu_tab %>%
-  full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
-  filter(Collecting_Institute == 'NOC') %>%
-  group_by(Analyzing_Institute, ASV) %>%
-  mutate(sum_pertot = sum(per_tot)) %>%
-  ungroup() %>%
-  distinct(Analyzing_Institute, ASV, .keep_all = TRUE) %>%
-  filter(sum_pertot >0) %>%
-  arrange(-sum_pertot) %>%
-  select(ASV, Analyzing_Institute, sum_pertot ) %>%
-  full_join(updated_taxa_tab %>% select(ASV, Phylum, Class, Order, Family, Genus, Species))
-
-# number of ASVs per class:
-test <- potu_tab %>%
-  full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
-  filter(Collecting_Institute == 'NOC') %>%
-  group_by(Analyzing_Institute, ASV) %>%
-  mutate(sum_pertot = sum(per_tot)) %>%
-  ungroup() %>%
-  distinct(Analyzing_Institute, ASV, .keep_all = TRUE) %>%
-  filter(sum_pertot >0) %>%
-  arrange(-sum_pertot) %>%
-  select(ASV, Analyzing_Institute, sum_pertot ) %>%
-  mutate(count=1) %>%
-  full_join(updated_taxa_tab %>% select(ASV, Phylum, Class, Order, Family, Genus, Species)) %>%
-  group_by(Analyzing_Institute, Class) %>%
-  mutate(sum_count = sum(count,na.rm=TRUE )) %>%
-  ungroup() %>%
-  distinct(Analyzing_Institute, Class, .keep_all = TRUE) %>%
-  select(Analyzing_Institute, Class,sum_count) %>%
-  arrange(Class,Analyzing_Institute)
-
-# number of ASVs per Phylum:
-test <- potu_tab %>%
-  full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
-  filter(Collecting_Institute %in% c('NOC', 'UDalhousie')) %>%
-  group_by(Analyzing_Institute, ASV) %>%
-  mutate(sum_pertot = sum(per_tot)) %>%
-  ungroup() %>%
-  distinct(Analyzing_Institute, ASV, .keep_all = TRUE) %>%
-  filter(sum_pertot >0) %>%
-  arrange(-sum_pertot) %>%
-  select(ASV, Analyzing_Institute, sum_pertot ) %>%
-  mutate(count=1) %>%
-  full_join(updated_taxa_tab %>% select(ASV, Phylum, Class, Order, Family, Genus, Species)) %>%
-  group_by(Analyzing_Institute, Phylum) %>%
-  mutate(sum_count = sum(count,na.rm=TRUE )) %>%
-  ungroup() %>%
-  distinct(Analyzing_Institute, Phylum, .keep_all = TRUE) %>%
-  select(Analyzing_Institute, Phylum,sum_count) %>%
-  arrange(Phylum,Analyzing_Institute)
-
-
-
-
-# look at NOC or UDalhousie where have equal replicates across all three analyzing institutes
-# total reads/ total asvs
-test <- potu_tab %>%
-  full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
-  filter(Collecting_Institute == 'NOC') %>%
-  mutate(count=1) %>%
-  filter(per_tot >0) %>%
-  group_by(Analyzing_Institute) %>%
-  mutate(total_reads = sum(reads,na.rm=TRUE )) %>%
-  mutate(total_ASVs = sum(count, na.rm=TRUE)) %>%
-  ungroup() %>%
-  distinct(Analyzing_Institute, .keep_all = TRUE) %>%
-  select(Analyzing_Institute, total_reads, total_ASVs) %>%
-  mutate(ASVs_per_read = total_ASVs/total_reads)
-
-test <- potu_tab %>%
-  full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
-  filter(Collecting_Institute == 'UDalhousie') %>%
-  mutate(count=1) %>%
-  filter(per_tot >0) %>%
-  group_by(Analyzing_Institute) %>%
-  mutate(total_reads = sum(reads,na.rm=TRUE )) %>%
-  mutate(total_ASVs = sum(count, na.rm=TRUE)) %>%
-  ungroup() %>%
-  distinct(Analyzing_Institute, .keep_all = TRUE) %>%
-  select(Analyzing_Institute, total_reads, total_ASVs) %>%
-  mutate(ASVs_per_read = total_ASVs/total_reads)
-
-
-test <- seq_tab %>%
-  full_join(test_sp) %>%
-  select(class, Analyzing_Institute, ASV) %>%
-  mutate(count=1) %>%
-  full_join(tot_reads) %>%
-  group_by(class, Analyzing_Institute) %>%
-  mutate(sum_count = sum(count,na.rm=TRUE)) %>%
-  mutate(sum_reads = sum(total_reads,na.rm=TRUE)) %>%
-  ungroup() %>%
-  distinct(class, Analyzing_Institute, .keep_all = TRUE) %>%
-  arrange(class, Analyzing_Institute)
-
-test <- seq_tab %>%
-  full_join(test_sp) %>%
-  select(phylum, Analyzing_Institute, ASV) %>%
-  mutate(count=1) %>%
-  full_join(tot_reads) %>%
-  group_by(phylum, Analyzing_Institute) %>%
-  mutate(sum_count = sum(count,na.rm=TRUE)) %>%
-  mutate(sum_reads = sum(total_reads,na.rm=TRUE)) %>%
-  ungroup() %>%
-  distinct(phylum, Analyzing_Institute, .keep_all = TRUE) %>%
-  arrange(phylum, Analyzing_Institute)
+# # Prelim look at data --------------
+# # combine with seq_tab:
+# 
+# tot_reads = asv_tab %>%
+#   tidyr::pivot_longer( -ASV, names_to ='SampleID',values_to = 'reads' ) %>%
+#   group_by(ASV) %>%
+#   mutate(total_reads = sum(reads,na.rm=TRUE )) %>%
+#   ungroup() %>%
+#   distinct(ASV, .keep_all = TRUE) %>%
+#   select(ASV, total_reads)
+# 
+# test <- asv_tab %>%
+#   tidyr::pivot_longer( -ASV, names_to ='SampleID',values_to = 'reads' ) %>%
+#   full_join(seq_tab %>%select(ASV, Analyzing_Institute)) %>%
+#   mutate(count=1) %>%
+#   group_by(Analyzing_Institute) %>%
+#   mutate(total_reads = sum(reads,na.rm=TRUE )) %>%
+#   mutate(total_ASVs = sum(count, na.rm=TRUE)) %>%
+#   ungroup() %>%
+#   distinct(Analyzing_Institute, .keep_all = TRUE) %>%
+#   select(Analyzing_Institute, total_reads, total_ASVs) %>%
+#   mutate(ASVs_per_read = total_ASVs/total_reads)
+# 
+# # look at NOC or UDalhousie where have equal replicates across all three analyzing institutes
+# test <- potu_tab %>%
+#   full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
+#   filter(Collecting_Institute == 'NOC') %>%
+#   group_by(Analyzing_Institute, ASV) %>%
+#   mutate(sum_pertot = sum(per_tot)) %>%
+#   ungroup() %>%
+#   distinct(Analyzing_Institute, ASV, .keep_all = TRUE) %>%
+#   filter(sum_pertot >0) %>%
+#   arrange(-sum_pertot) %>%
+#   select(ASV, Analyzing_Institute, sum_pertot ) %>%
+#   full_join(updated_taxa_tab %>% select(ASV, Phylum, Class, Order, Family, Genus, Species))
+# 
+# # number of ASVs per class:
+# test <- potu_tab %>%
+#   full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
+#   filter(Collecting_Institute == 'NOC') %>%
+#   group_by(Analyzing_Institute, ASV) %>%
+#   mutate(sum_pertot = sum(per_tot)) %>%
+#   ungroup() %>%
+#   distinct(Analyzing_Institute, ASV, .keep_all = TRUE) %>%
+#   filter(sum_pertot >0) %>%
+#   arrange(-sum_pertot) %>%
+#   select(ASV, Analyzing_Institute, sum_pertot ) %>%
+#   mutate(count=1) %>%
+#   full_join(updated_taxa_tab %>% select(ASV, Phylum, Class, Order, Family, Genus, Species)) %>%
+#   group_by(Analyzing_Institute, Class) %>%
+#   mutate(sum_count = sum(count,na.rm=TRUE )) %>%
+#   ungroup() %>%
+#   distinct(Analyzing_Institute, Class, .keep_all = TRUE) %>%
+#   select(Analyzing_Institute, Class,sum_count) %>%
+#   arrange(Class,Analyzing_Institute)
+# 
+# # number of ASVs per Phylum:
+# test <- potu_tab %>%
+#   full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
+#   filter(Collecting_Institute %in% c('NOC', 'UDalhousie')) %>%
+#   group_by(Analyzing_Institute, ASV) %>%
+#   mutate(sum_pertot = sum(per_tot)) %>%
+#   ungroup() %>%
+#   distinct(Analyzing_Institute, ASV, .keep_all = TRUE) %>%
+#   filter(sum_pertot >0) %>%
+#   arrange(-sum_pertot) %>%
+#   select(ASV, Analyzing_Institute, sum_pertot ) %>%
+#   mutate(count=1) %>%
+#   full_join(updated_taxa_tab %>% select(ASV, Phylum, Class, Order, Family, Genus, Species)) %>%
+#   group_by(Analyzing_Institute, Phylum) %>%
+#   mutate(sum_count = sum(count,na.rm=TRUE )) %>%
+#   ungroup() %>%
+#   distinct(Analyzing_Institute, Phylum, .keep_all = TRUE) %>%
+#   select(Analyzing_Institute, Phylum,sum_count) %>%
+#   arrange(Phylum,Analyzing_Institute)
+# 
+# 
+# 
+# 
+# # look at NOC or UDalhousie where have equal replicates across all three analyzing institutes
+# # total reads/ total asvs
+# test <- potu_tab %>%
+#   full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
+#   filter(Collecting_Institute == 'NOC') %>%
+#   mutate(count=1) %>%
+#   filter(per_tot >0) %>%
+#   group_by(Analyzing_Institute) %>%
+#   mutate(total_reads = sum(reads,na.rm=TRUE )) %>%
+#   mutate(total_ASVs = sum(count, na.rm=TRUE)) %>%
+#   ungroup() %>%
+#   distinct(Analyzing_Institute, .keep_all = TRUE) %>%
+#   select(Analyzing_Institute, total_reads, total_ASVs) %>%
+#   mutate(ASVs_per_read = total_ASVs/total_reads)
+# 
+# test <- potu_tab %>%
+#   full_join(meta_tab %>% mutate(SampleID = sample_name)) %>%
+#   filter(Collecting_Institute == 'UDalhousie') %>%
+#   mutate(count=1) %>%
+#   filter(per_tot >0) %>%
+#   group_by(Analyzing_Institute) %>%
+#   mutate(total_reads = sum(reads,na.rm=TRUE )) %>%
+#   mutate(total_ASVs = sum(count, na.rm=TRUE)) %>%
+#   ungroup() %>%
+#   distinct(Analyzing_Institute, .keep_all = TRUE) %>%
+#   select(Analyzing_Institute, total_reads, total_ASVs) %>%
+#   mutate(ASVs_per_read = total_ASVs/total_reads)
+# 
+# 
+# test <- seq_tab %>%
+#   full_join(test_sp) %>%
+#   select(class, Analyzing_Institute, ASV) %>%
+#   mutate(count=1) %>%
+#   full_join(tot_reads) %>%
+#   group_by(class, Analyzing_Institute) %>%
+#   mutate(sum_count = sum(count,na.rm=TRUE)) %>%
+#   mutate(sum_reads = sum(total_reads,na.rm=TRUE)) %>%
+#   ungroup() %>%
+#   distinct(class, Analyzing_Institute, .keep_all = TRUE) %>%
+#   arrange(class, Analyzing_Institute)
+# 
+# test <- seq_tab %>%
+#   full_join(test_sp) %>%
+#   select(phylum, Analyzing_Institute, ASV) %>%
+#   mutate(count=1) %>%
+#   full_join(tot_reads) %>%
+#   group_by(phylum, Analyzing_Institute) %>%
+#   mutate(sum_count = sum(count,na.rm=TRUE)) %>%
+#   mutate(sum_reads = sum(total_reads,na.rm=TRUE)) %>%
+#   ungroup() %>%
+#   distinct(phylum, Analyzing_Institute, .keep_all = TRUE) %>%
+#   arrange(phylum, Analyzing_Institute)
 

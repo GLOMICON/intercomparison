@@ -135,7 +135,7 @@ for (val in markers) {
       #print(n = Inf) %>%
       ungroup() %>%
       select(!!taxa_level, sum_per_tot) %>%
-      top_n(10)
+      top_n(20)
 
     # assign text colour
     textcol <- "grey40"
@@ -148,10 +148,9 @@ for (val in markers) {
       ggplot(aes(x = replicateID, y = per_tot)) +
       geom_bar(stat = "identity", aes(fill = !!taxa_level))+
       facet_grid(Analyzing_Institute~Collecting_Institute) +
-      scale_fill_tableau(palette = "Tableau 10", type = c("regular"), direction = 1)+
-      #labs(x="",y="Percent Total Reads")+
-      #scale_x_discrete(breaks = year_ticks, labels = year_labels, name = "",drop = FALSE)+
-      #scale_y_discrete(breaks = ASV_ticks, labels = ASV_labels, name = "",expand=c(0,0))+
+      scale_fill_tableau(palette = "Tableau 20", type = c("regular"), direction = 1)+
+      scale_x_continuous(breaks=c(1,5,10)) +
+      labs(x="",y="Percent Total Reads")+
       theme_minimal() +
       #facet_grid(rows = vars(PC_sign)) +
       theme(
@@ -168,11 +167,11 @@ for (val in markers) {
         plot.margin=margin(0.1,0.1,0.1,0.1,"cm"),
         plot.title=element_blank())
     
-    filename = paste(plot_dir, marker,'_top10',taxa_level,'_bar.png', sep='')
+    filename = paste(plot_dir, marker,'_top20',taxa_level,'_bar.png', sep='')
     #print('Plot of top 20 Genus average by month:')
     print(filename)
     ggsave(filename,height = 3, width =10, units = 'in')
-    filename = paste(plot_dir, marker,'_top10',taxa_level,'_bar.svg', sep='')
+    filename = paste(plot_dir, marker,'_top20',taxa_level,'_bar.svg', sep='')
     #print('Plot of top 20 Genus average by month:')
     print(filename)
     ggsave(filename,height = 3, width =10, units = 'in')
@@ -231,11 +230,9 @@ for (val in markers) {
       geom_bar(stat = "identity", aes(fill = !!taxa_level))+
       facet_grid(Analyzing_Institute~Collecting_Institute) +
       scale_fill_tableau(palette = "Tableau 20", type = c("regular"), direction = 1)+
-      #labs(x="",y="Percent Total Reads")+
-      #scale_x_discrete(breaks = year_ticks, labels = year_labels, name = "",drop = FALSE)+
-      #scale_y_discrete(breaks = ASV_ticks, labels = ASV_labels, name = "",expand=c(0,0))+
+      scale_x_continuous(breaks=c(1,5,10)) +
+      labs(x="",y="Percent Total Reads")+
       theme_minimal() +
-      #facet_grid(rows = vars(PC_sign)) +
       theme(
         #legend
         legend.position="right",legend.direction="vertical",
