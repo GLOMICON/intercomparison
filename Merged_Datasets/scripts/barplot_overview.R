@@ -397,7 +397,7 @@ for (val in markers) {
   
 }
 
-# Just shared environmental datasets: ----------------
+# Just shared datasets: ----------------
 ## Run over all markers ------------------------------------------------------
 
 for (val in markers) {
@@ -451,7 +451,8 @@ for (val in markers) {
     taxa_level = sym(val)
     top_taxa <- potu.c %>%
       left_join(meta_tab) %>%
-      filter(Collecting_Institute %in% c('NOC', 'UDalhousie', 'MBARI', 'NOAA')) %>%
+      #filter(Collecting_Institute %in% c('NOC', 'UDalhousie', 'MBARI', 'NOAA')) %>%
+      filter(Collecting_Institute %in% c('NOC', 'BLOOMMOCK', 'EVENMOCK')) %>%
       full_join(species_label) %>%
       filter(!!taxa_level != 'Unknown') %>%
       filter(!!taxa_level !='no_hit') %>%
@@ -476,7 +477,8 @@ for (val in markers) {
       full_join(species_label) %>% #join with taxonomy
       right_join(top_taxa) %>% #limit to top 20
       left_join(meta_tab) %>%
-      filter(Collecting_Institute %in% c('NOC', 'UDalhousie', 'MBARI', 'NOAA')) %>%
+      #filter(Collecting_Institute %in% c('NOC', 'UDalhousie', 'MBARI', 'NOAA')) %>%
+      filter(Collecting_Institute %in% c('NOC', 'BLOOMMOCK', 'EVENMOCK')) %>%
       ggplot(aes(x = replicateID, y = per_tot)) +
       geom_bar(stat = "identity", aes(fill = !!taxa_level))+
       facet_grid(Analyzing_Institute~Collecting_Institute) +
@@ -502,11 +504,11 @@ for (val in markers) {
     filename = paste(plot_dir, marker,'_top20',taxa_level,'_bar_shared.png', sep='')
     #print('Plot of top 20 Genus average by month:')
     print(filename)
-    ggsave(filename,height = 3, width =10, units = 'in')
+    ggsave(filename,height = 6, width =10, units = 'in')
     filename = paste(plot_dir, marker,'_top20',taxa_level,'_bar_shared.svg', sep='')
     #print('Plot of top 20 Genus average by month:')
     print(filename)
-    ggsave(filename,height = 3, width =10, units = 'in')
+    ggsave(filename,height = 6, width =10, units = 'in')
   }
   
   ## Select Specific Taxa ----------------------------------------------------
@@ -555,7 +557,8 @@ for (val in markers) {
       full_join(species_label) %>% #join with taxonomy
       right_join(top_taxa) %>% #limit to top 20
       left_join(meta_tab) %>%
-      filter(Collecting_Institute %in% c('NOC', 'UDalhousie', 'MBARI', 'NOAA')) %>%
+      #filter(Collecting_Institute %in% c('NOC', 'UDalhousie', 'MBARI', 'NOAA')) %>%
+      filter(Collecting_Institute %in% c('NOC', 'BLOOMMOCK', 'EVENMOCK')) %>%
       ggplot(aes(x = replicateID, y = per_tot)) +
       geom_bar(stat = "identity", aes(fill = !!taxa_level))+
       facet_grid(Analyzing_Institute~Collecting_Institute) +
@@ -580,11 +583,11 @@ for (val in markers) {
     filename = paste(plot_dir, marker,'_top20sp_bar_',var,'_shared.png', sep='')
     print(var)
     filename
-    ggsave(filename,height = 3, width =10, units = 'in')
+    ggsave(filename,height = 6, width =10, units = 'in')
     filename = paste(plot_dir, marker,'_top20sp_bar_',var,'_shared.svg', sep='')
     print(var)
     filename
-    ggsave(filename,height = 3, width =10, units = 'in')
+    ggsave(filename,height = 6, width =10, units = 'in')
     bp_top
   }
   

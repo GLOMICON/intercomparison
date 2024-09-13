@@ -26,7 +26,7 @@ plot_directory <- './Merged_Datasets/figures/RPCA/'
 data_directory = "./Merged_Datasets/RPCA/"
 
 # Loop over Analyzing Institutes ----------------------------------------------
-Analyzing_Institutes <- c('AWI', 'SBR', 'MBARI')
+Analyzing_Institutes <- c('AWI', 'SBR', 'MBARI', 'NOAA')
 for (val in Analyzing_Institutes) {
   Analyzing_Institute = sym(val)
   
