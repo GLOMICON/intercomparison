@@ -98,19 +98,18 @@ GLOMICON_species <-GLOMICON_species_key %>%
 #batch
 sp1 <- GLOMICON_species$Species_edited[1:600]
 sp2 <- GLOMICON_species$Species_edited[601:900]
-sp3 <- GLOMICON_species$Species_edited[901:1000]
-sp4 <- GLOMICON_species$Species_edited[1001:1327]
+sp3 <- GLOMICON_species$Species_edited[901:1200]
+sp4 <- GLOMICON_species$Species_edited[1201:1640]
 
 #look up NCBI names
 
 # passing in a long list of names causes error on NCBI side, batch instead:
 
 # taxize_options(ncbi_sleep = 0.5) # just as an e.g., you can adjust this time
-out1 <- classification(sp1, db = 'ncbi')
-out2 <- classification(sp2, db = 'ncbi')
-out3 <- classification(sp3, db = 'ncbi')
-
 taxize_options(ncbi_sleep = 0.5)
+out1 <- classification(sp1, db = 'ncbi', batch_size=5)
+out2 <- classification(sp2, db = 'ncbi', batch_size=5)
+out3 <- classification(sp3, db = 'ncbi', batch_size=5)
 out4 <- classification(sp4, db = 'ncbi', batch_size=5)
 
 
@@ -191,10 +190,10 @@ GLOMICON_genera_key <- test_unassigned_sp %>%
 GLOMICON_genera <- GLOMICON_genera_key %>%
   distinct(Genus_edited)
 
-gen1 <- GLOMICON_genera$Genus_edited[1:312]
+gen1 <- GLOMICON_genera$Genus_edited[1:428]
 
 
-out1_gen1 <- classification(gen1, db = 'ncbi')
+out1_gen1 <- classification(gen1, db = 'ncbi', batch_size=5)
 
 
 # out1
@@ -228,10 +227,10 @@ GLOMICON_family_key <- test_gen_unassigned %>%
 GLOMICON_family <- GLOMICON_family_key %>%
   distinct(Family_edited)
 
-fam1 <- GLOMICON_family$Family_edited[1:263]
+fam1 <- GLOMICON_family$Family_edited[1:301]
 
 
-out1_fam1 <- classification(fam1, db = 'ncbi')
+out1_fam1 <- classification(fam1, db = 'ncbi', batch_size=5)
 
 
 # out1
@@ -267,10 +266,10 @@ GLOMICON_order_key <- test_fam_unassigned %>%
 GLOMICON_order <- GLOMICON_order_key %>%
   distinct(Order_edited)
 
-ord1 <- GLOMICON_order$Order_edited[1:108]
+ord1 <- GLOMICON_order$Order_edited[1:133]
 
 
-out1_ord1 <- classification(ord1, db = 'ncbi')
+out1_ord1 <- classification(ord1, db = 'ncbi', batch_size=5)
 
 
 # out1
@@ -308,10 +307,10 @@ GLOMICON_class_key <- test_ord_unassigned %>%
 GLOMICON_class <- GLOMICON_class_key %>%
   distinct(Class_edited)
 
-cla1 <- GLOMICON_class$Class_edited[1:61]
+cla1 <- GLOMICON_class$Class_edited[1:76]
 
 
-out1_cla1 <- classification(cla1, db = 'ncbi')
+out1_cla1 <- classification(cla1, db = 'ncbi', batch_size=5)
 
 
 # out1
@@ -349,10 +348,10 @@ GLOMICON_phylum_key <- test_ord_unassigned %>%
 GLOMICON_phylum <- GLOMICON_phylum_key %>%
   distinct(Phylum_edited)
 
-phy1 <- GLOMICON_phylum$Phylum_edited[1:44]
+phy1 <- GLOMICON_phylum$Phylum_edited[1:52]
 
 
-out1_phy1 <- classification(phy1, db = 'ncbi')
+out1_phy1 <- classification(phy1, db = 'ncbi', batch_size=5)
 
 
 # out1
