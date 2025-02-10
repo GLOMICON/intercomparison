@@ -1,5 +1,5 @@
 ## written Katie Pitz
-## 08/08/24
+## 02/10/25
 ## Make Bar plot overview
 
 
@@ -7,7 +7,7 @@
 #data files
 data_directory <- './Merged_Datasets/data/'
 #figures
-plot_dir <- './Merged_Datasets/figures/barplot_overview/'
+plot_dir <- './Merged_Datasets/figures/barplot_overview_blastnr/'
 
 
 # Load Libraries -----------------------------------------------------------------
@@ -40,7 +40,7 @@ make_asv_tab <- function(data_directory, marker) {
 
 make_taxa_tab <- function(data_directory, marker) {
   print('taxa table')
-  file = paste(prefix,"_taxa_merged_updated.csv", sep='')
+  file = paste(prefix,"_taxa_blastnr.csv", sep='')
   filepath = paste(data_directory, file, sep='')
   print(filepath)
   df <- read_csv(filepath) # %>%
@@ -752,7 +752,7 @@ for (val in markers) {
   }
   if (marker =='18S') {
     print(marker)
-    phyla <- c('Annelida', 'Arthropoda', 'Bacillariophyta', 'Cnidaria','Rotifera')
+    phyla <- c('Bacillariophyta')
   }
   
   #plot species
@@ -959,7 +959,7 @@ for (val in markers) {
   }
   if (marker =='18S') {
     print(marker)
-    phyla <- c('Annelida', 'Arthropoda', 'Bacillariophyta', 'Cnidaria','Rotifera')
+    phyla <- c('Arthropoda', 'Bacillariophyta', 'Cnidaria','Rotifera')
   }
   
   #plot species
