@@ -1,0 +1,30 @@
+Blast started : 12:06:27
+Number of ASVs:
+13542
+:::::::::::::::::::::: BLAST ::::::::::::::::::::::::::::::::
+20250206_1206  BLASTing...
+ Database:  /MBON/blastdb/nt/nt
+ Percent identity:  80
+ Word size:  20
+ E value:  1e-5
+ Maximum target matches:  100
+ Output format: 5
+ Blast input:  GLOMICON_seq_merged_unique.fasta
+ Blast output:  GLOMICON_nt.xml
+Number of Records:
+13542
+Worker File size:
+2257
+Worker final file size:
+2258
+20250206_1728  Blast finished.
+Blast Not Empty
+total 2349640
+-rw-rw-r-- 1 kpitz blast_admin 351835969 Feb  6 14:05 mbon-worker1_GLOMICON_nt.xml
+-rw-rw-r-- 1 kpitz blast_admin 359145891 Feb  6 14:11 mbon-worker2_GLOMICON_nt.xml
+-rw-rw-r-- 1 kpitz blast_admin 379894167 Feb  6 14:33 mbon-worker4_GLOMICON_nt.xml
+-rw-rw-r-- 1 kpitz blast_admin 405946014 Feb  6 15:13 mbon-worker3_GLOMICON_nt.xml
+-rw-rw-r-- 1 kpitz blast_admin 459070657 Feb  6 17:27 mbon-worker6_GLOMICON_nt.xml
+-rw-rw-r-- 1 kpitz blast_admin 450128419 Feb  6 17:28 mbon-worker5_GLOMICON_nt.xml
+13542
+Data are in  Analysis_20250206_1206

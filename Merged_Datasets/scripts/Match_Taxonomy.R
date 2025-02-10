@@ -72,6 +72,7 @@ GLOMICON_species_key <- seq_tab %>%
   # R you have to double escape regex characters - \\
   mutate(Species_edited = str_replace(Species_edited, '_X*_sp\\.', '')) %>%
   mutate(Species_edited = str_replace(Species_edited, '_X*_', '')) %>%
+  mutate(Species_edited = str_replace(Species_edited, ' X* ', '')) %>%
   #mutate(Species_edited = str_replace(Species_edited, '_XX_sp\\.', '')) %>%
   #mutate(Species_edited = str_replace(Species_edited, '_XXX_sp\\.', '')) %>%
   #mutate(Species_edited = str_replace(Species_edited, '_XXXX_sp\\.', '')) %>%
@@ -96,10 +97,13 @@ GLOMICON_species <-GLOMICON_species_key %>%
   distinct(Species_edited, .keep_all = FALSE)
 
 #batch
-sp1 <- GLOMICON_species$Species_edited[1:600]
-sp2 <- GLOMICON_species$Species_edited[601:900]
-sp3 <- GLOMICON_species$Species_edited[901:1200]
-sp4 <- GLOMICON_species$Species_edited[1201:1640]
+sp1 <- GLOMICON_species$Species_edited[1:300]
+sp2 <- GLOMICON_species$Species_edited[301:600]
+sp3 <- GLOMICON_species$Species_edited[601:900]
+sp4 <- GLOMICON_species$Species_edited[901:1200]
+sp5 <- GLOMICON_species$Species_edited[1201:1500]
+sp6 <- GLOMICON_species$Species_edited[1501:1711]
+
 
 #look up NCBI names
 
@@ -111,7 +115,8 @@ out1 <- classification(sp1, db = 'ncbi', batch_size=5)
 out2 <- classification(sp2, db = 'ncbi', batch_size=5)
 out3 <- classification(sp3, db = 'ncbi', batch_size=5)
 out4 <- classification(sp4, db = 'ncbi', batch_size=5)
-
+out5 <- classification(sp5, db = 'ncbi', batch_size=5)
+out6 <- classification(sp6, db = 'ncbi', batch_size=5)
 
 # out1
 out_test <- out1[!is.na(out1)]
@@ -162,10 +167,37 @@ test_tax_tab4 <- tibble(names = names(out_test), out_test) %>%
   spread(rank, name) %>%
   select(sci_name = names, kingdom, phylum, class, order, family, genus, species)
 
+# out5
+out_test <- out5[!is.na(out5)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab5 <- tibble(names = names(out_test), out_test) %>%
+  unnest(cols = c(out_test)) %>%
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>%
+  select(-id) %>%
+  spread(rank, name) %>%
+  select(sci_name = names, kingdom, phylum, class, order, family, genus, species)
+
+
+# out6
+out_test <- out6[!is.na(out6)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab6 <- tibble(names = names(out_test), out_test) %>%
+  unnest(cols = c(out_test)) %>%
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>%
+  select(-id) %>%
+  spread(rank, name) %>%
+  select(sci_name = names, kingdom, phylum, class, order, family, genus, species)
+
 #merge taxa tibbles - only has species names with matches.
 df <- full_join(test_tax_tab1,test_tax_tab2) %>%
   full_join(test_tax_tab3) %>%
-  full_join(test_tax_tab4)
+  full_join(test_tax_tab4) %>%
+  full_join(test_tax_tab5) %>%
+  full_join(test_tax_tab6)
 
 # original names are in column 'sci_name' in df
 # In GLOMICON_species_key, edited species column name is in 'Species_edited'
@@ -190,11 +222,20 @@ GLOMICON_genera_key <- test_unassigned_sp %>%
 GLOMICON_genera <- GLOMICON_genera_key %>%
   distinct(Genus_edited)
 
-gen1 <- GLOMICON_genera$Genus_edited[1:428]
+gen1 <- GLOMICON_genera$Genus_edited[1:100]
+gen2 <- GLOMICON_genera$Genus_edited[101:201]
+gen3 <- GLOMICON_genera$Genus_edited[301:401]
+gen4 <- GLOMICON_genera$Genus_edited[401:533]
 
+gen3 <- GLOMICON_genera$Genus_edited[301:350]
+gen35 <- GLOMICON_genera$Genus_edited[351:400]
 
 out1_gen1 <- classification(gen1, db = 'ncbi', batch_size=5)
+out2_gen2 <- classification(gen2, db = 'ncbi', batch_size=5)
+out3_gen3 <- classification(gen3, db = 'ncbi', batch_size=5)
+out4_gen4 <- classification(gen4, db = 'ncbi', batch_size=5)
 
+out35_gen35 <- classification(gen35, db = 'ncbi', batch_size=5)
 
 # out1
 out_test <- out1_gen1[!is.na(out1_gen1)]
@@ -208,8 +249,63 @@ test_tax_tab_gen1 <- tibble(names = names(out_test), out_test) %>%
   spread(rank, name) %>% 
   select(sci_name = names, kingdom, phylum, class, order, family, genus)
 
+# out2
+out_test <- out2_gen2[!is.na(out2_gen2)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab_gen2 <- tibble(names = names(out_test), out_test) %>% 
+  unnest(cols = c(out_test)) %>% 
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>% 
+  select(-id) %>% 
+  spread(rank, name) %>% 
+  select(sci_name = names, kingdom, phylum, class, order, family, genus)
+
+# out3
+out_test <- out3_gen3[!is.na(out3_gen3)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab_gen3 <- tibble(names = names(out_test), out_test) %>% 
+  unnest(cols = c(out_test)) %>% 
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>% 
+  select(-id) %>% 
+  spread(rank, name) %>% 
+  select(sci_name = names, kingdom, phylum, class, order, family, genus)
+
+# out4
+out_test <- out4_gen4[!is.na(out4_gen4)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab_gen4 <- tibble(names = names(out_test), out_test) %>% 
+  unnest(cols = c(out_test)) %>% 
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>% 
+  select(-id) %>% 
+  spread(rank, name) %>% 
+  select(sci_name = names, kingdom, phylum, class, order, family, genus)
+
+# out35
+out_test <- out35_gen35[!is.na(out35_gen35)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab_gen35 <- tibble(names = names(out_test), out_test) %>% 
+  unnest(cols = c(out_test)) %>% 
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>% 
+  select(-id) %>% 
+  spread(rank, name) %>% 
+  select(sci_name = names, kingdom, phylum, class, order, family, genus)
+
+
+#merge taxa tibbles - only has species names with matches.
+df <- full_join(test_tax_tab_gen1,test_tax_tab_gen2) %>%
+  full_join(test_tax_tab_gen3) %>%
+  full_join(test_tax_tab_gen4) %>%
+  full_join(test_tax_tab_gen35)
+
 # join with previous information
-test_gen <- full_join(test_tax_tab_gen1%>%mutate(found=1),GLOMICON_genera_key %>% mutate(sci_name = Genus_edited) %>%
+test_gen <- full_join(df%>%mutate(found=1),GLOMICON_genera_key %>% mutate(sci_name = Genus_edited) %>%
                         select(-kingdom, -phylum, -class, -order, -family, -genus, -species, -found), by='sci_name')
 test_gen_unassigned <- test_gen %>%
   filter(is.na(found)==TRUE) #%>%
@@ -227,10 +323,15 @@ GLOMICON_family_key <- test_gen_unassigned %>%
 GLOMICON_family <- GLOMICON_family_key %>%
   distinct(Family_edited)
 
-fam1 <- GLOMICON_family$Family_edited[1:301]
-
+fam1 <- GLOMICON_family$Family_edited[1:100]
+fam2 <- GLOMICON_family$Family_edited[101:200]
+fam3 <- GLOMICON_family$Family_edited[201:300]
+fam4 <- GLOMICON_family$Family_edited[301:390]
 
 out1_fam1 <- classification(fam1, db = 'ncbi', batch_size=5)
+out2_fam2 <- classification(fam2, db = 'ncbi', batch_size=5)
+out3_fam3 <- classification(fam3, db = 'ncbi', batch_size=5)
+out4_fam4 <- classification(fam4, db = 'ncbi', batch_size=5)
 
 
 # out1
@@ -245,8 +346,49 @@ test_tax_tab_fam1 <- tibble(names = names(out_test), out_test) %>%
   spread(rank, name) %>% 
   select(sci_name = names, kingdom, phylum, class, order, family)
 
+# out2
+out_test <- out2_fam2[!is.na(out2_fam2)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab_fam2 <- tibble(names = names(out_test), out_test) %>% 
+  unnest(cols = c(out_test)) %>% 
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>% 
+  select(-id) %>% 
+  spread(rank, name) %>% 
+  select(sci_name = names, kingdom, phylum, class, order, family)
+
+# out3
+out_test <- out3_fam3[!is.na(out3_fam3)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab_fam3 <- tibble(names = names(out_test), out_test) %>% 
+  unnest(cols = c(out_test)) %>% 
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>% 
+  select(-id) %>% 
+  spread(rank, name) %>% 
+  select(sci_name = names, kingdom, phylum, class, order, family)
+
+# out4
+out_test <- out4_fam4[!is.na(out4_fam4)]
+tr <- class2tree(out_test)
+plot(tr, no.margin = TRUE)
+
+test_tax_tab_fam4 <- tibble(names = names(out_test), out_test) %>% 
+  unnest(cols = c(out_test)) %>% 
+  filter(rank %in% c("kingdom","phylum","class","order","family","genus", "species")) %>% 
+  select(-id) %>% 
+  spread(rank, name) %>% 
+  select(sci_name = names, kingdom, phylum, class, order, family)
+
+#merge taxa tibbles - only has species names with matches.
+df <- full_join(test_tax_tab_fam1,test_tax_tab_fam2) %>%
+  full_join(test_tax_tab_fam3) %>%
+  full_join(test_tax_tab_fam4)
+
 # join with previous information
-test_fam <- full_join(test_tax_tab_fam1%>%mutate(found=1),GLOMICON_family_key %>% mutate(sci_name = Family_edited) %>%
+test_fam <- full_join(df%>%mutate(found=1),GLOMICON_family_key %>% mutate(sci_name = Family_edited) %>%
                         select(-kingdom, -phylum, -class, -order, -family, -genus,  -found), by='sci_name')
 test_fam_unassigned <- test_fam %>%
   filter(is.na(found)==TRUE) 
@@ -266,7 +408,7 @@ GLOMICON_order_key <- test_fam_unassigned %>%
 GLOMICON_order <- GLOMICON_order_key %>%
   distinct(Order_edited)
 
-ord1 <- GLOMICON_order$Order_edited[1:133]
+ord1 <- GLOMICON_order$Order_edited[1:210]
 
 
 out1_ord1 <- classification(ord1, db = 'ncbi', batch_size=5)
@@ -307,7 +449,7 @@ GLOMICON_class_key <- test_ord_unassigned %>%
 GLOMICON_class <- GLOMICON_class_key %>%
   distinct(Class_edited)
 
-cla1 <- GLOMICON_class$Class_edited[1:76]
+cla1 <- GLOMICON_class$Class_edited[1:124]
 
 
 out1_cla1 <- classification(cla1, db = 'ncbi', batch_size=5)
@@ -348,7 +490,7 @@ GLOMICON_phylum_key <- test_ord_unassigned %>%
 GLOMICON_phylum <- GLOMICON_phylum_key %>%
   distinct(Phylum_edited)
 
-phy1 <- GLOMICON_phylum$Phylum_edited[1:52]
+phy1 <- GLOMICON_phylum$Phylum_edited[1:72]
 
 
 out1_phy1 <- classification(phy1, db = 'ncbi', batch_size=5)

@@ -26,7 +26,7 @@ plot_directory <- './Merged_Datasets/figures/Aitchison_distance/'
 # Set directory to retrieve data
 data_directory = "./Merged_Datasets/RPCA/"
 
-Analyzing_Institutes <- c('AWI', 'SBR', 'MBARI', 'NOAA')
+Analyzing_Institutes <- c('AWI', 'SBR', 'MBARI', 'NOAA', 'UDAL')
 
 
 # Loop over Analyzing Institutes ----------------------------------------------

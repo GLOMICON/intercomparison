@@ -1,0 +1,882 @@
+#OTUID	Kingdom	Phylum	Class	Order	Family	Genus	Species
+ASV_1		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
+ASV_14			Dinophyceae				
+ASV_37			Dinophyceae				
+ASV_49		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium parvum
+ASV_50			Dinophyceae				
+ASV_59	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	
+ASV_62			Dinophyceae				
+ASV_66			Dinophyceae				
+ASV_84		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
+ASV_86		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
+ASV_91	Metazoa	Mollusca	Gastropoda				
+ASV_95	Metazoa	Chordata	Appendicularia	Copelata	Oikopleuridae	Oikopleura	
+ASV_109	Metazoa	Arthropoda	Hexanauplia	Cyclopoida			
+ASV_111		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
+ASV_114	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
+ASV_124		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
+ASV_125		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
+ASV_126		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
+ASV_129			Dinophyceae				
+ASV_132		Ciliophora					
+ASV_135	Metazoa	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	Mytilus edulis
+ASV_145							metagenome
+ASV_151			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	
+ASV_152	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales			
+ASV_156			Dinophyceae	Gonyaulacales			
+ASV_167			Dinophyceae	Gonyaulacales			
+ASV_168		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
+ASV_172			Dinophyceae	Gonyaulacales			
+ASV_174		Bacillariophyta	Mediophyceae				
+ASV_179			Dinophyceae				
+ASV_180	Viridiplantae	Chlorophyta	Mamiellophyceae				
+ASV_183	Metazoa	Mollusca	Bivalvia	Mytilida	Mytilidae	Musculus	Musculus discors
+ASV_201	Metazoa	Annelida	Polychaeta		Capitellidae	Capitella	
+ASV_202			Dinophyceae	Suessiales	Biecheleriaceae	Biecheleria	
+ASV_207		Bacillariophyta	Fragilariophyceae	Fragilariales	Staurosiraceae	Plagiostriata	Plagiostriata goreensis
+ASV_208	Viridiplantae	Chlorophyta					
+ASV_215			Cryptophyceae	Cryptomonadales			
+ASV_229			Dinophyceae				
+ASV_232			Dinophyceae				
+ASV_243	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales			
+ASV_249	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas australis
+ASV_252			Cryptophyceae	Cryptomonadales			
+ASV_259			Dinophyceae				
+ASV_264			Dinophyceae				
+ASV_267		Bacillariophyta	Mediophyceae	Eupodiscales	Odontellaceae	Odontella	
+ASV_272			Dinophyceae				
+ASV_276			Dinophyceae				
+ASV_287			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
+ASV_298			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Margalefidinium	Margalefidinium fulvescens
+ASV_311		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
+ASV_320	Metazoa	Arthropoda	Hexanauplia	Calanoida			
+ASV_321		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
+ASV_323	Metazoa	Cnidaria	Hydrozoa	Siphonophorae			
+ASV_325	Metazoa	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	Mytilus edulis
+ASV_331			Dinophyceae				
+ASV_337	Metazoa	Chordata	Appendicularia	Copelata	Oikopleuridae		
+ASV_342	Metazoa	Arthropoda	Hexanauplia	Cyclopoida	Cyclopinidae	Cyclopina	
+ASV_347			Cryptophyceae	Cryptomonadales			
+ASV_353	Viridiplantae	Chlorophyta	Palmophyllophyceae	Prasinococcales	Prasinococcaceae	Prasinococcus	
+ASV_360		Bacillariophyta	Mediophyceae				
+ASV_370	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas gelidicola
+ASV_374	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	
+ASV_377	Metazoa	Annelida	Polychaeta	Sabellida			
+ASV_380		Bacillariophyta	Bacillariophyceae				
+ASV_384	Metazoa	Arthropoda	Hexanauplia	Calanoida			
+ASV_385		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
+ASV_390		Cercozoa	Thecofilosea		Ebriacea		
+ASV_391	Metazoa	Mollusca	Bivalvia	Mytilida	Mytilidae	Arcuatula	Arcuatula senhousia
+ASV_393			Dinophyceae				
+ASV_400			Dinophyceae	Syndiniales			
+ASV_415	Metazoa	Arthropoda	Hexanauplia	Calanoida	Paracalanidae	Paracalanus	Paracalanus parvus
+ASV_416		Haptophyta					
+ASV_433		Picozoa	Picomonadea	Picomonadida			
+ASV_442	Metazoa	Mollusca	Gastropoda	Nudibranchia	Tergipedidae	Tergipes	Tergipes tergipes
+ASV_458			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Margalefidinium	Margalefidinium fulvescens
+ASV_462			Cryptophyceae	Cryptomonadales			
+ASV_465		Haptophyta		Prymnesiales			
+ASV_468			Dinophyceae				
+ASV_480	Metazoa	Bryozoa	Gymnolaemata	Cheilostomatida	Membraniporidae	Membranipora	Membranipora membranacea
+ASV_486		Picozoa	Picomonadea	Picomonadida	Picomonadidae	Picomonas	
+ASV_489			Dinophyceae	Syndiniales			
+ASV_508			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_515			Dinophyceae				
+ASV_521	Viridiplantae	Chlorophyta	Trebouxiophyceae				
+ASV_538			Dinophyceae	Syndiniales			
+ASV_541		Ciliophora	Spirotrichea				
+ASV_549			Dinophyceae				
+ASV_556			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_558			Pelagophyceae	Sarcinochrysidales			
+ASV_569			Dinophyceae				
+ASV_577		Ciliophora	Spirotrichea				
+ASV_579			Cryptophyceae	Pyrenomonadales	Geminigeraceae	Teleaulax	Teleaulax amphioxeia
+ASV_588		Picozoa	Picomonadea	Picomonadida	Picomonadidae	Picomonas	
+ASV_589		Haptophyta		Prymnesiales			
+ASV_595							
+ASV_610		Haptophyta		Prymnesiales			
+ASV_612			Dinophyceae				
+ASV_621		Bacillariophyta	Mediophyceae				
+ASV_630			Dinophyceae	Syndiniales			
+ASV_633	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla
+ASV_647	Metazoa	Arthropoda	Hexanauplia	Harpacticoida	Tachidiidae	Tachidius	Tachidius triangularis
+ASV_654							
+ASV_655	Metazoa	Ctenophora	Tentaculata	Cydippida			
+ASV_659			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_665							
+ASV_666		Haptophyta		Prymnesiales			
+ASV_685	Metazoa	Bryozoa	Gymnolaemata	Cheilostomatida			
+ASV_700			Dinophyceae	Syndiniales			uncultured Duboscquella
+ASV_704	Viridiplantae	Chlorophyta	Mamiellophyceae				
+ASV_707	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	
+ASV_710	Viridiplantae	Chlorophyta	Palmophyllophyceae	Prasinococcales	Prasinococcaceae	Prasinococcus	
+ASV_711		Ciliophora	Spirotrichea		Tontoniidae	Pseudotontonia	
+ASV_728	Metazoa	Mollusca	Bivalvia				
+ASV_734		Haptophyta		Prymnesiales			
+ASV_741			Dinophyceae	Syndiniales			
+ASV_742			Dinophyceae	Syndiniales			
+ASV_754		Bacillariophyta	Mediophyceae				
+ASV_756			Dinophyceae				
+ASV_766		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
+ASV_767			Dinophyceae				
+ASV_773		Haptophyta		Prymnesiales			
+ASV_776		Haptophyta		Prymnesiales			
+ASV_782							
+ASV_793		Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Steenstrupiella	
+ASV_798			Dinophyceae	Syndiniales			
+ASV_807			Dinophyceae				
+ASV_814			Cryptophyceae	Cryptomonadales			
+ASV_820		Haptophyta		Prymnesiales			
+ASV_826			Choanoflagellata	Acanthoecida	Stephanoecidae	Calliacantha	Calliacantha natans
+ASV_832			Dinophyceae				
+ASV_854			Synurophyceae	Ochromonadales			
+ASV_864							
+ASV_870			Dinophyceae				
+ASV_873			Dinophyceae				
+ASV_879		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_881		Haptophyta		Prymnesiales			
+ASV_894	Metazoa	Arthropoda	Hexanauplia	Calanoida			
+ASV_896			Cryptophyceae	Cryptomonadales			
+ASV_908		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_909			Dinophyceae				
+ASV_911		Ciliophora	Spirotrichea				
+ASV_928			Dinophyceae				
+ASV_935			Dinophyceae	Gymnodiniales	Gymnodiniaceae		
+ASV_938			Choanoflagellata	Craspedida	Salpingoecidae	Lagenoeca	
+ASV_943		Bacillariophyta	Mediophyceae				
+ASV_945							marine metagenome
+ASV_946			Dinophyceae				
+ASV_950			Dinophyceae				
+ASV_965			Dinophyceae				
+ASV_969			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_974	Metazoa	Chordata	Ascidiacea	Stolidobranchia			
+ASV_983		Cercozoa					
+ASV_984	Metazoa	Arthropoda	Hexanauplia	Cyclopoida			
+ASV_985			Dinophyceae	Gonyaulacales			
+ASV_986			Dinophyceae	Syndiniales			uncultured Duboscquella
+ASV_987		Cercozoa					
+ASV_988		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_991			Dinophyceae	Syndiniales			
+ASV_1003	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas australis
+ASV_1005		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_1008							
+ASV_1010		Bacillariophyta	Mediophyceae				
+ASV_1023			Choanoflagellata	Craspedida	Salpingoecidae	Bicosta	Bicosta minor
+ASV_1031							
+ASV_1033	Metazoa	Arthropoda	Hexanauplia	Calanoida			
+ASV_1039		Picozoa					
+ASV_1042		Cercozoa	Chlorarachniophyceae				
+ASV_1051			Dinophyceae				
+ASV_1058			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	uncultured Gyrodinium
+ASV_1061		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_1062			Dinophyceae	Syndiniales			
+ASV_1063			Dinophyceae				
+ASV_1073		Cercozoa					
+ASV_1079		Cercozoa					
+ASV_1081			Dinophyceae				
+ASV_1091		Picozoa	Picomonadea	Picomonadida			
+ASV_1093	Metazoa	Arthropoda	Hexanauplia	Calanoida			
+ASV_1097			Pelagophyceae	Pelagomonadales	Pelagomonadaceae	Aureococcus	Aureococcus anophagefferens
+ASV_1102		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
+ASV_1107	Viridiplantae	Chlorophyta	Chlorodendrophyceae	Chlorodendrales	Chlorodendraceae	Tetraselmis	
+ASV_1113			Dinophyceae	Syndiniales			
+ASV_1120			Dinophyceae				
+ASV_1121		Haptophyta		Prymnesiales			
+ASV_1124	Metazoa	Annelida	Sipuncula	Golfingiida			
+ASV_1125			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_1126		Ciliophora	Spirotrichea				
+ASV_1129			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
+ASV_1141							
+ASV_1142		Haptophyta		Prymnesiales			
+ASV_1143			Dinophyceae	Dinophysales	Dinophysaceae	Sinophysis	
+ASV_1149			Cryptophyceae	Cryptomonadales			
+ASV_1155			Cryptophyceae	Cryptomonadales			
+ASV_1157		Cercozoa					
+ASV_1163			Dinophyceae	Syndiniales			
+ASV_1164		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
+ASV_1165			Cryptophyceae				uncultured Cryptophyta
+ASV_1175			Dinophyceae	Syndiniales			
+ASV_1194			Dinophyceae	Syndiniales			
+ASV_1201		Cercozoa					
+ASV_1203			Dinophyceae				
+ASV_1207	Metazoa	Porifera	Demospongiae	Poecilosclerida			
+ASV_1208		Ciliophora	Spirotrichea				
+ASV_1209			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	
+ASV_1217			Dinophyceae				
+ASV_1218			Cryptophyceae	Kathablepharidacea	Katablepharidaceae		
+ASV_1231		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
+ASV_1232							
+ASV_1238							
+ASV_1239	Metazoa	Chordata	Ascidiacea	Phlebobranchia	Ascidiidae	Phallusia	Phallusia fumigata
+ASV_1240	Metazoa	Ctenophora	Tentaculata	Cydippida			
+ASV_1244							marine metagenome
+ASV_1247	Fungi	Ascomycota					
+ASV_1257		Bacillariophyta	Mediophyceae	Cymatosirales	Cymatosiraceae	Brockmanniella	Brockmanniella brockmannii
+ASV_1259		Picozoa					
+ASV_1272							
+ASV_1273	Metazoa	Annelida	Polychaeta	Spionida			
+ASV_1284		Haptophyta		Prymnesiales			
+ASV_1285	Metazoa	Arthropoda	Hexanauplia	Harpacticoida	Tachidiidae	Tachidius	Tachidius triangularis
+ASV_1288	Metazoa	Annelida	Polychaeta	Eunicida			
+ASV_1290			Dinophyceae	Syndiniales			
+ASV_1299		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_1301		Ciliophora	Spirotrichea				
+ASV_1302		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_1303	Metazoa	Mollusca	Bivalvia	Myida			
+ASV_1309		Ciliophora	Spirotrichea				
+ASV_1312							
+ASV_1313			Dinophyceae	Syndiniales			
+ASV_1324	Metazoa	Annelida	Polychaeta	Spionida			
+ASV_1328							
+ASV_1334		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_1338			Dinophyceae	Syndiniales			uncultured Duboscquella
+ASV_1346			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_1347			Dinophyceae	Syndiniales			
+ASV_1353		Cercozoa					
+ASV_1356	Metazoa	Chordata	Ascidiacea	Stolidobranchia			
+ASV_1358		Cercozoa	Chlorarachniophyceae			Minorisa	
+ASV_1366			Dinophyceae	Syndiniales			
+ASV_1376			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_1379			Dinophyceae				
+ASV_1385		Ciliophora	Spirotrichea				
+ASV_1387							
+ASV_1400			Cryptophyceae				
+ASV_1404		Bacillariophyta	Mediophyceae				
+ASV_1406							
+ASV_1416							
+ASV_1418		Cercozoa					
+ASV_1422	Viridiplantae	Chlorophyta	Chlorodendrophyceae	Chlorodendrales			
+ASV_1426							
+ASV_1430			Dinophyceae				
+ASV_1431			Dinophyceae				
+ASV_1433		Picozoa	Picomonadea	Picomonadida			
+ASV_1436							
+ASV_1439							
+ASV_1450		Picozoa	Picomonadea	Picomonadida			
+ASV_1455		Bacillariophyta	Mediophyceae				
+ASV_1460		Cercozoa					uncultured Cercozoa
+ASV_1470	Metazoa	Bryozoa	Gymnolaemata	Cheilostomatida	Membraniporidae	Membranipora	Membranipora membranacea
+ASV_1471	Metazoa	Chordata	Ascidiacea	Phlebobranchia	Ascidiidae	Phallusia	Phallusia mammillata
+ASV_1472		Ciliophora	Spirotrichea				
+ASV_1477		Ciliophora	Spirotrichea				
+ASV_1486			Cryptophyceae	Kathablepharidacea	Katablepharidaceae		
+ASV_1489							
+ASV_1490		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina leadbeateri
+ASV_1495	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	
+ASV_1500		Haptophyta		Prymnesiales			
+ASV_1502		Cercozoa	Chlorarachniophyceae				
+ASV_1503	Metazoa	Arthropoda	Hexanauplia	Calanoida			
+ASV_1506	Metazoa	Porifera	Demospongiae	Poecilosclerida	Hymedesmiidae	Hymedesmia	Hymedesmia pansa
+ASV_1507			Dinophyceae	Gonyaulacales		Grammatodinium	Grammatodinium tongyeonginum
+ASV_1510		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_1518		Cercozoa					
+ASV_1521							
+ASV_1526		Cercozoa					
+ASV_1534		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
+ASV_1537		Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Rhizosolenia	Rhizosolenia setigera
+ASV_1542		Haptophyta		Prymnesiales			
+ASV_1543		Cercozoa	Thecofilosea	Ventricleftida	Ventrifissuridae	Ventrifissura	
+ASV_1544			Cryptophyceae				uncultured Cryptophyta
+ASV_1545	Metazoa	Chordata	Appendicularia	Copelata	Oikopleuridae	Oikopleura	
+ASV_1551				Pirsoniales	Pirsoniaceae	Pirsonia	Pirsonia verrucosa
+ASV_1559			Cryptophyceae				uncultured Cryptophyta
+ASV_1562		Cercozoa					
+ASV_1566		Ciliophora	Spirotrichea				
+ASV_1576	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	Chlamydomonadaceae	Carteria	
+ASV_1578	Metazoa	Arthropoda	Hexanauplia	Calanoida			
+ASV_1581		Haptophyta					
+ASV_1582			Dinophyceae	Syndiniales			
+ASV_1584			Dinophyceae				
+ASV_1589			Dinophyceae	Syndiniales			
+ASV_1593		Ciliophora	Spirotrichea				
+ASV_1601							
+ASV_1602	Metazoa	Mollusca	Bivalvia	Pectinida	Pectinidae	Placopecten	Placopecten magellanicus
+ASV_1604		Haptophyta		Prymnesiales			
+ASV_1609		Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Salpingella	
+ASV_1634			Dinophyceae	Syndiniales			
+ASV_1637		Bacillariophyta	Mediophyceae				
+ASV_1643	Metazoa	Chordata	Ascidiacea	Phlebobranchia	Ascidiidae	Phallusia	Phallusia nigra
+ASV_1654			Filasterea				
+ASV_1656		Haptophyta		Prymnesiales			
+ASV_1660			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_1665			Dinophyceae	Syndiniales			
+ASV_1666			Dinophyceae	Syndiniales			
+ASV_1668			Dinophyceae	Syndiniales			
+ASV_1678							uncultured Rhizaria
+ASV_1679			Dinophyceae	Syndiniales			
+ASV_1689			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Paragymnodinium	
+ASV_1694			Dinophyceae				
+ASV_1699			Cryptophyceae	Cryptomonadales			
+ASV_1704		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
+ASV_1712		Cercozoa					
+ASV_1714							
+ASV_1715	Metazoa	Mollusca	Bivalvia	Cardiida	Cardiidae	Parvicardium	Parvicardium minimum
+ASV_1716							
+ASV_1717		Cercozoa	Thecofilosea		Ebriacea		
+ASV_1726		Cercozoa	Thecofilosea	Ventricleftida	Ventrifissuridae	Ventrifissura	
+ASV_1731				Telonemida		Telonema	Telonema subtile
+ASV_1741			Dinophyceae				
+ASV_1757	Metazoa	Annelida	Polychaeta	Sabellida			
+ASV_1758			Dinophyceae	Syndiniales			
+ASV_1763	Metazoa	Mollusca	Bivalvia	Venerida			
+ASV_1764		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
+ASV_1765	Viridiplantae	Chlorophyta			Pycnococcaceae	Pycnococcus	Pycnococcus provasolii
+ASV_1766		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros dichaeta
+ASV_1768		Haptophyta					
+ASV_1774			Dinophyceae				
+ASV_1777			Dinophyceae	Gymnodiniales	Gymnodiniaceae		
+ASV_1804		Cercozoa					
+ASV_1806			Bigyra	Thraustochytrida	Thraustochytriaceae		
+ASV_1821			Dinophyceae				
+ASV_1828		Ciliophora	Spirotrichea				
+ASV_1829			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_1832			Dinophyceae	Syndiniales			
+ASV_1836							
+ASV_1837							
+ASV_1846		Ciliophora	Spirotrichea	Tintinnida	Codonellidae	Tintinnopsis	Tintinnopsis fimbriata
+ASV_1847			Dinophyceae				
+ASV_1848							
+ASV_1849			Dinophyceae	Syndiniales			
+ASV_1858	Fungi	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae		
+ASV_1862			Pelagophyceae	Pelagomonadales	Pelagomonadaceae	Aureococcus	Aureococcus anophagefferens
+ASV_1868			Dinophyceae				
+ASV_1869			Dinophyceae	Noctilucales	Noctilucaceae	Noctiluca	Noctiluca scintillans
+ASV_1871			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	
+ASV_1874			Dinophyceae	Syndiniales			
+ASV_1875			Choanoflagellata				uncultured Choanoflagellida
+ASV_1882		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
+ASV_1883	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas	Chlamydomonas parkeae
+ASV_1884			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_1887							metagenome
+ASV_1891		Cercozoa					
+ASV_1897	Viridiplantae	Chlorophyta					
+ASV_1903		Haptophyta		Prymnesiales			
+ASV_1906		Evosea	Eumycetozoa		Protosporangiidae		
+ASV_1918			Pelagophyceae	Pelagomonadales	Pelagomonadaceae	Pelagomonas	Pelagomonas calceolata
+ASV_1921		Cercozoa					uncultured Cercozoa
+ASV_1924	Metazoa	Arthropoda	Hexanauplia	Cyclopoida			
+ASV_1926			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_1930			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_1934		Cercozoa					
+ASV_1938			Dinophyceae				
+ASV_1939							
+ASV_1946	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas	Chlamydomonas parkeae
+ASV_1955		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
+ASV_1956	Metazoa	Porifera	Demospongiae	Suberitida			
+ASV_1958	Metazoa	Porifera	Demospongiae	Haplosclerida			
+ASV_1961	Metazoa	Mollusca	Bivalvia	Venerida			
+ASV_1965		Cercozoa	Chlorarachniophyceae				
+ASV_1966			Bigyra				
+ASV_1970			Dinophyceae	Dinophysales	Dinophysaceae	Sinophysis	
+ASV_1984		Bacillariophyta	Bacillariophyceae				
+ASV_1993			Dinophyceae	Syndiniales			
+ASV_1994		Bacillariophyta	Mediophyceae				
+ASV_1998		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
+ASV_2001		Haptophyta		Prymnesiales			
+ASV_2006			Dinophyceae				
+ASV_2016			Cryptophyceae	Cryptomonadales			
+ASV_2026	Metazoa	Arthropoda	Hexanauplia	Poecilostomatoida			
+ASV_2027			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Paragymnodinium	
+ASV_2057			Dinophyceae				
+ASV_2068		Cercozoa					
+ASV_2070	Metazoa	Annelida	Polychaeta		Scalibregmatidae	Sclerobregma	Sclerobregma branchiata
+ASV_2074	Metazoa	Annelida	Polychaeta	Spionida			
+ASV_2076	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pterosperma	Pterosperma cristatum
+ASV_2088							
+ASV_2096			Dinophyceae				
+ASV_2098	Metazoa	Annelida	Polychaeta	Phyllodocida			
+ASV_2106	Metazoa	Mollusca	Bivalvia	Venerida			
+ASV_2113			Dinophyceae	Syndiniales			
+ASV_2115							
+ASV_2116	Metazoa	Annelida	Polychaeta		Capitellidae	Capitella	
+ASV_2120			Dinophyceae	Syndiniales			
+ASV_2121			Dinophyceae	Syndiniales			
+ASV_2123			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	
+ASV_2129	Viridiplantae	Chlorophyta					
+ASV_2131	Metazoa	Mollusca	Bivalvia	Mytilida	Mytilidae	Musculus	Musculus lateralis
+ASV_2137			Centroplasthelida				
+ASV_2160		Cercozoa					
+ASV_2161	Metazoa	Arthropoda	Hexanauplia	Cyclopoida			
+ASV_2186							
+ASV_2189			Dinophyceae				
+ASV_2192		Cercozoa					
+ASV_2195		Bacillariophyta	Mediophyceae				
+ASV_2197							
+ASV_2205		Picozoa					
+ASV_2212							
+ASV_2216		Cercozoa					
+ASV_2224		Ciliophora	Nassophorea				
+ASV_2231		Haptophyta		Prymnesiales			
+ASV_2235							
+ASV_2253		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_2256	Metazoa	Annelida					
+ASV_2260							
+ASV_2262							seawater metagenome
+ASV_2273		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_2274							
+ASV_2275		Ciliophora	Spirotrichea				
+ASV_2284			Dinophyceae	Syndiniales			
+ASV_2296			Dinophyceae				
+ASV_2298		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_2303							
+ASV_2307		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_2311		Picozoa					
+ASV_2313		Bacillariophyta	Bacillariophyceae				
+ASV_2314		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium parvum
+ASV_2315		Cercozoa					
+ASV_2316		Cercozoa					
+ASV_2325			Cryptophyceae	Pyrenomonadales	Pyrenomonadaceae	Rhinomonas	Rhinomonas nottbecki
+ASV_2328	Fungi	Ascomycota					
+ASV_2330							
+ASV_2334			Dinophyceae				
+ASV_2351			Dinophyceae				
+ASV_2352	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	
+ASV_2354		Ciliophora	Spirotrichea				
+ASV_2361		Cercozoa					
+ASV_2381	Viridiplantae	Chlorophyta	Trebouxiophyceae				
+ASV_2384	Metazoa	Annelida	Polychaeta		Opheliidae	Euzonus	Euzonus ezoensis
+ASV_2395		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_2403		Apicomplexa	Conoidasida				
+ASV_2412			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_2415		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
+ASV_2424	Viridiplantae	Streptophyta	Magnoliopsida	Fabales	Fabaceae	Arachis	Arachis batizocoi
+ASV_2425		Cercozoa					
+ASV_2428			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_2442		Picozoa	Picomonadea	Picomonadida	Picomonadidae	Picomonas	
+ASV_2449		Ciliophora	Spirotrichea				
+ASV_2451			Dinophyceae				
+ASV_2455			Choanoflagellata	Acanthoecida	Acanthoecidae	Pleurasiga	Pleurasiga minima
+ASV_2457			Dinophyceae				
+ASV_2459							
+ASV_2460			Centroplasthelida				
+ASV_2465	Metazoa	Arthropoda					
+ASV_2472	Metazoa	Porifera					
+ASV_2473			Dinophyceae	Syndiniales			
+ASV_2474		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros dichaeta
+ASV_2475		Bacillariophyta	Mediophyceae				
+ASV_2478		Cercozoa					
+ASV_2485			Dinophyceae	Gonyaulacales			
+ASV_2488			Dinophyceae	Syndiniales			
+ASV_2495			Dinophyceae				
+ASV_2496		Haptophyta		Prymnesiales			
+ASV_2511							
+ASV_2515		Ciliophora	Spirotrichea				
+ASV_2518	Metazoa	Bryozoa	Gymnolaemata	Cheilostomatida			
+ASV_2521			Dinophyceae	Syndiniales			
+ASV_2523	Metazoa	Porifera	Demospongiae	Suberitida			
+ASV_2525		Ciliophora					
+ASV_2538							
+ASV_2539							
+ASV_2544			Dinophyceae				
+ASV_2546		Cercozoa					
+ASV_2551	Metazoa	Chordata	Ascidiacea	Stolidobranchia	Styelidae	Polycarpa	Polycarpa pomaria
+ASV_2552		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_2561			Cryptophyceae	Kathablepharidacea	Katablepharidaceae		
+ASV_2569		Cercozoa					
+ASV_2572			Dinophyceae	Gymnodiniales	Warnowiaceae	Warnowia	
+ASV_2580		Picozoa					
+ASV_2581	Metazoa	Arthropoda	Hexanauplia	Calanoida	Centropagidae	Centropages	Centropages typicus
+ASV_2582			Dinophyceae				
+ASV_2587	Metazoa	Chordata	Ascidiacea	Phlebobranchia	Corellidae	Corella	Corella inflata
+ASV_2589	Metazoa	Chordata	Ascidiacea	Stolidobranchia			
+ASV_2590		Cercozoa					
+ASV_2594			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_2597		Cercozoa					
+ASV_2618		Ciliophora					
+ASV_2621							
+ASV_2630			Dinophyceae	Syndiniales			
+ASV_2631	Metazoa	Mollusca	Bivalvia	Myida			
+ASV_2646	Metazoa	Chordata	Ascidiacea	Stolidobranchia			
+ASV_2647			Dinophyceae	Syndiniales			
+ASV_2650			Dinophyceae	Syndiniales			
+ASV_2651	Metazoa	Annelida	Polychaeta	Sabellida	Sabellidae	Chone	
+ASV_2652			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_2666		Haptophyta		Prymnesiales			
+ASV_2675			Dinophyceae				
+ASV_2678		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
+ASV_2697		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
+ASV_2698			Dinophyceae				
+ASV_2702		Haptophyta					
+ASV_2706		Picozoa					
+ASV_2712		Picozoa					
+ASV_2716			Dinophyceae	Syndiniales			
+ASV_2727		Haptophyta		Prymnesiales			
+ASV_2733							
+ASV_2734		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	Skeletonema	
+ASV_2740		Cercozoa	Chlorarachniophyceae				
+ASV_2743	Fungi	Ascomycota					
+ASV_2748		Cercozoa					uncultured Cercozoa
+ASV_2753							
+ASV_2760			Ichthyosporea			Pirum	Pirum gemmata
+ASV_2764							uncultured Rhizaria
+ASV_2772	Metazoa	Annelida	Polychaeta	Eunicida	Oenonidae	Arabella	Arabella semimaculata
+ASV_2773		Ciliophora	Spirotrichea				
+ASV_2776	Fungi	Ascomycota					
+ASV_2781		Haptophyta					
+ASV_2784							
+ASV_2785	Viridiplantae	Chlorophyta					
+ASV_2788			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_2789	Metazoa	Bryozoa	Gymnolaemata	Ctenostomatida	Alcyonidiidae	Alcyonidioides	Alcyonidioides mytili
+ASV_2806			Cryptophyceae	Pyrenomonadales	Geminigeraceae	Teleaulax	Teleaulax amphioxeia
+ASV_2808			Dinophyceae	Syndiniales			
+ASV_2815			Dinophyceae	Syndiniales			
+ASV_2817		Haptophyta		Prymnesiales			
+ASV_2820							marine metagenome
+ASV_2824			Dinophyceae	Syndiniales			
+ASV_2831		Ciliophora	Spirotrichea				
+ASV_2839		Ciliophora	Spirotrichea				
+ASV_2842	Metazoa	Cnidaria	Hydrozoa	Trachymedusae	Rhopalonematidae	Aglantha	Aglantha digitale
+ASV_2846		Ciliophora	Spirotrichea				
+ASV_2852		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
+ASV_2853			Dinophyceae				
+ASV_2861			Dinophyceae				
+ASV_2862		Haptophyta					
+ASV_2863		Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Salpingella	
+ASV_2881			Dinophyceae	Syndiniales			
+ASV_2905		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
+ASV_2915			Dinophyceae				
+ASV_2916			Dinophyceae				
+ASV_2919			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	Protoperidinium elegans
+ASV_2923	Metazoa	Annelida	Polychaeta		Protodrilidae	Meiodrilus	Meiodrilus gracilis
+ASV_2928		Ciliophora	Spirotrichea				
+ASV_2933							
+ASV_2935			Choanoflagellata				uncultured Choanoflagellida
+ASV_2950	Metazoa	Annelida					
+ASV_2954	Metazoa	Annelida	Polychaeta	Terebellida	Terebellidae	Thelepus	Thelepus cincinnatus
+ASV_2959		Ciliophora	Spirotrichea				
+ASV_2962			Dinophyceae				
+ASV_2964			Raphidophyceae	Chattonellales	Chattonellaceae	Heterosigma	Heterosigma akashiwo
+ASV_2975			Dinophyceae				
+ASV_2976		Ciliophora	Spirotrichea				
+ASV_2979	Metazoa	Porifera	Demospongiae	Suberitida			
+ASV_2993			Choanoflagellata	Acanthoecida	Acanthoecidae	Pleurasiga	Pleurasiga reynoldsii
+ASV_2994			Bigyra				
+ASV_2997		Cercozoa					
+ASV_2998		Cercozoa					
+ASV_2999			Cryptophyceae	Kathablepharidacea	Katablepharidaceae		
+ASV_3003	Metazoa	Mollusca					
+ASV_3010			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3011		Ciliophora	Spirotrichea	Euplotida	Euplotidae	Euplotes	Euplotes dammamensis
+ASV_3012			Dinophyceae				
+ASV_3015		Haptophyta		Prymnesiales			
+ASV_3017							
+ASV_3029		Haptophyta					
+ASV_3032			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3033			Dinophyceae				
+ASV_3036			Dinophyceae	Gonyaulacales			
+ASV_3042	Metazoa	Chordata					
+ASV_3043		Cercozoa	Chlorarachniophyceae				
+ASV_3046			Dinophyceae	Syndiniales			
+ASV_3047			Acantharea	Holacanthida	Acanthochiasmidae	Trizona	Trizona brandti
+ASV_3048		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira curviseriata
+ASV_3053			Cryptophyceae	Pyrenomonadales	Geminigeraceae	Teleaulax	Teleaulax amphioxeia
+ASV_3063		Ciliophora	Spirotrichea		Tontoniidae	Spirotontonia	
+ASV_3067		Cercozoa					
+ASV_3070		Cercozoa	Chlorarachniophyceae				
+ASV_3072		Ciliophora	Spirotrichea				
+ASV_3077		Haptophyta		Prymnesiales			
+ASV_3080							
+ASV_3081			Cryptophyceae	Kathablepharidacea	Katablepharidaceae		
+ASV_3088			Dinophyceae	Syndiniales			
+ASV_3105			Dinophyceae				
+ASV_3120							marine metagenome
+ASV_3123			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3127			Choanoflagellata	Acanthoecida	Acanthoecidae		
+ASV_3129		Haptophyta		Prymnesiales			
+ASV_3130		Cercozoa					
+ASV_3138		Rhodophyta	Florideophyceae	Ceramiales	Rhodomelaceae	Vertebrata	Vertebrata fucoides
+ASV_3141							uncultured Rhizaria
+ASV_3145			Dinophyceae	Syndiniales			
+ASV_3147							
+ASV_3152							
+ASV_3154	Metazoa	Annelida	Sipuncula	Golfingiida			
+ASV_3155		Ciliophora					
+ASV_3156							
+ASV_3165		Haptophyta					
+ASV_3168							uncultured Rhizaria
+ASV_3175	Metazoa	Annelida	Polychaeta	Eunicida			
+ASV_3176							
+ASV_3185		Cercozoa					
+ASV_3194		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
+ASV_3198			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3199							
+ASV_3204			Ichthyosporea			Pirum	Pirum gemmata
+ASV_3205		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_3212			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3214		Cercozoa	Thecofilosea	Cryomonadida			uncultured Cryothecomonas
+ASV_3216			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium hiranoi
+ASV_3217		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros dichaeta
+ASV_3218		Picozoa					
+ASV_3225			Cryptophyceae	Cryptomonadales			
+ASV_3226		Haptophyta		Prymnesiales			
+ASV_3230		Ciliophora	Spirotrichea				
+ASV_3231		Ciliophora	Spirotrichea				
+ASV_3260		Cercozoa	Thecofilosea		Ebriacea		
+ASV_3261	Viridiplantae	Chlorophyta	Nephroselmidophyceae	Nephroselmidales	Nephroselmidaceae	Nephroselmis	Nephroselmis pyriformis
+ASV_3262		Bacillariophyta	Mediophyceae				
+ASV_3264							
+ASV_3265		Haptophyta		Prymnesiales			
+ASV_3266		Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae	Rimostrombidium	
+ASV_3267	Viridiplantae	Chlorophyta	Chlorodendrophyceae	Chlorodendrales			
+ASV_3275							
+ASV_3276		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_3280							
+ASV_3283	Metazoa	Mollusca	Bivalvia				
+ASV_3285	Metazoa	Chordata	Ascidiacea	Phlebobranchia	Cionidae	Ciona	Ciona intestinalis
+ASV_3291							marine metagenome
+ASV_3295		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Cylindrotheca	Cylindrotheca closterium
+ASV_3296		Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Steenstrupiella	
+ASV_3298	Metazoa	Annelida	Polychaeta	Spionida	Poecilochaetidae	Poecilochaetus	Poecilochaetus serpens
+ASV_3317		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
+ASV_3318		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_3324		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_3329		Cercozoa					
+ASV_3330		Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Meuniera	Meuniera membranacea
+ASV_3344		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
+ASV_3348		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
+ASV_3361		Cercozoa					uncultured Cercozoa
+ASV_3363			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3365		Cercozoa					
+ASV_3367	Metazoa	Arthropoda					
+ASV_3368							
+ASV_3372			Dinophyceae				
+ASV_3380			Dinophyceae				
+ASV_3383			Dinophyceae	Gymnodiniales	Gymnodiniaceae		
+ASV_3385	Metazoa	Mollusca	Bivalvia	Pectinida	Pectinidae	Placopecten	Placopecten magellanicus
+ASV_3387	Metazoa	Cnidaria					
+ASV_3388			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3396			Cryptophyceae	Cryptomonadales			
+ASV_3400			Dinophyceae	Syndiniales			
+ASV_3401			Bigyra				
+ASV_3402	Metazoa	Annelida	Polychaeta		Scalibregmatidae	Lipobranchius	Lipobranchius jeffreysii
+ASV_3405		Haptophyta		Prymnesiales			
+ASV_3420							
+ASV_3438	Metazoa	Nemertea	Pilidiophora				
+ASV_3440			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3443			Cryptophyceae	Pyrenomonadales	Geminigeraceae	Teleaulax	Teleaulax amphioxeia
+ASV_3446							uncultured Rhizaria
+ASV_3448							
+ASV_3450							
+ASV_3451			Dinophyceae				
+ASV_3453	Metazoa	Chordata	Thaliacea	Doliolida	Doliolidae	Doliolum	Doliolum nationalis
+ASV_3455	Metazoa	Annelida					
+ASV_3457			Dinophyceae	Noctilucales	Noctilucaceae	Noctiluca	Noctiluca scintillans
+ASV_3459		Cercozoa					
+ASV_3460		Cercozoa					
+ASV_3478		Cercozoa					
+ASV_3486		Cercozoa					
+ASV_3487			Dinophyceae	Syndiniales			
+ASV_3498	Viridiplantae	Chlorophyta					
+ASV_3500			Dinophyceae	Syndiniales			
+ASV_3504			Cryptophyceae	Kathablepharidacea	Katablepharidaceae		
+ASV_3505		Cercozoa					
+ASV_3507			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Akashiwo	
+ASV_3517							
+ASV_3525			Dinophyceae	Syndiniales			
+ASV_3527							
+ASV_3532		Ciliophora	Spirotrichea	Tintinnida	Tintinnidiidae	Antetintinnidium	Antetintinnidium mucicola
+ASV_3540							
+ASV_3542			Dinophyceae	Syndiniales			
+ASV_3543		Ciliophora	Nassophorea				
+ASV_3551		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_3556	Viridiplantae	Chlorophyta					
+ASV_3557			Choanoflagellata				uncultured Choanoflagellida
+ASV_3569			Dinophyceae	Syndiniales			
+ASV_3572			Dinophyceae	Syndiniales			
+ASV_3593		Bacillariophyta	Mediophyceae				
+ASV_3598			Dinophyceae				
+ASV_3599		Haptophyta		Prymnesiales			
+ASV_3612			Dinophyceae				
+ASV_3613			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	Protoperidinium bipes
+ASV_3639	Viridiplantae	Chlorophyta	Ulvophyceae				
+ASV_3642		Ciliophora	Phyllopharyngea				
+ASV_3646			Dinophyceae	Syndiniales			
+ASV_3647							uncultured Rhizaria
+ASV_3648			Bolidophyceae	Parmales	Triparmaceae	Triparma	Triparma pacifica
+ASV_3650							
+ASV_3651			Dinophyceae				
+ASV_3653		Cercozoa					
+ASV_3660			Dinophyceae	Peridiniales	Amphidiniopsidaceae	Amphidiniopsis	
+ASV_3661		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_3667			Chrysophyceae				
+ASV_3668			Dinophyceae				
+ASV_3691							
+ASV_3693			Dinophyceae				
+ASV_3698		Bacillariophyta	Mediophyceae				
+ASV_3704			Dinophyceae				
+ASV_3705		Haptophyta		Prymnesiales			
+ASV_3707			Dinophyceae				
+ASV_3710			Polycystinea	Nassellaria			
+ASV_3714							uncultured Rhizaria
+ASV_3723							
+ASV_3724			Dinophyceae	Syndiniales			
+ASV_3726			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3729	Metazoa	Mollusca	Bivalvia				
+ASV_3731			Dinophyceae				
+ASV_3742		Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae		
+ASV_3746	Viridiplantae	Chlorophyta	Trebouxiophyceae				
+ASV_3752		Ciliophora	Spirotrichea				
+ASV_3755							
+ASV_3772			Dinophyceae	Syndiniales			
+ASV_3773		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
+ASV_3774			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3783		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina leadbeateri
+ASV_3786			Dinophyceae	Syndiniales			
+ASV_3792			Dinophyceae	Syndiniales	Syndiniaceae	Syndinium	
+ASV_3814		Ciliophora	Spirotrichea				
+ASV_3829			Dinophyceae	Syndiniales			
+ASV_3835	Metazoa	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia hudsonica
+ASV_3840			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3842		Ciliophora	Spirotrichea				
+ASV_3850		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
+ASV_3851							uncultured Rhizaria
+ASV_3854		Cercozoa					
+ASV_3858	Metazoa	Annelida	Polychaeta	Phyllodocida			
+ASV_3869		Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Steenstrupiella	
+ASV_3884							
+ASV_3885			Dinophyceae	Peridiniales	Peridiniaceae	Scrippsiella	
+ASV_3890							
+ASV_3891							
+ASV_3901		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_3906		Picozoa	Picomonadea				
+ASV_3908	Metazoa	Annelida					
+ASV_3919			Dinophyceae	Syndiniales			
+ASV_3921							
+ASV_3922		Bacillariophyta	Coscinodiscophyceae	Stephanodiscales	Stephanodiscaceae	Cyclotella	Cyclotella choctawhatcheeana
+ASV_3924			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_3929			Dinophyceae	Syndiniales			
+ASV_3934		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	Skeletonema	
+ASV_3937		Cercozoa					
+ASV_3944		Haptophyta		Prymnesiales			
+ASV_3945							
+ASV_3947		Haptophyta		Prymnesiales			
+ASV_3949		Cercozoa	Chlorarachniophyceae				
+ASV_3953		Cercozoa					
+ASV_3960			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum lima
+ASV_3962			Acantharea	Arthracanthida			
+ASV_3969			Dinophyceae				
+ASV_3971		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_3983		Ciliophora	Spirotrichea	Tintinnida	Codonellidae	Tintinnopsis	
+ASV_3986		Cercozoa	Chlorarachniophyceae				
+ASV_3988		Ciliophora					
+ASV_3989		Haptophyta					
+ASV_4006		Ciliophora					
+ASV_4022			Dinophyceae	Syndiniales			
+ASV_4025							
+ASV_4027			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Paragymnodinium	
+ASV_4032		Ciliophora	Spirotrichea				
+ASV_4034							
+ASV_4035		Haptophyta		Prymnesiales			
+ASV_4040			Dinophyceae				
+ASV_4041	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
+ASV_4043	Viridiplantae	Chlorophyta					
+ASV_4047		Tubulinea	Elardia	Arcellinida	Arcellidae	Arcella	Arcella gibbosa
+ASV_4049			Dinophyceae	Syndiniales			
+ASV_4053		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
+ASV_4055			Bolidophyceae	Parmales	Triparmaceae	Triparma	Triparma strigata
+ASV_4063			Dinophyceae	Syndiniales			
+ASV_4064	Metazoa	Arthropoda	Hexanauplia	Calanoida	Pseudodiaptomidae	Pseudodiaptomus	Pseudodiaptomus euryhalinus
+ASV_4065			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Akashiwo	
+ASV_4066		Bacillariophyta					
+ASV_4068		Cercozoa					
+ASV_4070	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Mamiella	Mamiella gilva
+ASV_4073							
+ASV_4074		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_4084							
+ASV_4085			Dinophyceae	Syndiniales			
+ASV_4090			Dinophyceae	Syndiniales			uncultured Amoebophrya
+ASV_4094			Dinophyceae	Syndiniales			
+ASV_4096		Ciliophora	Litostomatea	Haptorida	Didiniidae	Cyclotrichium	Cyclotrichium cyclokaryon
+ASV_4107			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_4116		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	Skeletonema	
+ASV_4118			Bolidophyceae	Parmales	Triparmaceae	Triparma	Triparma pacifica
+ASV_4120		Cercozoa	Imbricatea	Marimonadida		Abollifer	Abollifer prolabens
+ASV_4122		Haptophyta		Prymnesiales			
+ASV_4130		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
+ASV_4134		Cercozoa					
+ASV_4138	Metazoa	Annelida					
+ASV_4148			Dinophyceae	Syndiniales			
+ASV_4161			Dinophyceae				
+ASV_4167		Haptophyta		Prymnesiales			
+ASV_4175		Cercozoa					
+ASV_4179		Cercozoa	Thecofilosea				
+ASV_4186		Picozoa	Picomonadea	Picomonadida			
+ASV_4190			Choanoflagellata	Acanthoecida	Acanthoecidae	Crinolina	Crinolina isefiordensis
+ASV_4191	Metazoa	Annelida	Polychaeta	Sabellida			
+ASV_4194		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_4195		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_4209		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_4211		Cercozoa					
+ASV_4212		Cercozoa					
+ASV_4218			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum triestinum
+ASV_4219							
+ASV_4221		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
+ASV_4226			Cryptophyceae	Cryptomonadales	Hemiselmidaceae	Hemiselmis	Hemiselmis brunnescens
+ASV_4228			Chrysophyceae				
+ASV_4229	Viridiplantae	Streptophyta					
+ASV_4246		Picozoa					
+ASV_4248			Ichthyosporea			Pirum	Pirum gemmata
+ASV_4249			Dinophyceae	Syndiniales			
+ASV_4252			Dinophyceae				
+ASV_4254							
+ASV_4256		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium parvum
+ASV_4257			Dinophyceae	Syndiniales			
+ASV_4260		Cercozoa					
+ASV_4264		Ciliophora	Spirotrichea				
+ASV_4272			Dinophyceae				
+ASV_4274			Dinophyceae				
+ASV_4275							
+ASV_4277		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
+ASV_4279							
+ASV_4293							uncultured Rhizaria
+ASV_4295			Dinophyceae	Syndiniales			
+ASV_4302		Cercozoa					
+ASV_4304							
+ASV_4308			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
+ASV_4309	Metazoa	Annelida	Polychaeta	Phyllodocida			
+ASV_4314		Ciliophora	Spirotrichea				
+ASV_4315			Dinophyceae	Syndiniales			
+ASV_4318			Cryptophyceae	Kathablepharidacea	Katablepharidaceae		
+ASV_4320		Ciliophora	Phyllopharyngea				
+ASV_4321		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira lundiana
+ASV_4340		Haptophyta		Prymnesiales			
+ASV_4349		Ciliophora	Spirotrichea		Tontoniidae	Pseudotontonia	Pseudotontonia simplicidens
+ASV_4351		Haptophyta					
+ASV_4353							
+ASV_4359			Cryptophyceae	Pyrenomonadales	Geminigeraceae	Teleaulax	
+ASV_4361			Chrysophyceae	Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas imperforata
+ASV_4368			Dinophyceae	Gonyaulacales			
+ASV_4371			Dinophyceae	Peridiniales	Ensiculiferaceae	Pentapharsodinium	Pentapharsodinium tyrrhenicum
+ASV_4377			Dinophyceae				
+ASV_4379							
+ASV_4382			Dinophyceae	Gonyaulacales			
+ASV_4383			Cryptophyceae	Cryptomonadales			
+ASV_4386		Cercozoa					
+ASV_4387							
+ASV_4395		Rhodophyta	Florideophyceae				
+ASV_4398			Chrysophyceae				
+ASV_4400	Metazoa	Arthropoda	Hexanauplia	Cyclopoida	Rhynchomolgidae	Critomolgus	Critomolgus vicinus
+ASV_4401		Picozoa					
+ASV_4403	Viridiplantae	Chlorophyta					
+ASV_4405		Cercozoa					
+ASV_4406		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
+ASV_4408		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Cylindrotheca	uncultured Cylindrotheca
+ASV_4410							
+ASV_4417	Viridiplantae	Chlorophyta					
+ASV_4418	Metazoa	Annelida	Sipuncula	Golfingiida			
+ASV_4420	Fungi	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae		
+ASV_4424		Ciliophora	Spirotrichea				
+ASV_4425			Dinophyceae	Syndiniales			
+ASV_4427			Dinophyceae	Syndiniales			
+ASV_4428							
+ASV_4429							
+ASV_4433		Cercozoa	Thecofilosea			Mataza	
+ASV_4434		Ciliophora					
+ASV_4436		Cercozoa	Thecofilosea			Mataza	
+ASV_4437		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros dichaeta
+ASV_4440		Cercozoa	Thecofilosea			Mataza	
+ASV_4443				Pirsoniales	Pirsoniaceae	Pirsonia	
+ASV_4444	Fungi	Ascomycota	Sordariomycetes	Hypocreales	Hypocreaceae	Trichoderma	
+ASV_4446			Dinophyceae	Syndiniales			
+ASV_4448		Haptophyta		Prymnesiales			
+ASV_4449		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
