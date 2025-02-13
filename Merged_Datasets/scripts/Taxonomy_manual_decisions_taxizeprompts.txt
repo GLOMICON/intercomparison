@@ -8,7 +8,7 @@ More than one UID found for taxon 'Actinocyclus'!
 1 active genus gastropods   Actinocyclus            262595                     2015/09/16 00:00
 2 active genus    diatoms   Actinocyclus             49230                     2016/08/18 00:00
 
-2 DIATOM
+2 diatoms
 
 More than one UID found for taxon 'Bonamia'!
 
@@ -18,7 +18,7 @@ More than one UID found for taxon 'Bonamia'!
 1 active genus   eudicots        Bonamia            142579                     2015/09/16 00:00
 2 active genus eukaryotes        Bonamia            126727                     2015/09/16 00:00
 
-1 eudicots
+2 eukaryotes
 
 More than one UID found for taxon 'Cyclotrichium'!
 

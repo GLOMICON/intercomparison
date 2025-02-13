@@ -540,11 +540,11 @@ for (val in markers) {
   #if (marker %in% c('COI','COInoH')) {
   if (marker == 'COI') {
     print(marker)
-    phyla <- c('Annelida', 'Arthropoda', 'Bacillariophyta', 'Cnidaria','Rotifera', 'unknown')
+    phyla <- c( 'Arthropoda', 'Bacillariophyta','Rotifera', 'unknown')
   }
   if (marker =='18S') {
     print(marker)
-    phyla <- c('Annelida', 'Arthropoda', 'Bacillariophyta', 'Cnidaria','Rotifera')
+    phyla <- c( 'Arthropoda', 'Bacillariophyta', 'Rotifera')
   }
   
   #plot species
@@ -748,11 +748,11 @@ for (val in markers) {
   #if (marker %in% c('COI','COInoH')) {
   if (marker == 'COI') {
     print(marker)
-    phyla <- c('Annelida', 'Arthropoda', 'Bacillariophyta', 'Cnidaria','Rotifera', 'unknown')
+    phyla <- c( 'Arthropoda', 'Bacillariophyta', 'Rotifera', 'unknown')
   }
   if (marker =='18S') {
     print(marker)
-    phyla <- c('Annelida', 'Arthropoda', 'Bacillariophyta', 'Cnidaria','Rotifera')
+    phyla <- c( 'Arthropoda', 'Bacillariophyta', 'Rotifera')
   }
   
   #plot species
