@@ -9,6 +9,7 @@ data_directory <- './Merged_Datasets/data/'
 #figures
 plot_dir <- './Merged_Datasets/figures/barplot_overview/'
 
+sites <- c('BLOOMMOCK','EVENMOCK','Arctic','North Atlantic', 'English Channel', 'La Manche', 'Central California', 'Southern California')
 
 # Load Libraries -----------------------------------------------------------------
 
@@ -91,7 +92,16 @@ for (val in markers) {
     group_by(Analyzing_Institute, Collecting_Institute) %>%
     mutate(replicateID = row_number()) %>%
     ungroup()
-  
+  # create site names
+  meta_tab %<>%
+    mutate(site = case_when(Collecting_Institute == 'AWI'~ 'Arctic',
+                            Collecting_Institute == 'MBARI'~ 'Central California',
+                            Collecting_Institute == 'NOAA'~ 'Southern California',
+                            Collecting_Institute == 'SBR'~ 'La Manche',
+                            Collecting_Institute == 'UDalhousie'~ 'North Atlantic',
+                            Collecting_Institute == 'NOC'~ 'English Channel',
+                            TRUE ~ Collecting_Institute
+                            ))
   
   #OTU table long format with percent total reads
   potu.c <- make_compositional(otu.c)
@@ -130,12 +140,7 @@ for (val in markers) {
     taxa_level = sym(val)
     top_taxa <- potu.c %>%
       full_join(species_label) %>%
-      # filter(!!taxa_level != 'Unknown') %>%
-      # filter(!!taxa_level !='no_hit') %>%
-      # filter(!!taxa_level !='unassigned') %>%
-      # filter(!!taxa_level !='unknown') %>%
-      # filter(!!taxa_level !='s_') %>%
-      # filter(!!taxa_level !='g_') %>%
+      filter(!!taxa_level !='NA') %>%
       group_by(!!taxa_level) %>%
       mutate(sum_per_tot = sum(per_tot, na.rm=TRUE)) %>%
       distinct(!!taxa_level,.keep_all = TRUE ) %>%
@@ -155,9 +160,12 @@ for (val in markers) {
       right_join(top_taxa) %>% #limit to top 20
       left_join(meta_tab) %>%
       #filter(Collecting_Institute %in% c('NOC', 'UDalhousie')) %>%
+      filter(Collecting_Institute !='NA') %>%
+      filter(replicateID <6) %>%
       ggplot(aes(x = replicateID, y = per_tot)) +
       geom_bar(stat = "identity", aes(fill = !!taxa_level))+
-      facet_grid(Analyzing_Institute~Collecting_Institute) +
+      #facet_grid(Analyzing_Institute~Collecting_Institute) +
+      facet_grid(site~Analyzing_Institute) +
       scale_fill_tableau(palette = "Tableau 20", type = c("regular"), direction = 1)+
       scale_x_continuous(breaks=c(1,5,10)) +
       labs(x="",y="Percent Total Reads")+
@@ -180,11 +188,11 @@ for (val in markers) {
     filename = paste(plot_dir, marker,'_top20',taxa_level,'_bar.png', sep='')
     #print('Plot of top 20 Genus average by month:')
     print(filename)
-    ggsave(filename,height = 3, width =15, units = 'in')
+    ggsave(filename,height = 10, width =16, units = 'in')
     filename = paste(plot_dir, marker,'_top20',taxa_level,'_bar.svg', sep='')
     #print('Plot of top 20 Genus average by month:')
     print(filename)
-    ggsave(filename,height = 3, width =15, units = 'in')
+    ggsave(filename,height = 8, width =8, units = 'in')
   }
   
   # Select Specific Taxa ----------------------------------------------------
