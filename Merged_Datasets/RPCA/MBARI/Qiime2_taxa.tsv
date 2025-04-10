@@ -106,7 +106,6 @@ ASV_233
 ASV_235			Cryptophyceae				
 ASV_239		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
 ASV_240							
-ASV_242		Haptophyta					
 ASV_244							
 ASV_245			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Paulsenella	Paulsenella vonstoschii
 ASV_247							
@@ -175,7 +174,6 @@ ASV_379		Bacillariophyta	Coscinodiscophyceae
 ASV_383			Dinophyceae				
 ASV_388			Dinophyceae	Peridiniales	Ensiculiferaceae	Pentapharsodinium	
 ASV_392							
-ASV_394		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_395			Dinophyceae				
 ASV_397			Dictyochophyceae	Florenciellales			
 ASV_398		Ciliophora	Spirotrichea				
@@ -283,7 +281,6 @@ ASV_652
 ASV_662							
 ASV_664			Bolidophyceae	Parmales	Triparmaceae		
 ASV_667							eukaryote clone OLI11305
-ASV_668		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_673							
 ASV_674							
 ASV_675			Pelagophyceae				Pelagophyceae sp. CCMP3390
@@ -356,7 +353,6 @@ ASV_836		Bacillariophyta
 ASV_843			Dinophyceae				
 ASV_847							
 ASV_849		Haptophyta		Prymnesiales			
-ASV_850		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
 ASV_852			Centroplasthelida	Pterocystida	Pterocystidae		
 ASV_856							
 ASV_862		Euglenozoa	Diplonemea		Diplonemidae		
@@ -463,7 +459,6 @@ ASV_1156		Endomyxa	Ascetosporea	Paradiniida		Paradinium	Paradinium poucheti
 ASV_1158			Dinophyceae				
 ASV_1167							
 ASV_1172	Metazoa	Annelida	Polychaeta		Capitellidae	Capitella	
-ASV_1176		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
 ASV_1177		Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae		
 ASV_1180							
 ASV_1181		Bacillariophyta	Coscinodiscophyceae	Leptocylindrales	Leptocylindraceae	Leptocylindrus	
@@ -573,7 +568,6 @@ ASV_1425
 ASV_1432	Metazoa	Annelida	Sipuncula	Phascolosomatiformes	Phascolosomatidae	Apionsoma	
 ASV_1434			Bigyra	Nanomonadea		Solenicola	
 ASV_1435							
-ASV_1438		Bacillariophyta	Bacillariophyceae				
 ASV_1440							
 ASV_1441							
 ASV_1444		Rhodophyta	Florideophyceae				
@@ -591,9 +585,7 @@ ASV_1468		Ciliophora	Spirotrichea
 ASV_1469			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	
 ASV_1474			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_1476							
-ASV_1478		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_1479							
-ASV_1481		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_1482		Endomyxa	Ascetosporea	Paradiniida			
 ASV_1483			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
 ASV_1484		Bacillariophyta	Bacillariophyceae				
@@ -610,7 +602,6 @@ ASV_1515		Ciliophora	Spirotrichea
 ASV_1516			Dinophyceae	Suessiales		Dactylodinium	Dactylodinium arachnoides
 ASV_1519			Bigyra	Nanomonadea		Incisomonas	
 ASV_1520			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	
-ASV_1523		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_1530							
 ASV_1531		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
 ASV_1532		Picozoa					Picobiliphyte sp. MS584-11
@@ -648,7 +639,6 @@ ASV_1603		Bacillariophyta	Fragilariophyceae	Rhaponeidales	Rhaphoneidaceae	Rhapho
 ASV_1605							
 ASV_1608			Dinophyceae				
 ASV_1614							
-ASV_1615		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_1617			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa rotundata
 ASV_1619							
 ASV_1620	Metazoa	Arthropoda	Hexanauplia	Cyclopoida	Oithonidae	Oithona	Oithona sp. Roadstead of Brest
@@ -668,7 +658,6 @@ ASV_1647		Picozoa	Picomonadea	Picomonadida	Picomonadidae	Picomonas
 ASV_1648			Dinophyceae	Gymnodiniales	Kareniaceae	Takayama	Takayama cf. pulchellum
 ASV_1649							
 ASV_1651		Euglenozoa	Diplonemea		Diplonemidae		
-ASV_1652		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_1653							
 ASV_1655			Dictyochophyceae				
 ASV_1657							
@@ -686,7 +675,6 @@ ASV_1682		Haptophyta
 ASV_1688							
 ASV_1691			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_1692	Viridiplantae	Chlorophyta	Nephroselmidophyceae	Nephroselmidales	Nephroselmidaceae	Nephroselmis	Nephroselmis pyriformis
-ASV_1693		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_1702							
 ASV_1705							
 ASV_1706							
@@ -757,7 +745,6 @@ ASV_1827
 ASV_1830	Metazoa	Arthropoda	Hexanauplia				
 ASV_1831							
 ASV_1833							
-ASV_1834		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_1835		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	Cryothecomonas sp. APCC MC5-1Cryo
 ASV_1838			Dinophyceae				
 ASV_1841							
@@ -802,14 +789,12 @@ ASV_1919			Dinophyceae
 ASV_1922		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
 ASV_1923							
 ASV_1925			Dinophyceae	Gymnodiniales	Warnowiaceae	Proterythropsis	Proterythropsis sp. BSL-2009a
-ASV_1931		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_1932	Metazoa	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia hudsonica
 ASV_1933			Cryptophyceae	Cyathomonadacea	Goniomonadaceae	Goniomonas	
 ASV_1935							
 ASV_1936							
 ASV_1937			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_1940			Dinophyceae				
-ASV_1942	Viridiplantae	Chlorophyta	Palmophyllophyceae	Prasinococcales	Prasinococcaceae	Prasinococcus	
 ASV_1947	Metazoa	Arthropoda	Malacostraca	Euphausiacea			
 ASV_1948							
 ASV_1954				Pirsoniales			
@@ -817,12 +802,10 @@ ASV_1957		Cercozoa
 ASV_1959							
 ASV_1960							
 ASV_1962							
-ASV_1963		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_1964							
 ASV_1967			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_1968		Ciliophora	Spirotrichea		Tontoniidae	Pseudotontonia	Pseudotontonia sp. JG-2011a
 ASV_1974		Cercozoa		Cercomonadida	Cercomonadidae		
-ASV_1975		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_1978							
 ASV_1979			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	Gymnodinium litoralis
 ASV_1981		Rhodophyta	Florideophyceae				
@@ -862,7 +845,6 @@ ASV_2058	Viridiplantae	Chlorophyta	Ulvophyceae	Ulvales	Ulvaceae	Ulva
 ASV_2059			Dinophyceae	Peridiniales	Protoperidiniaceae		
 ASV_2061			Cryptophyceae	Cyathomonadacea	Goniomonadaceae		
 ASV_2062							
-ASV_2069		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_2072			Cryptophyceae	Cryptomonadales	Cryptomonadaceae	Cryptomonas	
 ASV_2073			Choanoflagellata	Acanthoecida	Stephanoecidae	Calliacantha	Calliacantha natans
 ASV_2077			Dinophyceae	Peridiniales	Protoperidiniaceae		
@@ -884,7 +866,6 @@ ASV_2138		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysoc
 ASV_2139	Metazoa	Mollusca	Cephalopoda	Oegopsida	Chiroteuthidae	Chiroteuthis	
 ASV_2140							
 ASV_2141		Cercozoa	Imbricatea	Thaumatomonadida		Scutellomonas	Scutellomonas patella
-ASV_2142	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
 ASV_2143			Dinophyceae	Peridiniales	Protoperidiniaceae		
 ASV_2144			Dinophyceae	Peridiniales	Ensiculiferaceae	Ensiculifera	Ensiculifera imariensis
 ASV_2145		Bacillariophyta	Coscinodiscophyceae	Melosirales	Stephanopyxidaceae	Stephanopyxis	
@@ -949,10 +930,8 @@ ASV_2305			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
 ASV_2306		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros debilis
 ASV_2317		Cercozoa					
 ASV_2326		Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae		
-ASV_2327		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_2329							
 ASV_2331							
-ASV_2342		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_2343							
 ASV_2345		Rhodophyta	Florideophyceae	Ceramiales	Rhodomelaceae	Neochondria	Neochondria nidifica
 ASV_2348	Metazoa	Cnidaria	Hydrozoa	Leptothecata	Campanulariidae		
@@ -970,7 +949,6 @@ ASV_2371
 ASV_2376		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
 ASV_2377	Metazoa	Arthropoda	Malacostraca	Euphausiacea			
 ASV_2378			Dinophyceae	Thoracosphaerales			
-ASV_2379		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_2382	Metazoa	Mollusca	Bivalvia				
 ASV_2383							
 ASV_2386	Metazoa	Annelida	Polychaeta	Phyllodocida	Phyllodocidae		
@@ -994,7 +972,6 @@ ASV_2423			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
 ASV_2432			Cryptophyceae	Pyrenomonadales	Geminigeraceae		
 ASV_2434							
 ASV_2436	Viridiplantae	Streptophyta	Magnoliopsida	Alismatales	Zosteraceae	Phyllospadix	Phyllospadix iwatensis
-ASV_2440			Dinophyceae				
 ASV_2441							
 ASV_2444		Haptophyta		Prymnesiales			
 ASV_2447							
@@ -1019,10 +996,8 @@ ASV_2508
 ASV_2509							
 ASV_2510		Bacillariophyta	Fragilariophyceae	Fragilariales	Fragilariaceae	Asterionellopsis	Asterionellopsis glacialis
 ASV_2513			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
-ASV_2514		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_2516							
 ASV_2517			Dinophyceae				
-ASV_2519		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_2520			Dinophyceae	Peridiniales	Ensiculiferaceae	Ensiculifera	Ensiculifera imariensis
 ASV_2522			Bigyra	Thraustochytrida			
 ASV_2524			Dinophyceae	Blastodiniales			
@@ -1038,7 +1013,6 @@ ASV_2543		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis
 ASV_2547			Dinophyceae	Peridiniales	Amphidiniopsidaceae		
 ASV_2555			Dinophyceae				
 ASV_2567	Metazoa	Nemertea	Pilidiophora				
-ASV_2575		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_2577			Dinophyceae	Prorocentrales	Prorocentraceae		
 ASV_2578	Viridiplantae	Chlorophyta					
 ASV_2579							
@@ -1050,12 +1024,9 @@ ASV_2588
 ASV_2591							
 ASV_2592			Bigyra	Oblongichytrida		Oblongichytrium	
 ASV_2593			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Polykrikos	
-ASV_2595		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
-ASV_2596			Dinophyceae				
 ASV_2604							
 ASV_2605							
 ASV_2606			Dinophyceae				
-ASV_2607		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_2609		Cercozoa		Cercomonadida	Cercomonadidae		
 ASV_2612		Bacillariophyta	Coscinodiscophyceae	Melosirales	Stephanopyxidaceae		
 ASV_2614							
@@ -1130,7 +1101,6 @@ ASV_2837			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
 ASV_2838							
 ASV_2840			Dinophyceae	Peridiniales	Protoperidiniaceae		
 ASV_2845		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina leadbeateri
-ASV_2854			Dinophyceae				
 ASV_2864							
 ASV_2865		Endomyxa	Ascetosporea	Paradiniida		Paradinium	
 ASV_2866	Metazoa	Mollusca	Bivalvia	Venerida			
@@ -1145,7 +1115,6 @@ ASV_2888			Dinophyceae	Peridiniales	Ensiculiferaceae	Ensiculifera
 ASV_2889							
 ASV_2893			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_2894				Pirsoniales			
-ASV_2895	Fungi	Ascomycota	Pichiomycetes	Serinales	Debaryomycetaceae	Candida	
 ASV_2896							
 ASV_2897			Dinophyceae				
 ASV_2898							
@@ -1216,7 +1185,6 @@ ASV_3098
 ASV_3100							
 ASV_3101			Dinophyceae				
 ASV_3102		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira aestivalis
-ASV_3108		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_3110		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
 ASV_3116							
 ASV_3117							
@@ -1227,13 +1195,11 @@ ASV_3128
 ASV_3131							
 ASV_3132							
 ASV_3133							
-ASV_3146		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_3148							
 ASV_3149			Dinophyceae	Peridiniales	Ensiculiferaceae	Ensiculifera	Ensiculifera imariensis
 ASV_3157		Haptophyta		Prymnesiales			
 ASV_3158		Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Amphorides	Amphorides quadrilineata
 ASV_3163			Dinophyceae	Gonyaulacales	Gonyaulacaceae		
-ASV_3164		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_3166		Bacillariophyta	Coscinodiscophyceae				
 ASV_3167			Dinophyceae	Dinophysales	Dinophysaceae	Dinophysis	Dinophysis acuminata
 ASV_3169			Dinophyceae				
@@ -1248,7 +1214,6 @@ ASV_3183		Bacillariophyta	Bacillariophyceae	Naviculales	Pleurosigmataceae
 ASV_3192							
 ASV_3195							
 ASV_3201	Fungi	Ascomycota	Dothideomycetes	Mycosphaerellales	Mycosphaerellaceae	Ramularia	
-ASV_3202			Bigyra	Thraustochytrida	Thraustochytriaceae		Thraustochytriidae sp. thel2
 ASV_3213							
 ASV_3229	Fungi	Basidiomycota	Agaricomycetes	Agaricales			
 ASV_3232			Dinophyceae				
@@ -1257,7 +1222,6 @@ ASV_3239		Ciliophora	Spirotrichea	Choreotrichida	Strombidinopsidae	Strombidinops
 ASV_3242				Telonemida			
 ASV_3259		Bacillariophyta	Bacillariophyceae	Naviculales	Pleurosigmataceae	Pleurosigma	Pleurosigma sp. LM-2002
 ASV_3268			Dinophyceae				
-ASV_3269	Viridiplantae	Chlorophyta	Palmophyllophyceae	Prasinococcales	Prasinococcaceae		
 ASV_3270							
 ASV_3271							
 ASV_3272							
@@ -1348,7 +1312,6 @@ ASV_3548			Dinophyceae	Gonyaulacales
 ASV_3549			Dinophyceae	Gonyaulacales	Gonyaulacaceae		
 ASV_3552							
 ASV_3553			Dinophyceae	Gonyaulacales	Gonyaulacaceae	Gonyaulax	
-ASV_3554		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	
 ASV_3566							
 ASV_3570		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales			
 ASV_3571			Dinophyceae				
@@ -1504,8 +1467,6 @@ ASV_3995
 ASV_3996			Dinophyceae	Syndiniales	Eudubosquellidae		
 ASV_3997	Metazoa	Arthropoda	Malacostraca	Euphausiacea			
 ASV_3998							
-ASV_4011		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
-ASV_4014			Dinophyceae				
 ASV_4016							
 ASV_4019							
 ASV_4020							
@@ -1539,7 +1500,6 @@ ASV_4069	Metazoa	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia
 ASV_4071			Dinophyceae				
 ASV_4072							
 ASV_4075							
-ASV_4076		Bacillariophyta	Coscinodiscophyceae				
 ASV_4078			Dinophyceae				
 ASV_4079			Dinophyceae				
 ASV_4080							
@@ -1563,7 +1523,6 @@ ASV_4108		Foraminifera		Rotaliida	Globigerinidae	Globigerinita	Globigerinita uvu
 ASV_4109							
 ASV_4110			Choanoflagellata	Acanthoecida	Stephanoecidae	Stephanoeca	
 ASV_4111							
-ASV_4112			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
 ASV_4113	Fungi	Ascomycota	Taphrinomycetes	Taphrinales	Taphrinaceae	Taphrina	
 ASV_4114		Bacillariophyta					
 ASV_4115			Dinophyceae				
@@ -1588,7 +1547,6 @@ ASV_4140			Cryptophyceae	Kathablepharidacea	Katablepharidaceae
 ASV_4147							
 ASV_4155		Rhodophyta	Florideophyceae	Rhodymeniales	Lomentariaceae	Lomentaria	
 ASV_4156							
-ASV_4157		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_4159							
 ASV_4162				Ancyromonadida	Planomonadidae	Planomonas	
 ASV_4164		Ciliophora	Spirotrichea	Sporadotrichida	Oxytrichidae	Protogastrostyla	
@@ -1662,7 +1620,6 @@ ASV_4313			Dinophyceae	Syndiniales	Duboscquellidae
 ASV_4316							
 ASV_4317							
 ASV_4319							
-ASV_4322			Dinophyceae				
 ASV_4323							
 ASV_4325							
 ASV_4326			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
@@ -1715,7 +1672,6 @@ ASV_4458		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae
 ASV_4459	Metazoa	Cnidaria	Hydrozoa	Leptothecata	Sertulariidae		
 ASV_4460							
 ASV_4461							
-ASV_4462		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_4463							
 ASV_4464			Dinophyceae	Peridiniales	Ensiculiferaceae	Ensiculifera	Ensiculifera imariensis
 ASV_4465	Metazoa	Arthropoda	Malacostraca	Euphausiacea			
@@ -1742,7 +1698,6 @@ ASV_4500			Dinophyceae	Suessiales	Suessiaceae	Ansanella
 ASV_4501							
 ASV_4503							
 ASV_4504			Bigyra	Bicosoecida	Bicosoecidae		
-ASV_4505			Dinophyceae				
 ASV_4506							
 ASV_4507			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	Protoperidinium excentricum
 ASV_4510			Dinophyceae				
@@ -1764,7 +1719,6 @@ ASV_4554
 ASV_4555		Rhodophyta	Florideophyceae	Gigartinales	Hypneaceae	Hypnea	
 ASV_4556			Dinophyceae				
 ASV_4557							
-ASV_4558			Dinophyceae				
 ASV_4559		Ciliophora	Spirotrichea		Tontoniidae		
 ASV_4560			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	Gymnodinium litoralis
 ASV_4561	Viridiplantae	Chlorophyta					
@@ -1869,7 +1823,6 @@ ASV_4725			Dinophyceae
 ASV_4726		Endomyxa		Gromiida	Gromiidae		
 ASV_4727							
 ASV_4728			Dinophyceae				
-ASV_4729			Dinophyceae				
 ASV_4730							
 ASV_4731		Haptophyta		Prymnesiales			
 ASV_4733			Cryptophyceae	Pyrenomonadales	Pyrenomonadaceae		
@@ -2029,7 +1982,6 @@ ASV_4996		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	C
 ASV_4997			Dinophyceae				
 ASV_4998			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_4999	Metazoa	Platyhelminthes	Cestoda	Phyllobothriidea	Phyllobothriidae	Scyphophyllidium	Scyphophyllidium exiguum
-ASV_5001	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae		
 ASV_5002							
 ASV_5003		Endomyxa		Gromiida	Gromiidae		
 ASV_5004			Chrysophyceae	Hibberdiales	Hibberdiaceae		
@@ -2142,7 +2094,6 @@ ASV_5186		Cercozoa	Chlorarachniophyceae			Norrisiella
 ASV_5187			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_5190							
 ASV_5191							
-ASV_5199			Dinophyceae				
 ASV_5212		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Attheyaceae	Attheya	Attheya longicornis
 ASV_5215			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_5223		Ciliophora	Colpodea				
@@ -2181,7 +2132,6 @@ ASV_5308
 ASV_5309			Dinophyceae				
 ASV_5310							
 ASV_5311	Metazoa	Mollusca	Gastropoda	Nudibranchia	Eubranchidae	Eubranchus	
-ASV_5312							
 ASV_5313		Euglenozoa	Euglenida	Petalomonadida	Scytomonadidae		
 ASV_5314		Ciliophora	Spirotrichea	Tintinnida	Codonellopsidae	Laackmanniella	Laackmanniella prolongata
 ASV_5315							
@@ -2447,7 +2397,6 @@ ASV_6397
 ASV_6398							
 ASV_6399			Acantharea				
 ASV_6400			Dinophyceae	Blastodiniales		Blastodinium	Blastodinium mangini
-ASV_6401	Metazoa	Ctenophora	Tentaculata				
 ASV_6402	Viridiplantae	Chlorophyta	Mamiellophyceae	Dolichomastigales	Dolichomastigaceae		
 ASV_6403		Haptophyta		Prymnesiales			
 ASV_6404			Dinophyceae	Blastodiniales		Blastodinium	Blastodinium oviforme
@@ -2469,7 +2418,6 @@ ASV_6565			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
 ASV_6594							
 ASV_6596	Metazoa	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	Sagitta	Sagitta sp. DP-2006
 ASV_6603		Endomyxa	Ascetosporea				
-ASV_6604	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
 ASV_6606							
 ASV_6609							
 ASV_6610		Euglenozoa	Euglenida	Euglenales	Euglenaceae	Trachelomonas	
@@ -2491,7 +2439,6 @@ ASV_6654
 ASV_6655							
 ASV_6666							
 ASV_6682			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
-ASV_6694			Dinophyceae				
 ASV_6697			Dinophyceae				
 ASV_6698			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_6699							
@@ -2635,7 +2582,6 @@ ASV_7298
 ASV_7299	Viridiplantae	Chlorophyta	Chloropicophyceae	Chloropicales	Chloropicaceae	Chloropicon	Chloropicon sieburthii
 ASV_7300							
 ASV_7301	Fungi	Basidiomycota	Agaricomycetes	Auriculariales	Auriculariaceae		
-ASV_7302		Haptophyta		Prymnesiales			
 ASV_7303							
 ASV_7304	Fungi	Ascomycota					
 ASV_7307	Metazoa	Arthropoda	Hexanauplia	Harpacticoida	Miraciidae		
@@ -2713,7 +2659,6 @@ ASV_7910
 ASV_7911							
 ASV_7919			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_7925	Metazoa	Ctenophora	Nuda	Beroida	Beroidae	Beroe	
-ASV_7931			Polycystinea				
 ASV_7946							
 ASV_7957							
 ASV_7959		Cercozoa					
@@ -2781,14 +2726,12 @@ ASV_8161
 ASV_8162							
 ASV_8163			Dinophyceae				
 ASV_8164			Dinophyceae	Peridiniales	Peridiniaceae		
-ASV_8165		Bacillariophyta	Bacillariophyceae				
 ASV_8168		Cercozoa	Thecofilosea		Ebriacea		
 ASV_8169							
 ASV_8171		Euglenozoa	Diplonemea		Hemistasiidae		
 ASV_8172			Dinophyceae				
 ASV_8174							
 ASV_8175							
-ASV_8178		Bacillariophyta	Bacillariophyceae				
 ASV_8179		Euglenozoa	Diplonemea		Hemistasiidae		
 ASV_8180				Apusomonadida	Apusomonadidae	Multimonas	
 ASV_8185							
@@ -2928,14 +2871,11 @@ ASV_9145			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	Protoperi
 ASV_9146	Metazoa	Chordata	Thaliacea	Salpida	Salpidae	Pegea	Pegea confoederata
 ASV_9147	Metazoa	Ctenophora	Tentaculata				
 ASV_9324							
-ASV_9326	Viridiplantae	Chlorophyta					
 ASV_9327			Dinophyceae	Gymnodiniales	Warnowiaceae		
 ASV_9328				Pirsoniales			
 ASV_9329							
 ASV_9330		Discosea		Longamoebia	Thecamoebida	Stenamoeba	
-ASV_9331							
 ASV_9332							
-ASV_9333			Cryptophyceae	Pyrenomonadales	Chroomonadaceae		
 ASV_9335		Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Salpingella	Salpingella acuminata
 ASV_9338			Dinophyceae				
 ASV_9341			Dinophyceae				
@@ -2950,7 +2890,6 @@ ASV_9352
 ASV_9354							
 ASV_9355							
 ASV_9356							
-ASV_9357							
 ASV_9358							
 ASV_9359							
 ASV_9361	Metazoa	Arthropoda	Malacostraca				
@@ -2975,7 +2914,6 @@ ASV_9382
 ASV_9383			Dinophyceae	Gymnodiniales	Kareniaceae		
 ASV_9384			Dinophyceae				
 ASV_9385			Cryptophyceae	Cryptomonadales	Hemiselmidaceae		
-ASV_9386							
 ASV_9387							
 ASV_9388			Dinophyceae				
 ASV_9391			Dinophyceae				
@@ -3031,7 +2969,6 @@ ASV_9466			Dinophyceae
 ASV_9467							
 ASV_9468	Metazoa	Arthropoda	Hexanauplia	Calanoida	Clausocalanidae	Pseudocalanus	Pseudocalanus moultoni
 ASV_9469			Dinophyceae				
-ASV_9470							
 ASV_9471							
 ASV_9472							
 ASV_9477			Dinophyceae				
@@ -3089,7 +3026,6 @@ ASV_9542		Cercozoa		Cercomonadida	Cercomonadidae
 ASV_9543		Ciliophora	Oligohymenophorea	Philasterida	Thigmophryidae	Myxophyllum	Myxophyllum magnum
 ASV_9544		Cercozoa		Cercomonadida	Cercomonadidae		
 ASV_9545							
-ASV_9546			Dinophyceae				
 ASV_9547							eukaryote clone OLI11012
 ASV_9549			Cryptophyceae	Pyrenomonadales	Geminigeraceae		
 ASV_9550							
@@ -3133,7 +3069,6 @@ ASV_9609
 ASV_9611							
 ASV_9613	Metazoa	Mollusca	Gastropoda	Nudibranchia	Dotidae	Doto	
 ASV_9614							
-ASV_9618			Acantharea				
 ASV_9621							
 ASV_9622							
 ASV_9625		Apicomplexa	Conoidasida	Eucoccidiorida	Eimeriidae		
@@ -3157,7 +3092,6 @@ ASV_9648			Dinophyceae
 ASV_9649			Dinophyceae	Thoracosphaerales			
 ASV_9652			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_9653			Dinophyceae				
-ASV_9654		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae		
 ASV_9656		Picozoa					Picobiliphyte sp. MS584-11
 ASV_9657			Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	
 ASV_9658			Dinophyceae	Peridiniales	Ensiculiferaceae	Pentapharsodinium	Pentapharsodinium tyrrhenicum
@@ -3166,7 +3100,6 @@ ASV_9663
 ASV_9664							
 ASV_9666							
 ASV_9668							
-ASV_9670	Metazoa	Echinodermata	Ophiuroidea	Amphilepidida			
 ASV_9672							
 ASV_9673							
 ASV_9674							
@@ -3197,16 +3130,12 @@ ASV_9706
 ASV_9708							
 ASV_9709	Metazoa	Chordata	Thaliacea	Pyrosomata	Pyrosomatidae	Pyrosoma	Pyrosoma atlanticum
 ASV_9711			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
-ASV_9713							
-ASV_9714		Euglenozoa	Diplonemea				Diplonemida sp. 37 RG-2016
-ASV_9716							
 ASV_9717	Metazoa	Cnidaria					
 ASV_9719							
 ASV_9722			Polycystinea	Collodaria	Sphaerozoidae		
 ASV_9723							
 ASV_9724	Metazoa	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae		
 ASV_9725			Dinophyceae				
-ASV_9727							
 ASV_9728							
 ASV_9729		Haptophyta		Prymnesiales			
 ASV_9730							
@@ -3223,7 +3152,6 @@ ASV_9742
 ASV_9745							
 ASV_9746							
 ASV_9748							
-ASV_9750			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_9751			Dinophyceae				
 ASV_9753							
 ASV_9760			Dinophyceae				
@@ -3247,41 +3175,32 @@ ASV_9777
 ASV_9778			Dinophyceae				
 ASV_9779			Dinophyceae				
 ASV_9780	Metazoa	Arthropoda	Hexanauplia	Poecilostomatoida	Corycaeidae	Corycaeus	Corycaeus speciosus
-ASV_9781			Polycystinea	Collodaria	Sphaerozoidae		
 ASV_9782							
 ASV_9783							
 ASV_9784							
 ASV_9785			Dinophyceae				
 ASV_9786			Centroplasthelida	Pterocystida	Pterocystidae		
 ASV_9787							
-ASV_9788			Dinophyceae				
 ASV_9789							
-ASV_9790							
 ASV_9791			Dinophyceae				
 ASV_9792		Cercozoa	Thecofilosea	Tectofilosida	Chlamydophryidae		
 ASV_9793							
 ASV_9794							
 ASV_9795			Dinophyceae				
-ASV_9796			Dinophyceae				
-ASV_9797			Dinophyceae	Syndiniales	Syndiniaceae		
 ASV_9798			Dinophyceae				
 ASV_9799			Dinophyceae				
-ASV_9800			Dinophyceae				
 ASV_9801							
 ASV_9802			Dinophyceae	Peridiniales	Ensiculiferaceae	Ensiculifera	
 ASV_9803							
 ASV_9804			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
-ASV_9805							
 ASV_9806			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_9807		Bacillariophyta	Bacillariophyceae				
 ASV_9808							
 ASV_9809			Dinophyceae				
-ASV_9810			Cryptophyceae	Pyrenomonadales	Geminigeraceae		
 ASV_9811			Dinophyceae				
 ASV_9812							
 ASV_9813			Dinophyceae	Thoracosphaerales			
 ASV_9814			Polycystinea	Spumellaria	Actinommidae	Actinomma	Actinomma boreale
-ASV_9815							
 ASV_9816			Dinophyceae				
 ASV_9817							
 ASV_9818							
@@ -3289,20 +3208,16 @@ ASV_9819			Bolidophyceae	Parmales	Triparmaceae
 ASV_9820			Dinophyceae				
 ASV_9821		Ciliophora	Oligohymenophorea	Philasterida	Loxocephalidae		
 ASV_9822			Dinophyceae				
-ASV_9823		Ciliophora					
 ASV_9824		Cercozoa	Imbricatea	Marimonadida		Abollifer	
 ASV_9825		Euglenozoa	Diplonemea		Diplonemidae		
 ASV_9826			Dinophyceae	Peridiniales	Peridiniaceae		
 ASV_9827		Apicomplexa	Conoidasida	Eugregarinorida	Cephaloidophoridae		
-ASV_9828		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_9829							
 ASV_9830		Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae		
 ASV_9831			Raphidophyceae	Chattonellales	Vacuolariaceae		
 ASV_9832		Euglenozoa	Diplonemea		Diplonemidae		
 ASV_9833							
 ASV_9834							
-ASV_9835							
-ASV_9836							
 ASV_9837	Metazoa	Cnidaria	Hydrozoa	Anthoathecata	Bougainvilliidae	Garveia	Garveia grisea
 ASV_9838							
 ASV_9839			Dinophyceae				
@@ -3311,15 +3226,11 @@ ASV_9841			Chrysophyceae
 ASV_9842			Dinophyceae				
 ASV_9843							
 ASV_9844							
-ASV_9845			Polycystinea	Nassellaria	Trissocyclidae	Ceratospyris	
-ASV_9846	Fungi	Ascomycota	Saccharomycetes	Saccharomycetales			
 ASV_9847			Dinophyceae				
 ASV_9848		Ciliophora	Spirotrichea		Tontoniidae	Pseudotontonia	
 ASV_9849							
 ASV_9850							
 ASV_9851							
-ASV_9852							
-ASV_9853			Dinophyceae				
 ASV_9854			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_9855	Fungi	Basidiomycota	Agaricomycetes				
 ASV_9856			Dinophyceae				
@@ -3335,18 +3246,15 @@ ASV_9865			Dinophyceae
 ASV_9866			Bigyra	Nanomonadea		Incisomonas	
 ASV_9867			Dinophyceae				
 ASV_9868							
-ASV_9869		Ciliophora	Oligohymenophorea	Philasterida	Philasteridae		
 ASV_9870		Euglenozoa	Diplonemea		Diplonemidae		
 ASV_9871		Ciliophora	Oligohymenophorea	Philasterida	Loxocephalidae		
 ASV_9872		Bacillariophyta	Coscinodiscophyceae	Melosirales	Stephanopyxidaceae		
-ASV_9873			Polycystinea	Nassellaria	Pterocorythidae		
 ASV_9874							
 ASV_9875							
 ASV_9876							
 ASV_9877					Colpodellaceae		
 ASV_9878							
 ASV_9879		Euglenozoa	Kinetoplastea	Eubodonida	Bodonidae		
-ASV_9880							
 ASV_9881			Dinophyceae	Syndiniales	Syndiniaceae		
 ASV_9882							
 ASV_9883		Cercozoa	Imbricatea	Marimonadida		Pseudopirsonia	Pseudopirsonia mucosa
@@ -3360,11 +3268,9 @@ ASV_9890	Metazoa	Chordata
 ASV_9891							
 ASV_9892			Polycystinea	Nassellaria	Plagiacanthidae	Lithomelissa	
 ASV_9893							
-ASV_9894							
 ASV_9895		Ciliophora	Spirotrichea				
 ASV_9896			Dinophyceae	Peridiniales	Glenodiniaceae		
 ASV_9897			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
-ASV_9898							
 ASV_9899			Dinophyceae				
 ASV_9900		Bacillariophyta	Coscinodiscophyceae				
 ASV_9901			Dinophyceae	Syndiniales	Eudubosquellidae	Euduboscquella	
@@ -3373,12 +3279,10 @@ ASV_9903
 ASV_9904							
 ASV_9905							
 ASV_9906							
-ASV_9907							
 ASV_9908			Dinophyceae				
 ASV_9909		Ciliophora	Prostomatea	Prorodontida			
 ASV_9910			Dinophyceae	Peridiniales	Peridiniaceae		
 ASV_9911							
-ASV_9912							
 ASV_9913							
 ASV_9914		Bacillariophyta	Coscinodiscophyceae				
 ASV_9915			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
@@ -3387,31 +3291,21 @@ ASV_9917			Dinophyceae
 ASV_9918							
 ASV_9919			Dinophyceae				
 ASV_9920							
-ASV_9921							
 ASV_9922							
 ASV_9923		Ciliophora	Oligohymenophorea	Peniculida	Stokesiidae		
 ASV_9924			Dinophyceae	Blastodiniales			
-ASV_9925			Dinophyceae	Peridiniales	Pfiesteriaceae		
 ASV_9926	Metazoa	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae		
-ASV_9927							
 ASV_9928			Dinophyceae				
 ASV_9929			Dinophyceae				
 ASV_9930			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_9931							
-ASV_9932			Dinophyceae				
 ASV_9933			Dinophyceae				
 ASV_9934							
-ASV_9935							
-ASV_9936							
 ASV_9937							
 ASV_9938							
-ASV_9939							
 ASV_9940							
 ASV_9941							
-ASV_9942		Euglenozoa	Diplonemea				Diplonemida sp. 3 RG-2016
 ASV_9943							
-ASV_9944			Dinophyceae	Gymnodiniales	Ceratoperidiniaeceae		
-ASV_9945			Dinophyceae				
 ASV_9946			Dinophyceae				
 ASV_9947		Apicomplexa	Conoidasida	Eucoccidiorida	Eimeriidae		
 ASV_9948			Dinophyceae				
@@ -3420,7 +3314,6 @@ ASV_9950			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
 ASV_9951						Telonemia	
 ASV_9952			Polycystinea	Collodaria	Sphaerozoidae		
 ASV_9953			Dinophyceae	Gonyaulacales	Amphidomataceae		
-ASV_9954			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	
 ASV_9955			Dinophyceae				
 ASV_9956	Metazoa	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	Sagitta	Sagitta sp. DP-2006
 ASV_9957							
@@ -3429,19 +3322,12 @@ ASV_9959		Ciliophora	Oligohymenophorea	Apostomatida	Foettingeriidae
 ASV_9960							
 ASV_9961							
 ASV_9962				Sticholonchida	Sticholonchidae		
-ASV_9963							
 ASV_9964							
-ASV_9965							
 ASV_9966			Polycystinea	Collodaria	Sphaerozoidae		
-ASV_9967							
-ASV_9968							
 ASV_9969			Dinophyceae				
-ASV_9970		Ciliophora	Oligohymenophorea	Peniculida	Stokesiidae		
 ASV_9971			Dinophyceae				
 ASV_9972			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
-ASV_9973							
 ASV_9974			Dinophyceae				
-ASV_9975			Acantharea				
 ASV_9976							
 ASV_9977			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_9978	Viridiplantae	Streptophyta	Magnoliopsida	Asterales	Asteraceae		
@@ -3449,46 +3335,35 @@ ASV_9979			Polycystinea
 ASV_9980			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	
 ASV_9981		Ciliophora	Prostomatea	Prorodontida		Halodinium	Halodinium verrucatum
 ASV_9982			Dinophyceae				
-ASV_9983							
 ASV_9984			Dinophyceae				
 ASV_9985							
 ASV_9986			Dinophyceae				
 ASV_9987							
-ASV_9988		Foraminifera		Rotaliida	Globorotaliidae	Neogloboquadrina	
 ASV_9989							
 ASV_9990			Dinophyceae				
-ASV_9991							
 ASV_9992							
 ASV_9993			Dinophyceae				
 ASV_9994			Dinophyceae				
 ASV_9995			Dinophyceae				
-ASV_9996							
 ASV_9997			Dinophyceae				
-ASV_9998			Polycystinea				
 ASV_9999			Dinophyceae				
-ASV_10000			Dinophyceae				
-ASV_10001							
 ASV_10002			Dinophyceae				
 ASV_10003							
 ASV_10004			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
-ASV_10005		Euglenozoa	Diplonemea				Diplonemida sp. 3 RG-2016
 ASV_10006			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_10007			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_10008			Dinophyceae				
-ASV_10009			Dinophyceae				
 ASV_10010			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_10011			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_10012							
 ASV_10013			Dinophyceae				
 ASV_10014							
-ASV_10015							
 ASV_10016			Dinophyceae				
 ASV_10017	Metazoa	Annelida	Polychaeta	Phyllodocida	Typhloscolecidae	Typhloscolex	
 ASV_10018		Ciliophora					
 ASV_10019			Dinophyceae				
 ASV_10020		Ciliophora	Spirotrichea	Choreotrichida	Leegaardiellidae	Leegaardiella	Leegaardiella sp. LS803
 ASV_10021		Ciliophora	Litostomatea	Cyclotrichida	Mesodiniidae		
-ASV_10022							
 ASV_10023							
 ASV_10024							
 ASV_10025			Polycystinea	Spumellaria	Ethmosphaeridae	Styptosphaera	
@@ -3497,81 +3372,55 @@ ASV_10027
 ASV_10028							
 ASV_10029		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae		
 ASV_10030			Dinophyceae				
-ASV_10031			Acantharea	Symphyacanthida	Amphilithiidae		
 ASV_10032							
 ASV_10033			Dinophyceae	Peridiniales	Ensiculiferaceae	Pentapharsodinium	Pentapharsodinium tyrrhenicum
-ASV_10034							
 ASV_10035							
-ASV_10036			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
-ASV_10037		Euglenozoa	Diplonemea				Diplonemida sp. 3 RG-2016
 ASV_10038							
 ASV_10039			Dinophyceae				
 ASV_10040			Dinophyceae				
 ASV_10041			Dinophyceae				
-ASV_10042							
-ASV_10043							
 ASV_10044							
 ASV_10045	Metazoa	Annelida	Polychaeta		Capitellidae	Notomastus	
 ASV_10046		Euglenozoa	Diplonemea				Diplonemida sp. 21sb RG-2016
 ASV_10047							
-ASV_10048		Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Haslea	
-ASV_10049			Dinophyceae	Peridiniales	Peridiniaceae		
-ASV_10050							
 ASV_10051							
 ASV_10052							
-ASV_10053			Dinophyceae	Gonyaulacales	Pyrophacaceae	Fragilidium	Fragilidium duplocampanaeforme
 ASV_10054							
 ASV_10055							
 ASV_10056							
-ASV_10057							eukaryote clone OLI11012
 ASV_10058							
 ASV_10059			Dinophyceae				
 ASV_10060		Bacillariophyta	Bacillariophyceae				
-ASV_10061			Dinophyceae	Gymnodiniales	Kareniaceae		
 ASV_10062		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia heimii
-ASV_10063			Dinophyceae				
-ASV_10064			Dinophyceae				
-ASV_10065							
 ASV_10066			Dinophyceae				
 ASV_10067			Dinophyceae				
-ASV_10068							
 ASV_10069							
 ASV_10070							
 ASV_10071							
-ASV_10072							
-ASV_10073			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_10074							
 ASV_10075							
-ASV_10076			Dinophyceae				
 ASV_10077			Dinophyceae	Gonyaulacales	Amphidomataceae		
 ASV_10078							
 ASV_10079							
-ASV_10080							
-ASV_10081							
 ASV_10082			Acantharea				Uncultured marine acantharean DH147-EKD17
 ASV_10083			Polycystinea				
 ASV_10084			Dinophyceae	Coccidiniales	Chytriodiniaceae		
 ASV_10085				Sticholonchida	Sticholonchidae		
 ASV_10086			Dinophyceae	Syndiniales	Syndiniaceae		
 ASV_10087							
-ASV_10088	Metazoa	Arthropoda	Hexanauplia	Poecilostomatoida	Oncaeidae	Oncaea	
 ASV_10089							
 ASV_10090			Polycystinea	Collodaria	Sphaerozoidae		
 ASV_10091			Dinophyceae				
 ASV_10092	Metazoa	Ctenophora	Tentaculata				
 ASV_10093							
 ASV_10094			Polycystinea				
-ASV_10095			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	
 ASV_10096			Dinophyceae				
 ASV_10097		Bacillariophyta	Bacillariophyceae				
-ASV_10098							
 ASV_10099		Euglenozoa	Diplonemea				Diplonemida sp. 1sb RG-2016
 ASV_10100		Ciliophora	Oligohymenophorea	Apostomatida	Foettingeriidae		
 ASV_10101							
 ASV_10102	Metazoa	Cnidaria	Hydrozoa	Siphonophorae	Resomiidae	Resomia	Resomia ornicephala
-ASV_10103			Dinophyceae				
 ASV_10104	Metazoa	Arthropoda	Hexanauplia	Calanoida			
-ASV_10105							
 ASV_10106		Ciliophora	Spirotrichea	Urostylida	Pseudokeronopsidae		
 ASV_10107			Polycystinea				
 ASV_10108							
@@ -3586,45 +3435,28 @@ ASV_10116			Polycystinea	Collodaria	Sphaerozoidae	Sphaerozoum
 ASV_10117			Dinophyceae				
 ASV_10118	Metazoa	Mollusca	Gastropoda	Pteropoda			
 ASV_10119			Dinophyceae				
-ASV_10120			Dinophyceae	Syndiniales	Ellobiopsidae	Thalassomyces	Thalassomyces fagei
-ASV_10121							
 ASV_10122							
-ASV_10123			Dinophyceae				
 ASV_10124			Dinophyceae				
-ASV_10125		Bacillariophyta	Fragilariophyceae				
 ASV_10126							
 ASV_10127			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	
-ASV_10128			Acantharea				
 ASV_10129	Metazoa	Cnidaria	Hydrozoa	Leptothecata	Eirenidae	Eutonina	Eutonina indicans
-ASV_10130			Polycystinea	Collodaria	Sphaerozoidae		
 ASV_10131			Dinophyceae				
 ASV_10132							
-ASV_10133							
 ASV_10134							
-ASV_10135							
-ASV_10136			Dinophyceae	Gymnodiniales	Kareniaceae		
-ASV_10137			Dinophyceae				
 ASV_10138	Metazoa	Arthropoda	Hexanauplia	Poecilostomatoida	Oncaeidae	Oncaea	
-ASV_10139							
-ASV_10140			Dinophyceae				
 ASV_10141			Dinophyceae				
 ASV_10142			Dinophyceae	Coccidiniales	Chytriodiniaceae		
 ASV_10143							
-ASV_10144							
-ASV_10145			Polycystinea	Spumellaria	Ethmosphaeridae		
 ASV_10146							
 ASV_10147			Polycystinea				
-ASV_10148							
 ASV_10149							
 ASV_10150		Ciliophora	Oligohymenophorea	Philasterida	Cinetochilidae		
 ASV_10151							
 ASV_10152			Dinophyceae				
-ASV_10153			Dinophyceae				
 ASV_10154							
 ASV_10155	Viridiplantae	Chlorophyta	Mamiellophyceae	Dolichomastigales			
 ASV_10156			Dinophyceae	Blastodiniales			
 ASV_10157							
-ASV_10158			Polycystinea				
 ASV_10159							
 ASV_10160			Dinophyceae	Peridiniales	Amphidiniopsidaceae	Herdmania	Herdmania litoralis
 ASV_10161			Dinophyceae				
@@ -3633,13 +3465,10 @@ ASV_10163
 ASV_10164			Dinophyceae				
 ASV_10165	Viridiplantae	Chlorophyta					
 ASV_10166							
-ASV_10167	Viridiplantae	Chlorophyta	Mamiellophyceae	Dolichomastigales			
 ASV_10168			Polycystinea	Collodaria	Sphaerozoidae	Sphaerozoum	
 ASV_10169			Dinophyceae				
 ASV_10170							
 ASV_10171		Haptophyta					Haptophyceae sp. EE-2014
-ASV_10172							
-ASV_10173			Dinophyceae				
 ASV_10174		Ciliophora	Spirotrichea	Urostylida			
 ASV_10175			Dinophyceae				
 ASV_10176		Oomycota		Lagenidiales	Haliphthoraceae		
@@ -3647,10 +3476,8 @@ ASV_10177			Dinophyceae
 ASV_10178		Haptophyta					
 ASV_10179							
 ASV_10180			Dinophyceae				
-ASV_10181							
 ASV_10182		Ciliophora	Spirotrichea				
 ASV_10183							
-ASV_10184							
 ASV_10185							
 ASV_10186			Dinophyceae				
 ASV_10187							
@@ -3658,26 +3485,20 @@ ASV_10188			Dinophyceae
 ASV_10189							
 ASV_10190							
 ASV_10191							
-ASV_10192			Dinophyceae				
 ASV_10193		Bacillariophyta	Bacillariophyceae				
-ASV_10194							
 ASV_10195		Ciliophora	Oligohymenophorea	Philasterida	Cinetochilidae		
 ASV_10196							
 ASV_10197							
 ASV_10198							
-ASV_10199			Dinophyceae	Syndiniales	Duboscquellidae		
 ASV_10200			Dinophyceae				
 ASV_10201							
 ASV_10202			Cryptophyceae	Cyathomonadacea	Goniomonadaceae		
-ASV_10203			Dinophyceae				
 ASV_10204			Dinophyceae				
 ASV_10205							
 ASV_10206							
 ASV_10207							
 ASV_10208			Bolidophyceae	Parmales	Triparmaceae		
 ASV_10209			Dinophyceae				
-ASV_10210			Dinophyceae				
-ASV_10211							
 ASV_10212			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_10213			Polycystinea	Nassellaria	Plagiacanthidae		
 ASV_10214							
@@ -3685,16 +3506,12 @@ ASV_10215
 ASV_10216			Dinophyceae				
 ASV_10217			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_10218			Dinophyceae				
-ASV_10219			Dinophyceae				
-ASV_10220							
 ASV_10221		Bacillariophyta	Mediophyceae				
 ASV_10222							
-ASV_10223			Dinophyceae	Coccidiniales	Chytriodiniaceae		
 ASV_10224			Dinophyceae				
 ASV_10225		Discosea	Flabellinia		Vannellidae	Vannella	
 ASV_10226			Dinophyceae				
 ASV_10227							
-ASV_10228							
 ASV_10229							
 ASV_10230							
 ASV_10231			Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	

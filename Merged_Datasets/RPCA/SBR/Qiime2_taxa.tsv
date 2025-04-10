@@ -26,7 +26,6 @@ ASV_495			Dinophyceae
 ASV_496	Metazoa	Cnidaria	Hydrozoa				
 ASV_500			Dinophyceae				
 ASV_506			Dinophyceae				
-ASV_516		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_527			Dinophyceae				
 ASV_535		Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae	Pelagostrobilidium	
 ASV_536	Metazoa	Arthropoda	Hexanauplia	Calanoida	Pontellidae	Anomalocera	Anomalocera patersoni
@@ -35,7 +34,6 @@ ASV_546	Metazoa	Annelida	Polychaeta	Sabellida	Sabellidae	Sabella	Sabella spallan
 ASV_548			Dinophyceae	Thoracosphaerales	Thoracosphaeraceae		
 ASV_550			Dinophyceae				
 ASV_552		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_553		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_557			Dinophyceae				
 ASV_560							
 ASV_565			Dinophyceae				
@@ -64,18 +62,15 @@ ASV_670			Dinophyceae
 ASV_672			Dinophyceae	Thoracosphaerales	Thoracosphaeraceae		
 ASV_676			Dinophyceae				
 ASV_684		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira oceanica
-ASV_688		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
 ASV_691		Cercozoa					
 ASV_713			Dinophyceae				
 ASV_714			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_721	Metazoa	Annelida	Polychaeta	Sabellida	Serpulidae	Hydroides	Hydroides norvegica
-ASV_724		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_738			Dinophyceae				
 ASV_740		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
 ASV_744			Dinophyceae				
 ASV_755			Dinophyceae				
 ASV_762			Dinophyceae	Gonyaulacales	Ceratiaceae	Tripos	Tripos furca
-ASV_764		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_765			Bigyra	Thraustochytrida	Thraustochytriaceae	Aplanochytrium	
 ASV_777		Oomycota					
 ASV_784			Dinophyceae	Gonyaulacales	Gonyaulacaceae	Gonyaulax	Gonyaulax spinifera
@@ -113,7 +108,6 @@ ASV_1012			Dinophyceae	Blastodiniales		Blastodinium	Blastodinium contortum
 ASV_1014			Dinophyceae	Thoracosphaerales	Thoracosphaeraceae	Stoeckeria	
 ASV_1017		Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae	Pelagostrobilidium	Pelagostrobilidium neptuni
 ASV_1026			Dinophyceae				
-ASV_1029		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_1032			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_1041			Dinophyceae	Thoracosphaerales	Thoracosphaeraceae		
 ASV_1046	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'
@@ -133,11 +127,9 @@ ASV_1110	Metazoa	Rotifera	Eurotatoria	Ploima	Notommatidae	Notommata	Notommata co
 ASV_1112		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira lundiana
 ASV_1119		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
 ASV_1127			Bigyra				
-ASV_1130		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
 ASV_2011			Dinophyceae				
 ASV_2012			Dinophyceae				
 ASV_2013		Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae	Rimostrombidium	
-ASV_2015		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_2031		Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula lanceolata
 ASV_2033			Bigyra				
 ASV_2037			Dinophyceae				
@@ -145,9 +137,7 @@ ASV_2040		Ciliophora	Spirotrichea	Tintinnida	Tintinnidiidae	Antetintinnidium	Ant
 ASV_2042		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
 ASV_2045		Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae	Rimostrombidium	
 ASV_2051			Choanoflagellata	Acanthoecida	Stephanoecidae		
-ASV_2052		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_2053			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
-ASV_2055		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_2060			Dinophyceae				
 ASV_2065		Cercozoa					
 ASV_2066			Dinophyceae				
@@ -155,9 +145,7 @@ ASV_2067	Metazoa	Arthropoda	Insecta
 ASV_2071			Dinophyceae				
 ASV_2075	Metazoa	Arthropoda	Insecta				
 ASV_2082			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
-ASV_2085		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
 ASV_2087	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	
-ASV_2097		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_2101			Bigyra				
 ASV_2107	Metazoa	Porifera	Demospongiae	Tethyida	Tethyidae	Tethya	
 ASV_2108			Ichthyosporea				
@@ -169,12 +157,10 @@ ASV_2117			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusifo
 ASV_2118		Bacillariophyta	Mediophyceae	Eupodiscales	Odontellaceae	Odontella	
 ASV_2126			Dinophyceae				
 ASV_2127		Bacillariophyta	Mediophyceae				
-ASV_2128		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
 ASV_2151			Dinophyceae	Gonyaulacales	Pyrocystaceae	Dissodinium	Dissodinium pseudolunula
 ASV_2157		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Protaspa	
 ASV_2167			Dinophyceae	Peridiniales	Peridiniaceae	Scrippsiella	
 ASV_2168			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	
-ASV_2169		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora arcus
 ASV_2170	Metazoa	Arthropoda	Hexanauplia	Calanoida	Clausocalanidae	Clausocalanus	Clausocalanus furcatus
 ASV_2171		Bacillariophyta					
 ASV_2173			Dinophyceae				
@@ -183,10 +169,7 @@ ASV_2176		Ciliophora	Spirotrichea	Choreotrichida	Strombidinopsidae	Strombidinops
 ASV_2177		Ciliophora	Spirotrichea		Strombidiidae		
 ASV_2188							
 ASV_2190		Ciliophora	Spirotrichea		Strombidiidae		
-ASV_2191		Bacillariophyta	Mediophyceae				
 ASV_2193		Bacillariophyta					
-ASV_2194		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_2201		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
 ASV_2208			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_2209		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_2218			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
@@ -198,29 +181,23 @@ ASV_2241			Dinophyceae
 ASV_2243		Ciliophora	Spirotrichea				
 ASV_2244			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_2245			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
-ASV_2246		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_2258			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	
 ASV_2259			Dinophyceae				
 ASV_2263			Dinophyceae				
 ASV_2265			Dinophyceae	Gonyaulacales	Ceratiaceae	Tripos	Tripos furca
-ASV_2266		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_2267		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
 ASV_2269		Ciliophora	Spirotrichea		Strombidiidae		
 ASV_2271			Dinophyceae				
 ASV_2272			Dinophyceae				
 ASV_2287		Ciliophora	Prostomatea	Prorodontida	Urotrichidae	Urotricha	
-ASV_2297		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_2304			Dinophyceae				
 ASV_2308			Chrysophyceae	Chromulinales	Paraphysomonadaceae	Paraphysomonas	
 ASV_2309		Cercozoa					
 ASV_2310			Dinophyceae				
 ASV_2318			Bigyra				
-ASV_2319		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_2320		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira minuscula
 ASV_2321		Ciliophora	Spirotrichea	Tintinnida	Xystonellidae		
 ASV_2322		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	
 ASV_2323			Dinophyceae				
-ASV_2324		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_2332			Dinophyceae				
 ASV_2333			Dinophyceae				
 ASV_2335		Ciliophora	Spirotrichea		Tontoniidae	Pseudotontonia	Pseudotontonia simplicidens
@@ -265,11 +242,9 @@ ASV_2499		Bacillariophyta	Coscinodiscophyceae	Coscinodiscales	Hemidiscaceae	Acti
 ASV_2500		Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Steenstrupiella	
 ASV_2501		Cercozoa	Thecofilosea			Mataza	Mataza hastifera
 ASV_2502			Bigyra				
-ASV_2528		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
 ASV_2533			Dinophyceae				
 ASV_2553			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium rubrum
 ASV_2554		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
-ASV_2556		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
 ASV_2557			Dinophyceae				
 ASV_2558			Phaeophyceae	Fucales	Sargassaceae	Coccophora	Coccophora langsdorfii
 ASV_2568			Chrysophyceae				
@@ -293,7 +268,6 @@ ASV_2627		Ciliophora	Spirotrichea	Choreotrichida
 ASV_2628			Dinophyceae				
 ASV_2632			Dinophyceae				
 ASV_2635			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
-ASV_2638		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_2640							
 ASV_2641			Dinophyceae	Gymnodiniales	Ceratoperidiniaeceae	Ceratoperidinium	Ceratoperidinium falcatum
 ASV_2665			Dinophyceae	Abediniales	Abediniaceae	Abedinium	Abedinium dasypus
@@ -307,12 +281,10 @@ ASV_2683			Dinophyceae
 ASV_2685			Dictyochophyceae	Dictyochales	Dictyochaceae	Dictyocha	Dictyocha octonaria
 ASV_2687			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
 ASV_2689		Ciliophora	Spirotrichea	Tintinnida	Undellidae		
-ASV_2691		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
 ASV_2694			Dinophyceae				
 ASV_2710		Ciliophora	Spirotrichea		Tontoniidae	Pseudotontonia	
 ASV_2711	Metazoa	Cnidaria	Hydrozoa	Trachymedusae	Rhopalonematidae	Aglaura	Aglaura hemistoma
 ASV_2713		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_2714		Bacillariophyta	Coscinodiscophyceae	Stephanodiscales	Stephanodiscaceae	Stephanodiscus	
 ASV_2715			Dinophyceae				
 ASV_2719			Dinophyceae				
 ASV_2722		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	Skeletonema	
@@ -321,7 +293,6 @@ ASV_2732		Picozoa
 ASV_2735	Metazoa	Arthropoda	Insecta				
 ASV_2739			Dinophyceae				
 ASV_2741			Dinophyceae				
-ASV_2742		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
 ASV_2745		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia cf. cuspidata
 ASV_2746			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
 ASV_2750			Dinophyceae				
@@ -346,12 +317,10 @@ ASV_2801		Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	N
 ASV_2802			Dinophyceae	Gymnodiniales	Ceratoperidiniaeceae	Ceratoperidinium	Ceratoperidinium falcatum
 ASV_2803			Dinophyceae				
 ASV_2804			Dinophyceae				
-ASV_2805		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
 ASV_2855			Dinophyceae				
 ASV_2856			Bolidophyceae	Parmales	Triparmaceae	Triparma	Triparma eleuthera
 ASV_2857			Dinophyceae				
 ASV_2858			Dinophyceae				
-ASV_2859		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_2860			Acantharea				
 ASV_2869		Bacillariophyta	Mediophyceae				
 ASV_2871			Dinophyceae				
@@ -363,12 +332,8 @@ ASV_2876		Ciliophora	Litostomatea	Haptorida	Spathidiidae	Spathidium
 ASV_2877			Dinophyceae				
 ASV_2878			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
 ASV_2879	Metazoa	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	Mytilus galloprovincialis
-ASV_2880		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_2882		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
 ASV_2906		Ciliophora	Litostomatea	Cyclotrichida	Mesodiniidae	Askenasia	
-ASV_2907		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_2908			Dinophyceae				
-ASV_2912		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_2922		Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae	Pelagostrobilidium	Pelagostrobilidium neptuni
 ASV_2929			Dinophyceae				
 ASV_2931		Bacillariophyta					
@@ -377,7 +342,6 @@ ASV_2944			Dinophyceae
 ASV_2945		Cercozoa	Thecofilosea			Mataza	
 ASV_2946			Dinophyceae	Dinophysales	Dinophysaceae	Phalacroma	Phalacroma rotundatum
 ASV_2947		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora flabellata
-ASV_2958		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
 ASV_2960		Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Guinardia	Guinardia solstherfothii
 ASV_2967			Dinophyceae				
 ASV_2968			Dinophyceae				
@@ -392,8 +356,6 @@ ASV_3002		Ciliophora	Oligohymenophorea	Philasterida
 ASV_3005		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	
 ASV_3006			Bigyra				
 ASV_3019			Chrysophyceae				
-ASV_3020		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_3021		Bacillariophyta					
 ASV_3022			Dinophyceae				
 ASV_3023			Dinophyceae				
 ASV_3024		Ciliophora	Oligohymenophorea				
@@ -404,7 +366,6 @@ ASV_3060			Dinophyceae	Dinophysales	Dinophysaceae	Sinophysis
 ASV_3062			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_3064			Dinophyceae				
 ASV_3065			Dinophyceae				
-ASV_3066		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
 ASV_3073			Dinophyceae				
 ASV_3075		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	
 ASV_3086			Dinophyceae				
@@ -419,7 +380,6 @@ ASV_3115		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium pienaarii
 ASV_3118		Ciliophora	Spirotrichea		Tontoniidae	Spirotontonia	
 ASV_3121	Metazoa	Annelida	Polychaeta	Sabellida	Serpulidae	Protula	Protula bispiralis
 ASV_3122			Dinophyceae				
-ASV_3124			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa niei
 ASV_3134	Metazoa	Annelida	Polychaeta	Terebellida	Cirratulidae	Cirratulus	Cirratulus cirratus
 ASV_3135			Dinophyceae				
 ASV_3136			Dinophyceae				
@@ -439,17 +399,12 @@ ASV_3196		Apicomplexa
 ASV_3210	Metazoa	Cnidaria	Hydrozoa	Leptothecata	Campanulariidae	Eucheilota	Eucheilota bakeri
 ASV_3211			Dinophyceae				
 ASV_3215			Dinophyceae				
-ASV_3219		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_3220		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
 ASV_3221		Ciliophora	Spirotrichea		Strombidiidae		
 ASV_3222		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira gessneri
 ASV_3223			Dinophyceae				
 ASV_3224			Dinophyceae				
 ASV_3227			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
 ASV_3228			Dinophyceae				
-ASV_3233		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_3234		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora beaufortiana
-ASV_3235		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
 ASV_3236			Dinophyceae				
 ASV_3238			Dinophyceae				
 ASV_3256			Bigyra	Thraustochytrida	Thraustochytriaceae		
@@ -466,7 +421,6 @@ ASV_3289			Dinophyceae
 ASV_3290		Bacillariophyta	Coscinodiscophyceae	Asterolamprales	Asterolampraceae	Asteromphalus	
 ASV_3304			Dinophyceae				
 ASV_3305			Chrysophyceae				
-ASV_3306			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
 ASV_3307	Metazoa	Chordata	Ascidiacea	Stolidobranchia	Styelidae	Polycarpa	Polycarpa pomaria
 ASV_3308			Dinophyceae				
 ASV_3310			Dinophyceae				
@@ -477,7 +431,6 @@ ASV_3314			Acantharea	Symphyacanthida
 ASV_3315			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
 ASV_3319		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
 ASV_3322	Metazoa	Arthropoda	Hexanauplia	Calanoida	Temoridae	Temora	Temora longicornis
-ASV_3323		Bacillariophyta	Coscinodiscophyceae				
 ASV_3325		Oomycota		Peronosporales	Pontismataceae	Pontisma	Pontisma porphyrae
 ASV_3342		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
 ASV_3343			Dinophyceae				
@@ -485,11 +438,7 @@ ASV_3345			Dinophyceae
 ASV_3346			Phaeophyceae	Fucales	Sargassaceae	Sargassum	Sargassum thunbergii
 ASV_3352		Cercozoa	Imbricatea	Euglyphida	Paulinellidae	Paulinella	
 ASV_3360			Dinophyceae	Thoracosphaerales	Thoracosphaeraceae		
-ASV_3362			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_3370		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_3373			Chrysophyceae				
-ASV_3375		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_3376			Dinophyceae				
 ASV_3377		Ciliophora	Spirotrichea		Strombidiidae		
 ASV_3378			Bigyra	Thraustochytrida	Thraustochytriaceae		
 ASV_3384		Bacillariophyta	Mediophyceae				
@@ -501,7 +450,6 @@ ASV_3413			Dinophyceae
 ASV_3414			Dinophyceae	Gonyaulacales	Gonyaulacaceae	Gonyaulax	
 ASV_3415		Haptophyta					
 ASV_3416			Dictyochophyceae	Florenciellales			
-ASV_3417		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
 ASV_3418			Dinophyceae				
 ASV_3423			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
 ASV_3426		Bacillariophyta	Mediophyceae				
@@ -516,7 +464,6 @@ ASV_3469			Dinophyceae
 ASV_3470			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
 ASV_3472		Oomycota					
 ASV_3473			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
-ASV_3474		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_3475			Dinophyceae				
 ASV_3476			Chrysophyceae				
 ASV_3477	Fungi	Chytridiomycota	Chytridiomycetes				
@@ -531,7 +478,6 @@ ASV_3510			Dinophyceae	Peridiniales	Peridiniaceae	Scrippsiella
 ASV_3511		Bacillariophyta	Coscinodiscophyceae				
 ASV_3512		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora beaufortiana
 ASV_3513			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
-ASV_3514		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
 ASV_3515		Ciliophora	Oligohymenophorea	Sessilida			
 ASV_3516			Dinophyceae				
 ASV_3518			Choanoflagellata	Acanthoecida	Stephanoecidae		
@@ -539,7 +485,6 @@ ASV_3521			Choanoflagellata	Acanthoecida	Stephanoecidae
 ASV_3524		Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Rhizosolenia	Rhizosolenia shrubsolei
 ASV_3526			Dinophyceae				
 ASV_3528		Bacillariophyta	Mediophyceae	Cymatosirales	Cymatosiraceae	Minutocellus	Minutocellus polymorphus
-ASV_3531		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
 ASV_3555			Dinophyceae				
 ASV_3558		Cercozoa	Chlorarachniophyceae				
 ASV_3559			Dinophyceae				
@@ -550,15 +495,12 @@ ASV_3563	Metazoa	Mollusca	Caudofoveata	Chaetodermatida	Chaetodermatidae	Chaetode
 ASV_3564	Metazoa	Annelida	Sipuncula	Golfingiida	Golfingiidae	Nephasoma	Nephasoma pellucidum
 ASV_3565		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros brevis
 ASV_3567			Dinophyceae				
-ASV_3568		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
 ASV_3579	Metazoa	Annelida	Polychaeta	Spionida	Poecilochaetidae	Poecilochaetus	Poecilochaetus serpens
 ASV_3618			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
 ASV_3620			Bigyra	Thraustochytrida	Thraustochytriaceae		
 ASV_3621			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
 ASV_3622			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_3623			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
-ASV_3626			Dinophyceae	Suessiales			
-ASV_3627		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
 ASV_3628			Dinophyceae				
 ASV_3629		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	
 ASV_3630			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
@@ -567,9 +509,7 @@ ASV_3634		Picozoa
 ASV_3636			Bigyra				
 ASV_3641		Ciliophora	Spirotrichea		Strombidiidae	Strombidium	
 ASV_3643			Dinophyceae				
-ASV_3644		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_3654		Ciliophora	Spirotrichea	Tintinnida	Codonellidae	Tintinnopsis	Tintinnopsis tubulosoides
-ASV_3662		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_3671		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_3672			Acantharea				
 ASV_3673			Dinophyceae				
@@ -591,8 +531,6 @@ ASV_3689			Dinophyceae
 ASV_3690			Bigyra				
 ASV_3720	Fungi	Chytridiomycota	Chytridiomycetes				
 ASV_3728			Bigyra	Labyrinthulida	Labyrinthulaceae		
-ASV_3732		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_3733		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora beaufortiana
 ASV_3734			Dinophyceae				
 ASV_3737		Haptophyta		Prymnesiales	Prymnesiaceae	Haptolina	Haptolina cf. hirta
 ASV_3738		Bacillariophyta	Bacillariophyceae	Naviculales	Amphipleuraceae	Halamphora	Halamphora veneta
@@ -634,33 +572,13 @@ ASV_3874			Ichthyosporea
 ASV_3875	Metazoa	Arthropoda	Hexanauplia				
 ASV_3876			Dinophyceae				
 ASV_3877							
-ASV_3878	Fungi	Ascomycota	Dothideomycetes	Pleosporales	Leptosphaeriaceae	Plenodomus	Plenodomus lingam
-ASV_3880		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_3881			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Paulsenella	Paulsenella vonstoschii
 ASV_3883			Dinophyceae				
 ASV_3887		Ciliophora	Spirotrichea		Tontoniidae		
 ASV_3893			Acantharea				
 ASV_3894						Telonemia	
 ASV_3895			Bigyra	Bicosoecida		Caecitellus	
-ASV_5274		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_5275			Dinophyceae	Suessiales			
-ASV_5276			Dinophyceae				
-ASV_5277		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_5278		Bacillariophyta	Mediophyceae				
 ASV_5279			Dinophyceae				
-ASV_5280	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_5282			Dinophyceae				
-ASV_5287		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_5289		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_5290		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_5292		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_5295		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_5296		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica
-ASV_5297			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_5298			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium ostenfeldii
-ASV_5307		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_5330		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_5331		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
 ASV_5332			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
 ASV_5345		Bacillariophyta	Mediophyceae				
 ASV_5357	Metazoa	Arthropoda	Insecta				
@@ -697,7 +615,6 @@ ASV_5426			Dinophyceae
 ASV_5438			Dinophyceae				
 ASV_5439			Dinophyceae				
 ASV_5441			Dinophyceae				
-ASV_5443		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
 ASV_5444		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina acantha
 ASV_5445			Chrysophyceae				
 ASV_5446			Pelagophyceae	Pelagomonadales	Pelagomonadaceae	Pelagococcus	Pelagococcus subviridis
@@ -706,10 +623,6 @@ ASV_5448		Cercozoa	Thecofilosea		Ebriacea
 ASV_5449		Haptophyta		Zygodiscales	Helicosphaeraceae	Helicosphaera	Helicosphaera carteri
 ASV_5450			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
 ASV_5451			Bigyra	Thraustochytrida	Thraustochytriaceae		
-ASV_5456		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_5457		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_5458			Dinophyceae				
-ASV_5459		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_5460			Dinophyceae				
 ASV_5461			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_5463			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
@@ -718,12 +631,6 @@ ASV_5466			Dinophyceae	Gonyaulacales	Ceratiaceae	Tripos	Tripos fusus
 ASV_5467			Choanoflagellata	Acanthoecida	Stephanoecidae		
 ASV_5468			Dinophyceae				
 ASV_5469						Telonemia	
-ASV_5470			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
-ASV_5471		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_5473		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_5474		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_5475		Bacillariophyta	Coscinodiscophyceae				
-ASV_5477		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
 ASV_5478		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira concaviuscula
 ASV_5479		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	
 ASV_5480			Bigyra				
@@ -764,15 +671,7 @@ ASV_5574			Dinophyceae
 ASV_5575			Dinophyceae	Peridiniales	Peridiniaceae	Scrippsiella	
 ASV_5576			Dinophyceae				
 ASV_5577			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
-ASV_5578		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_5579			Dinophyceae				
-ASV_5580			Dinophyceae				
-ASV_5581		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_5582		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_5583		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_5584		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_5585		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_5586		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_5587			Dinophyceae				
 ASV_5588		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira concaviuscula
 ASV_5590			Dinophyceae	Suessiales			
@@ -792,17 +691,6 @@ ASV_5603			Dinophyceae
 ASV_5604		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Protaspa	
 ASV_5605			Dinophyceae				
 ASV_5606							
-ASV_5607		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_5608			Dinophyceae				
-ASV_5609		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_5619		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_5631			Dinophyceae				
-ASV_5632		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_5633		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_5634			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_5635		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_5636			Dinophyceae				
-ASV_5637			Dinophyceae				
 ASV_5646			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_5647			Dinophyceae	Gonyaulacales	Ceratiaceae	Tripos	Tripos fusus
 ASV_5648			Dinophyceae				
@@ -846,13 +734,6 @@ ASV_5685			Dinophyceae	Suessiales
 ASV_5686			Dinophyceae	Suessiales			
 ASV_5687			Dinophyceae	Suessiales	Biecheleriaceae	Biecheleria	Biecheleria brevisulcata
 ASV_5688						Telonemia	
-ASV_5689	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_5690	Fungi	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae	Aspergillus	Aspergillus oryzae
-ASV_5691			Dinophyceae				
-ASV_5692		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_5693		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_5694			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_5695			Dinophyceae				
 ASV_5696			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_5697			Dinophyceae				
 ASV_5698		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina throndsenii
@@ -881,7 +762,6 @@ ASV_5720		Haptophyta
 ASV_5721			Dinophyceae				
 ASV_5722			Dinophyceae				
 ASV_5723			Dinophyceae				
-ASV_5725			Dinophyceae				
 ASV_5820		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	Cryothecomonas aestivalis
 ASV_5821			Dinophyceae				
 ASV_5822	Fungi	Cryptomycota					
@@ -889,7 +769,6 @@ ASV_5823			Dinophyceae
 ASV_5824		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora caribaea
 ASV_5825			Dinophyceae				
 ASV_5826		Ciliophora	Spirotrichea		Strombidiidae		
-ASV_5827			Dinophyceae				
 ASV_5828			Dinophyceae				
 ASV_5830			Dinophyceae				
 ASV_5831			Dinophyceae				
@@ -899,25 +778,6 @@ ASV_5835			Dinophyceae
 ASV_5836				Ancyromonadida	Planomonadidae	Planomonas	Planomonas micra
 ASV_5837							
 ASV_5838			Dinophyceae				
-ASV_5839		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora lineolata
-ASV_5840		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_5841		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_5842		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_5843		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_5844		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_5845		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_5846		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_5847			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_5848		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_5849		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
-ASV_5850			Dinophyceae				
-ASV_5851			Dinophyceae				
-ASV_5852		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_5853		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	
-ASV_5854			Dinophyceae				
-ASV_5855		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_5856			Dinophyceae				
-ASV_5857		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
 ASV_5858			Dinophyceae				
 ASV_5859			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	
 ASV_5860		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	
@@ -983,12 +843,6 @@ ASV_5936			Dinophyceae	Gonyaulacales	Pyrocystaceae	Dissodinium	Dissodinium pseud
 ASV_5937			Dinophyceae	Blastodiniales		Blastodinium	
 ASV_5938			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_5939		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_5940		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_5941			Dinophyceae				
-ASV_5942		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_5943		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_5944		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_5945		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
 ASV_5946			Dinophyceae				
 ASV_5947		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
 ASV_5948			Dinophyceae				
@@ -1032,13 +886,6 @@ ASV_5987			Dinophyceae
 ASV_5988		Picozoa					
 ASV_5989						Telonemia	
 ASV_5990			Dinophyceae				
-ASV_5991		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_5993		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6015		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_6104		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_6105		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
-ASV_6106		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_6107			Dinophyceae				
 ASV_6165			Bolidophyceae	Parmales			
 ASV_6167			Dinophyceae				
 ASV_6168			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	
@@ -1050,7 +897,6 @@ ASV_6179			Dinophyceae
 ASV_6180			Dinophyceae				
 ASV_6181		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	
 ASV_6183			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
-ASV_6184		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
 ASV_6185			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
 ASV_6188	Metazoa	Arthropoda	Hexanauplia				
 ASV_6189			Dinophyceae				
@@ -1061,9 +907,6 @@ ASV_6199			Dinophyceae
 ASV_6200			Dinophyceae				
 ASV_6201			Dinophyceae				
 ASV_6203			Dinophyceae				
-ASV_6205		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_6206	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_6207		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
 ASV_6208		Bacillariophyta	Mediophyceae				
 ASV_6209			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	
 ASV_6211			Dinophyceae				
@@ -1075,17 +918,6 @@ ASV_6218			Dinophyceae
 ASV_6219			Chrysophyceae				
 ASV_6223	Metazoa	Arthropoda	Hexanauplia				
 ASV_6225			Dinophyceae				
-ASV_6226		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6228		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_6229	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_6230		Bacillariophyta					
-ASV_6232		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium polylepis
-ASV_6234		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_6235			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
-ASV_6237			Dinophyceae				
-ASV_6239			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_6241		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_6243		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
 ASV_6246			Dinophyceae				
 ASV_6247			Dinophyceae				
 ASV_6249	Metazoa	Porifera	Demospongiae	Poecilosclerida	Mycalidae	Mycale	Mycale fibrexilis
@@ -1138,38 +970,13 @@ ASV_6321			Dinophyceae	Suessiales	Suessiaceae	Pelagodinium
 ASV_6322			Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium spinosum
 ASV_6325		Ciliophora	Spirotrichea		Strombidiidae		
 ASV_6327		Cercozoa	Thecofilosea		Ebriacea	Ebria	Ebria tripartita
-ASV_6337		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6346		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6348			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_6350		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_6351			Dinophyceae				
-ASV_6352			Dinophyceae				
-ASV_6353			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_6354		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_6355		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_6356		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
-ASV_6357		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_6358		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_6359		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_6360		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora commutata
-ASV_6361		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
-ASV_6362		Picozoa					
-ASV_6363	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_6364			Dinophyceae				
-ASV_6367		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_6405		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_6406		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	
 ASV_6408			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
 ASV_6410		Cercozoa	Chlorarachniophyceae				
 ASV_6411			Bigyra	Labyrinthulida	Labyrinthulaceae		
 ASV_6412			Bigyra	Labyrinthulida	Labyrinthulaceae		
 ASV_6413			Bolidophyceae	Parmales			
 ASV_6417		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira concaviuscula
-ASV_6421		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_6423		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_6424		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_6425			Dinophyceae				
-ASV_6427		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
 ASV_6428			Dinophyceae				
 ASV_6429			Dinophyceae				
 ASV_6430			Chrysophyceae				
@@ -1182,33 +989,8 @@ ASV_6437			Dinophyceae
 ASV_6438			Dinophyceae				
 ASV_6441			Dinophyceae				
 ASV_6442			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
-ASV_6446		Bacillariophyta					
-ASV_6447			Dinophyceae	Suessiales			
-ASV_6448		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_6452		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_6453		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_6455			Dinophyceae				
-ASV_6456		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora commutata
-ASV_6457			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_6458		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_6459		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_6461		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_6462		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_6463		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_6465			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
-ASV_6468		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_6469		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_6470		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_6471		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_6472		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
 ASV_6474	Viridiplantae	Chlorophyta	Palmophyllophyceae	Prasinococcales	Prasinococcaceae	Prasinococcus	Prasinococcus capsulatus
-ASV_6475		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_6477			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
-ASV_6480		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6481		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_6482		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
 ASV_6483			Dinophyceae				
-ASV_6484			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
 ASV_6486			Dinophyceae				
 ASV_6487		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	Cryothecomonas aestivalis
 ASV_6496			Dinophyceae				
@@ -1252,19 +1034,9 @@ ASV_6586		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	C
 ASV_6587	Fungi	Chytridiomycota	Chytridiomycetes	Chytridiales	Chytriomycetaceae	Asterophlyctis	Asterophlyctis sarcoptoides
 ASV_6589			Dinophyceae				
 ASV_6591			Dinophyceae				
-ASV_6592	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	Micromonas polaris
-ASV_6593		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6595		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_6597		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_6598		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_6599						Telonemia	
-ASV_6600		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_6601			Dinophyceae				
 ASV_6602			Dinophyceae				
-ASV_6605		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_6607			Dinophyceae				
-ASV_6608			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
-ASV_6615		Bacillariophyta	Coscinodiscophyceae				
 ASV_6618			Chrysophyceae				
 ASV_6621			Dinophyceae				
 ASV_6622			Dinophyceae				
@@ -1274,12 +1046,10 @@ ASV_6625
 ASV_6626			Dinophyceae				
 ASV_6627			Dinophyceae	Coccidiniales	Chytriodiniaceae	Chytriodinium	Chytriodinium roseum
 ASV_6629			Dinophyceae				
-ASV_6630		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
 ASV_6631		Oomycota					
 ASV_6632			Chrysophyceae				
 ASV_6634			Dinophyceae				
 ASV_6637			Dinophyceae				
-ASV_6639		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
 ASV_6640			Choanoflagellata	Acanthoecida	Stephanoecidae		
 ASV_6642			Dinophyceae				
 ASV_6643		Picozoa					
@@ -1291,41 +1061,24 @@ ASV_6648			Dinophyceae
 ASV_6649			Dinophyceae				
 ASV_6650			Dinophyceae				
 ASV_6651							
-ASV_6652		Bacillariophyta	Mediophyceae				
 ASV_6653			Dinophyceae				
-ASV_6657			Dinophyceae				
-ASV_6660		Bacillariophyta	Mediophyceae				
 ASV_6661			Cryptophyceae	Cryptomonadales			
 ASV_6663			Dinophyceae				
 ASV_6695			Dinophyceae				
-ASV_6696		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_6701		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_6711			Dinophyceae				
-ASV_6721		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_6725		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Protaspa	
 ASV_6727			Dinophyceae				
 ASV_6728		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	
-ASV_6729			Dinophyceae				
 ASV_6730		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina acantha
 ASV_6731			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
 ASV_6732			Dinophyceae				
 ASV_6733		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
 ASV_6735			Dinophyceae				
-ASV_6737			Chrysophyceae	Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas imperforata
 ASV_6740			Dinophyceae				
 ASV_6742			Dinophyceae				
-ASV_6743		Bacillariophyta					
-ASV_6744			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa triquetra
-ASV_6746		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
 ASV_6748			Dinophyceae				
 ASV_6753			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
-ASV_6754			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_6755		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_6756		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
 ASV_6758			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
-ASV_6759		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
 ASV_6761		Haptophyta					
-ASV_6763			Dinophyceae				
 ASV_6764			Dinophyceae	Suessiales			
 ASV_6765		Ciliophora	Spirotrichea		Tontoniidae	Spirotontonia	
 ASV_6766		Bacillariophyta	Mediophyceae				
@@ -1339,79 +1092,39 @@ ASV_6774			Dinophyceae
 ASV_6775			Dinophyceae				
 ASV_6776			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa pygmaea
 ASV_6779			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
-ASV_6780			Dinophyceae	Peridiniales	Ensiculiferaceae	Pentapharsodinium	Pentapharsodinium tyrrhenicum
 ASV_6781			Dinophyceae				
-ASV_6783			Bigyra	Thraustochytrida	Thraustochytriaceae		
 ASV_6784		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium kappa
-ASV_6785		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_6787			Dinophyceae				
-ASV_6789		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
 ASV_6790			Dinophyceae				
-ASV_6793		Bacillariophyta					
 ASV_6794			Dinophyceae				
-ASV_6795			Dinophyceae				
 ASV_6797			Cryptophyceae	Cryptomonadales			
 ASV_6798			Dinophyceae				
-ASV_6799			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
 ASV_6800			Dinophyceae				
 ASV_6801			Dinophyceae				
 ASV_6802		Cercozoa					
 ASV_6804		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira aestivalis
 ASV_6805		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira concaviuscula
-ASV_6807			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
 ASV_6811	Metazoa	Porifera	Demospongiae	Poecilosclerida	Hymedesmiidae	Hymedesmia	Hymedesmia pansa
-ASV_6813		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	
-ASV_6814			Dinophyceae				
 ASV_6815			Dinophyceae				
-ASV_6817		Bacillariophyta					
 ASV_6820	Metazoa	Arthropoda	Insecta				
 ASV_6821	Metazoa	Porifera	Demospongiae	Poecilosclerida	Hymedesmiidae	Hymedesmia	
-ASV_6822		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6823		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_6828		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
 ASV_6829		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Protaspa	
 ASV_6830	Fungi	Ascomycota	Pichiomycetes	Serinales	Debaryomycetaceae	Debaryomyces	Debaryomyces maramus
-ASV_6833			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
 ASV_6835			Dinophyceae				
-ASV_6836		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_6839			Bigyra				
 ASV_6840		Bacillariophyta	Mediophyceae				
 ASV_6841			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
 ASV_6842		Ciliophora	Spirotrichea		Strombidiidae		
 ASV_6843			Dinophyceae				
 ASV_6844			Dinophyceae				
-ASV_6845		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_6848		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_6851		Picozoa					
 ASV_6852			Dinophyceae				
 ASV_6854		Bacillariophyta	Mediophyceae	Lithodesmiales	Lithodesmiaceae	Helicotheca	Helicotheca tamesis
-ASV_6855		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
 ASV_6857			Dinophyceae				
 ASV_6858		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	
-ASV_6863			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
 ASV_6864			Dinophyceae				
 ASV_6865			Dinophyceae				
-ASV_6866		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_6867		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6868		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_6869		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_6870		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6871		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_6872		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_6873		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_6874		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_6875		Haptophyta		Coccosphaerales	Pontosphaeraceae	Scyphosphaera	Scyphosphaera apsteinii
 ASV_6876		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_6877		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_6878		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
 ASV_6879			Dinophyceae				
-ASV_6880			Dinophyceae				
-ASV_6881		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_6882		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_6883			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_6884		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_6885		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_6886		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
 ASV_6887	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
 ASV_6888			Dinophyceae				
 ASV_6889			Dinophyceae	Gonyaulacales	Gonyaulacaceae	Gonyaulax	Gonyaulax spinifera
@@ -1513,14 +1226,8 @@ ASV_6994			Dinophyceae	Blastodiniales		Blastodinium	Blastodinium contortum
 ASV_6995			Dinophyceae				
 ASV_6996		Cercozoa	Thecofilosea		Ebriacea		
 ASV_6997			Dinophyceae				
-ASV_6999			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
 ASV_7006	Metazoa	Arthropoda	Insecta				
-ASV_7010		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_7019		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_7025			Dinophyceae				
-ASV_7047		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_7057			Dinophyceae				
-ASV_7063		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
 ASV_7066			Dinophyceae				
 ASV_7068			Dinophyceae				
 ASV_7069			Dinophyceae				
@@ -1541,60 +1248,10 @@ ASV_7091
 ASV_7095			Dinophyceae				
 ASV_7097			Dinophyceae				
 ASV_7099			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
-ASV_7119			Dinophyceae	Suessiales			
-ASV_7120		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_7121		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_7124			Dinophyceae				
-ASV_7125			Dinophyceae	Suessiales			
-ASV_7128		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_7129		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
 ASV_7130			Dinophyceae				
 ASV_7131			Dinophyceae				
-ASV_7133		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_7156		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_7163		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7164		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_7167		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_7168		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_7169			Dinophyceae				
-ASV_7170		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_7171		Bacillariophyta					
-ASV_7173			Dinophyceae				
-ASV_7174			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
 ASV_7175		Bacillariophyta					
-ASV_7177		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7178			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_7180			Dinophyceae	Suessiales			
-ASV_7181			Dinophyceae				
-ASV_7182		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_7184		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7185			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_7186			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_7187		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_7189		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	Skeletonema	
-ASV_7190		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_7191			Dinophyceae				
-ASV_7193		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_7194			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_7195		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_7196			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_7197		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7198		Bacillariophyta	Mediophyceae				
-ASV_7199		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7200		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_7201		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora beaufortiana
-ASV_7202		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_7203		Picozoa	Picomonadea	Picomonadida	Picomonadidae	Picomonas	Picomonas judraskeda
-ASV_7204		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_7205		Bacillariophyta					
-ASV_7206		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_7207		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_7209		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_7213		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7215		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
 ASV_7216			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	
-ASV_7217		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_7218			Dinophyceae				
 ASV_7220	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pterosperma	Pterosperma cristatum
 ASV_7223			Dinophyceae				
 ASV_7225		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Bacterosira	
@@ -1611,15 +1268,10 @@ ASV_7244			Dinophyceae
 ASV_7245			Dinophyceae				
 ASV_7246			Dinophyceae				
 ASV_7247			Dinophyceae				
-ASV_7248		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_7249		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_7250			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
-ASV_7251			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
 ASV_7252		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
 ASV_7253		Bacillariophyta	Fragilariophyceae	Fragilariales	Staurosiraceae	Plagiostriata	Plagiostriata goreensis
 ASV_7254			Dinophyceae				
 ASV_7255			Dinophyceae				
-ASV_7256	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
 ASV_7257			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_7258		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_7260				Telonemida		Telonema	Telonema subtile
@@ -1631,8 +1283,6 @@ ASV_7268		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae
 ASV_7269			Dinophyceae				
 ASV_7270			Dinophyceae				
 ASV_7271			Dinophyceae				
-ASV_7272		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7273			Dinophyceae				
 ASV_7276			Dinophyceae				
 ASV_7278			Dinophyceae				
 ASV_7279			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
@@ -1685,17 +1335,12 @@ ASV_7360			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum
 ASV_7361							
 ASV_7362			Dinophyceae				
 ASV_7363		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	
-ASV_7364		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_7365		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_7366			Dinophyceae				
-ASV_7368		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_7373		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Protaspa	
 ASV_7374		Haptophyta		Zygodiscales	Helicosphaeraceae	Helicosphaera	Helicosphaera carteri
 ASV_7375			Dinophyceae				
 ASV_7376			Dinophyceae				
 ASV_7389							
 ASV_7401		Haptophyta		Coccolithales	Calcidiscaceae	Tergestiella	
-ASV_7402		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
 ASV_7404		Bacillariophyta	Bacillariophyceae	Naviculales	Amphipleuraceae	Halamphora	Halamphora veneta
 ASV_7405		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
 ASV_7406			Dinophyceae				
@@ -1943,234 +1588,59 @@ ASV_7662			Dinophyceae
 ASV_7663			Dinophyceae				
 ASV_7664							
 ASV_7665			Dinophyceae				
-ASV_7670			Dinophyceae				
 ASV_7671			Dinophyceae				
-ASV_7674		Bacillariophyta					
-ASV_7677		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	
-ASV_7682		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_7684		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_7687			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_7688		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_7697		Bacillariophyta					
-ASV_7698		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_7703			Dinophyceae				
-ASV_7704			Dinophyceae				
-ASV_7706		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_7707		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_7711		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_7712			Dinophyceae				
 ASV_7716			Dinophyceae				
 ASV_7718			Dinophyceae				
 ASV_7725			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
 ASV_7726	Metazoa	Arthropoda	Hexanauplia	Calanoida	Calanidae	Limnocalanus	Limnocalanus macrurus
 ASV_7735			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	
 ASV_7737			Dinophyceae				
-ASV_7739		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_7741			Dinophyceae				
 ASV_7742		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina throndsenii
 ASV_7744			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
 ASV_7745			Dinophyceae				
 ASV_7747			Dinophyceae				
-ASV_7751			Dinophyceae	Suessiales			
 ASV_7752			Dinophyceae				
 ASV_7755			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa pygmaea
 ASV_7759			Dinophyceae				
-ASV_7761			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_7762		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_7763			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_7773			Dinophyceae	Suessiales			
-ASV_7782		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_7792		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_7795			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_7798		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_7801		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora commutata
-ASV_7803			Dinophyceae	Suessiales			
-ASV_7804		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_7805		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7811			Dinophyceae				
-ASV_7814			Dinophyceae	Suessiales			
-ASV_7818		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_7825		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_7826		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_7827			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
-ASV_7828		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_7831		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_7832		Bacillariophyta	Mediophyceae				
-ASV_7838		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_7850			Dinophyceae				
-ASV_7852		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_7860		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7862		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_7864		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7865		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_7866		Bacillariophyta	Mediophyceae				
-ASV_7867		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_7868		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
 ASV_7869			Dinophyceae				
-ASV_7871			Dinophyceae				
-ASV_7872			Dinophyceae	Suessiales			
-ASV_7874		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_7875			Dinophyceae	Peridiniales	Peridiniaceae	Scrippsiella	
-ASV_7877		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_7878		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_7879			Dinophyceae				
-ASV_7881		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora commutata
-ASV_7884		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_7885		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_7887		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_7888		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_7890		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_7891			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_7893		Bacillariophyta	Mediophyceae				
-ASV_7894		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_7895		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_7896		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_7897		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_7898		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_7899		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
 ASV_7900	Metazoa	Arthropoda	Insecta				
-ASV_7905		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
 ASV_7906			Dinophyceae				
 ASV_7907		Bacillariophyta	Mediophyceae				
-ASV_7909			Dinophyceae				
-ASV_7914		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_7917			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
 ASV_7918		Ciliophora	Spirotrichea		Strombidiidae		
-ASV_7920		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_7921		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_7922			Dinophyceae				
-ASV_7924		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_7927			Dinophyceae	Suessiales			
 ASV_7928			Ichthyosporea				
-ASV_7929							
 ASV_7932			Dinophyceae				
-ASV_7933		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_7935			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	
-ASV_7936			Dinophyceae				
 ASV_7938			Dinophyceae				
 ASV_7939		Cercozoa	Thecofilosea		Ebriacea		
 ASV_7941		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_7942			Dinophyceae				
 ASV_7944			Dinophyceae				
-ASV_7945		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
 ASV_7947			Dinophyceae				
 ASV_7948			Dinophyceae				
 ASV_7949			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_7950		Bacillariophyta	Mediophyceae				
 ASV_7951			Dinophyceae				
-ASV_7953		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_7955		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Bacterosira	
 ASV_7956		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira concaviuscula
-ASV_7958		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_7960			Chrysophyceae	Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas imperforata
-ASV_7961		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_7962		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora beaufortiana
 ASV_7963			Dinophyceae				
-ASV_7965		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_7966		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_7967			Dinophyceae				
-ASV_7968		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
 ASV_7970			Dinophyceae				
 ASV_7971		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira concaviuscula
 ASV_7972			Dinophyceae				
 ASV_7973			Dinophyceae				
-ASV_7975		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
 ASV_7977			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_7980		Haptophyta					
-ASV_7981			Dinophyceae				
 ASV_7983			Bolidophyceae	Parmales			
 ASV_7985			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	
-ASV_7987		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
 ASV_7990			Dinophyceae				
-ASV_7991		Bacillariophyta	Coscinodiscophyceae				
-ASV_7993			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa triquetra
-ASV_7994		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_7998		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_7999		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8000	Viridiplantae	Streptophyta	Charophyceae	Charales	Characeae	Nitella	Nitella axillaris
-ASV_8002		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_8005		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_8006		Bacillariophyta	Coscinodiscophyceae				
-ASV_8007		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
 ASV_8009			Dinophyceae				
-ASV_8010			Dinophyceae				
 ASV_8387			Pelagophyceae				
 ASV_8388			Dinophyceae				
-ASV_8389		Bacillariophyta	Fragilariophyceae	Fragilariales	Staurosiraceae	Plagiostriata	Plagiostriata goreensis
-ASV_8390			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium ostenfeldii
-ASV_8391		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_8392		Bacillariophyta	Bacillariophyceae	Naviculales	Amphipleuraceae	Halamphora	Halamphora coloradiana
-ASV_8393			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_8394			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_8395		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8396		Bacillariophyta	Coscinodiscophyceae	Stephanodiscales	Stephanodiscaceae	Stephanodiscus	
-ASV_8397			Dinophyceae				
-ASV_8398		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_8399		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8400		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_8401			Dinophyceae				
-ASV_8402			Dinophyceae				
-ASV_8403		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_8404		Bacillariophyta					
-ASV_8405			Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
-ASV_8406		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_8407			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
-ASV_8408			Dinophyceae				
-ASV_8409		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_8410			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa triquetra
-ASV_8411		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8412				Pirsoniales	Pirsoniaceae	Pirsonia	
-ASV_8413			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_8414		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Bacterosira	
-ASV_8415		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_8416		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8417		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_8418		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_8419		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_8420		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_8421		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8422		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8423		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8424		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_8425			Dinophyceae				
-ASV_8426		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8427		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8428		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_8429		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8430		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8431		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8432		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_8433		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_8434		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8435		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8436			Dinophyceae	Suessiales			
 ASV_8437			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_8438			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_8439			Dinophyceae				
 ASV_8440			Dinophyceae				
 ASV_8441			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium fusiforme
 ASV_8442			Dinophyceae				
-ASV_8443		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Bacterosira	
-ASV_8444		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_8445		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_8446		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_8447			Dinophyceae				
-ASV_8448		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8449			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
-ASV_8450		Bacillariophyta					
-ASV_8451		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8452		Bacillariophyta					
-ASV_8453		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8454			Dinophyceae				
-ASV_8455	Fungi	Ascomycota	Dothideomycetes				
-ASV_8456		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_8457	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_8458							
-ASV_8459		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8460		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8461		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8462		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_8463		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
 ASV_8464		Bacillariophyta					
 ASV_8465		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira curviseriata
 ASV_8466							
@@ -2207,23 +1677,8 @@ ASV_8496		Cercozoa	Thecofilosea		Ebriacea	Ebria	Ebria tripartita
 ASV_8497			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
 ASV_8498			Dinophyceae				
 ASV_8499			Dinophyceae				
-ASV_8500		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
 ASV_8501		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina acantha
-ASV_8502		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
 ASV_8503		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8504		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8505		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8506		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_8507		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8508		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8509		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8510		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_8511		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8512		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_8513			Dinophyceae				
-ASV_8514		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_8515			Dinophyceae				
-ASV_8516		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
 ASV_8517			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
 ASV_8518		Haptophyta					
 ASV_8519			Dinophyceae	Peridiniales	Peridiniaceae	Scrippsiella	
@@ -2394,154 +1849,7 @@ ASV_8683		Haptophyta		Prymnesiales	Prymnesiaceae
 ASV_8684			Dinophyceae				
 ASV_8685		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	Cryothecomonas aestivalis
 ASV_8686		Bacillariophyta	Mediophyceae				
-ASV_8687		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
 ASV_8688			Dinophyceae				
-ASV_8689			Dinophyceae	Suessiales			
-ASV_8690			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_8691		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_8692		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8693		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8694		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_8695		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8696		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_8697		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8698		Bacillariophyta					
-ASV_8699		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_8700		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_8701		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8702			Dinophyceae				
-ASV_8703		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8704			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_8705		Picozoa					
-ASV_8706		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
-ASV_8707		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_8708		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_8709		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8710			Dinophyceae				
-ASV_8711		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8712		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8713		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_8714			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
-ASV_8715		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_8716		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8717	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_8718			Dinophyceae				
-ASV_8719		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8720		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8721		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_8722			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa triquetra
-ASV_8723			Dinophyceae				
-ASV_8724		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_8725		Bacillariophyta	Mediophyceae				
-ASV_8726		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_8727		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_8728		Bacillariophyta	Mediophyceae				
-ASV_8729		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_8730		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora beaufortiana
-ASV_8731		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_8732			Dinophyceae				
-ASV_8733			Dinophyceae				
-ASV_8734		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora beaufortiana
-ASV_8735	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_8736		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_8737		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8738			Dinophyceae				
-ASV_8739		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_8740		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_8741		Bacillariophyta	Mediophyceae				
-ASV_8742		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_8743		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_8744			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_8745			Dinophyceae				
-ASV_8746		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8747		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_8748		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8749		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_8750		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_8751		Bacillariophyta	Bacillariophyceae	Thalassiophysales	Catenulaceae	Amphora	Amphora commutata
-ASV_8752		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8753		Bacillariophyta	Mediophyceae				
-ASV_8754			Dinophyceae				
-ASV_8755		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8756		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_8757		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8758		Bacillariophyta	Mediophyceae				
-ASV_8759		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	Skeletonema	
-ASV_8760		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica
-ASV_8761			Dinophyceae				
-ASV_8762		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8763		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_8764		Bacillariophyta	Fragilariophyceae	Fragilariales	Staurosiraceae	Plagiostriata	Plagiostriata goreensis
-ASV_8765		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_8766		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8767			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_8768			Dinophyceae				
-ASV_8769		Picozoa	Picomonadea	Picomonadida	Picomonadidae	Picomonas	Picomonas judraskeda
-ASV_8770			Dinophyceae				
-ASV_8771		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_8772		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8773			Dinophyceae				
-ASV_8774		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8775			Dinophyceae				
-ASV_8776		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium nemamethecum
-ASV_8777		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	
-ASV_8778		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8779		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_8780		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8781		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8782			Dinophyceae				
-ASV_8783		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	
-ASV_8784		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_8785			Dinophyceae				
-ASV_8786		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8787		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8788		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8789		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8790			Dinophyceae				
-ASV_8791		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8792		Bacillariophyta	Mediophyceae				
-ASV_8793		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8794		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8795			Dinophyceae				
-ASV_8796			Dinophyceae	Suessiales			
-ASV_8797		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8798			Dinophyceae				
-ASV_8799		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8800		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros neogracilis
-ASV_8801		Bacillariophyta	Mediophyceae				
-ASV_8802		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_8803		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8804		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica
-ASV_8805		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8806			Dinophyceae	Suessiales			
-ASV_8807		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8808			Dinophyceae	Suessiales			
-ASV_8809		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8810		Bacillariophyta	Coscinodiscophyceae	Stephanodiscales	Stephanodiscaceae	Stephanodiscus	
-ASV_8811		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_8812			Dinophyceae	Gonyaulacales	Pyrocystaceae	Alexandrium	Alexandrium minutum
-ASV_8813		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8814		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_8815		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica
-ASV_8816			Dinophyceae				
-ASV_8817		Picozoa					
-ASV_8818			Dinophyceae	Suessiales			
-ASV_8819		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_8820			Dinophyceae	Suessiales			
-ASV_8821		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8822		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_8823		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8824		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8825			Dinophyceae				
-ASV_8826		Bacillariophyta	Mediophyceae	Triceratiales	Triceratiaceae	Triceratium	Triceratium pentacrinus
-ASV_8827		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_8828		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_8829		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_8830		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8831		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_8832		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_8833		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8834			Dinophyceae				
 ASV_8835		Cercozoa					
 ASV_8836			Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	
 ASV_8837			Dinophyceae				
@@ -2561,7 +1869,6 @@ ASV_8850		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Protaspa
 ASV_8851		Cercozoa	Thecofilosea		Ebriacea		
 ASV_8852			Dinophyceae				
 ASV_8853			Dinophyceae				
-ASV_8854			Dinophyceae				
 ASV_8855		Cercozoa	Thecofilosea		Ebriacea		
 ASV_8856			Dinophyceae				
 ASV_8857			Dinophyceae				
@@ -2618,44 +1925,8 @@ ASV_8907			Dictyochophyceae	Florenciellales		Pseudochattonella	Pseudochattonella
 ASV_8908		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
 ASV_8909		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	Skeletonema	
 ASV_8910	Fungi	Chytridiomycota	Chytridiomycetes	Chytridiales	Chytriomycetaceae	Asterophlyctis	Asterophlyctis sarcoptoides
-ASV_8911	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_8912			Dinophyceae				
-ASV_8913		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8914			Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
-ASV_8915		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_8916		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
-ASV_8917		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8918		Bacillariophyta	Coscinodiscophyceae				
-ASV_8919		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8920		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra guillardii
-ASV_8921		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_8922			Dinophyceae				
-ASV_8923			Dinophyceae				
 ASV_8924		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina acantha
-ASV_8925		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8926		Bacillariophyta					
-ASV_8927		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	
-ASV_8928		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	Conticribra weissflogii
-ASV_8929		Bacillariophyta	Coscinodiscophyceae				
-ASV_8930			Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	
-ASV_8931		Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia seriata
-ASV_8932		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8933			Dinophyceae				
-ASV_8934		Bacillariophyta	Coscinodiscophyceae	Melosirales	Melosiraceae	Melosira	Melosira arctica
-ASV_8935		Bacillariophyta	Fragilariophyceae	Licmophorales	Licmophoraceae	Licmophora	Licmophora reichardtii
-ASV_8936		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
-ASV_8937		Haptophyta		Prymnesiales	Prymnesiaceae	Prymnesium	Prymnesium aff. polylepis
-ASV_8938			Dinophyceae				
-ASV_8939	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas parkeae
-ASV_8940		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	
-ASV_8941		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
-ASV_8942		Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	
-ASV_8943		Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
-ASV_8944		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
-ASV_8945		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis globosa
-ASV_8946		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hispida
 ASV_8947			Dinophyceae				
-ASV_8948		Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Isochrysis galbana
 ASV_8949		Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Protaspa	
 ASV_8950			Dinophyceae				
 ASV_8951		Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	Skeletonema	
@@ -2676,8 +1947,6 @@ ASV_8965			Dinophyceae
 ASV_8966			Dinophyceae				
 ASV_8967			Dinophyceae				
 ASV_8968		Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina throndsenii
-ASV_8969		Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros socialis
-ASV_8970		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis pouchetii
 ASV_8971		Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis rex
 ASV_8972			Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium spirale
 ASV_8973			Choanoflagellata	Acanthoecida	Acanthoecidae		
