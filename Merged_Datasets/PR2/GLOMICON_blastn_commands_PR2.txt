@@ -1,0 +1,49 @@
+# blastn commands
+# 041025
+
+# PR2
+# run on deepedna2 at MBARI
+
+# makeblastdb -in pr2_version_5.1.0_SSU_taxo_long.fasta -dbtype nucl
+
+blastn -query GLOMICON_seq_merged_unique.fasta -db /home/kpitz/ref_db/PR2/pr2_version_5.1.0_SSU_taxo_long.fasta -outfmt 5 -out ./GLOMICON_PR2_blastn_041025.xml
+
+
+
+
+# errors from makeblastdb with PR2 version 5.1.0
+
+(base) kpitz@deepedna2:~/ref_db/PR2$ makeblastdb -in pr2_version_5.1.0_SSU_taxo_long.fasta -dbtype nucl
+
+
+Building a new DB, current time: 04/10/2025 14:50:00
+New DB name:   /home/kpitz/ref_db/PR2/pr2_version_5.1.0_SSU_taxo_long.fasta
+New DB title:  pr2_version_5.1.0_SSU_taxo_long.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Error: (803.7) [makeblastdb] Blast-def-line-set.E.title
+Bad char [0xC2] in string at byte 187
+AF203895.1.1766_U|18S_rRNA|nucleus|strain_MELU_K10608|Eukaryota|Archaeplastida|Rhodophyta|Eurhodophytina|Florideophyceae|Ceramiales|Rhodomelaceae|Epiglossum|Epiglossum_proliferum 
+Error: (803.7) [makeblastdb] Blast-def-line-set.E.title
+Bad char [0xA0] in string at byte 188
+AF203895.1.1766_U|18S_rRNA|nucleus|strain_MELU_K10608|Eukaryota|Archaeplastida|Rhodophyta|Eurhodophytina|Florideophyceae|Ceramiales|Rhodomelaceae|Epiglossum|Epiglossum_proliferum 
+Error: (803.7) [makeblastdb] Blast-def-line-set.E.title
+Bad char [0xC2] in string at byte 187
+AF203895.1.1766_U|18S_rRNA|nucleus|strain_MELU_K10608|Eukaryota|Archaeplastida|Rhodophyta|Eurhodophytina|Florideophyceae|Ceramiales|Rhodomelaceae|Epiglossum|Epiglossum_proliferum 
+Error: (803.7) [makeblastdb] Blast-def-line-set.E.title
+Bad char [0xA0] in string at byte 188
+AF203895.1.1766_U|18S_rRNA|nucleus|strain_MELU_K10608|Eukaryota|Archaeplastida|Rhodophyta|Eurhodophytina|Florideophyceae|Ceramiales|Rhodomelaceae|Epiglossum|Epiglossum_proliferum 
+Error: (803.7) [makeblastdb] Blast-def-line-set.E.title
+Bad char [0xC2] in string at byte 165
+MF093915.1.1767_U|18S_rRNA|nucleus||Eukaryota|Archaeplastida|Rhodophyta|Eurhodophytina|Florideophyceae|Ceramiales|Rhodomelaceae|Alsidium|Alsidium_seaforthii 
+Error: (803.7) [makeblastdb] Blast-def-line-set.E.title
+Bad char [0xA0] in string at byte 166
+MF093915.1.1767_U|18S_rRNA|nucleus||Eukaryota|Archaeplastida|Rhodophyta|Eurhodophytina|Florideophyceae|Ceramiales|Rhodomelaceae|Alsidium|Alsidium_seaforthii 
+Error: (803.7) [makeblastdb] Blast-def-line-set.E.title
+Bad char [0xC2] in string at byte 165
+MF093915.1.1767_U|18S_rRNA|nucleus||Eukaryota|Archaeplastida|Rhodophyta|Eurhodophytina|Florideophyceae|Ceramiales|Rhodomelaceae|Alsidium|Alsidium_seaforthii 
+Error: (803.7) [makeblastdb] Blast-def-line-set.E.title
+Bad char [0xA0] in string at byte 166
+MF093915.1.1767_U|18S_rRNA|nucleus||Eukaryota|Archaeplastida|Rhodophyta|Eurhodophytina|Florideophyceae|Ceramiales|Rhodomelaceae|Alsidium|Alsidium_seaforthii 
+Adding sequences from FASTA; added 240200 sequences in 3.39892 seconds.
