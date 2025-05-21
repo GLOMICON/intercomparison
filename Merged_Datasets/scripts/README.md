@@ -23,9 +23,13 @@
 
 	output files:
 	> `Merged_Datasets/data/GLOMICON_asv_merged.csv` asv table
+ 	> 
 	> `Merged_Datasets/data/GLOMICON_taxa_merged.csv` taxonomy table
+	> 
 	> `Merged_Datasets/data/GLOMICON_seq_merged.csv` sequence table
+	> 
 	> `Merged_Datasets/data/GLOMICON_meta_merged.csv` metadata table
+	> 
 	> `Merged_Datasets/data/GLOMICON_merged.fasta` sequence fasta file
 	
 
