@@ -5,10 +5,14 @@
 1. `GLOMICON_data_merge.ipynb` First script to merge individual GLOMICON datasets together:
 
 	> `NOAA/NOAA_GLOMICON_results/asv_taxa_sample_table.tsv`
+	
 	> `AWI/Glomicon-AWI-310124/GLOMICON-INTERCOMP_R-4.3.2_seqtab.merged.nochim.PR2-500.csv`
+	
 	> `SBR/SBR_original_files/outputs/asv_table/18s_dada2_v1.0.filtered.table.with.taxo.vsearch_BH.tsv`
+	
 	> `MBARI/Analysis_In_Progress/data/filtered_seq_data/GLOMICON_18S_otu_Filtered.csv`
 	> `MBARI/Analysis_In_Progress/data/filtered_seq_data/GLOMICON_18S_taxa_Filtered.csv`
+	
 	> `UDalhousie/UDalhousie_GLOMICON_data/GLOMICON_UDAL_f20_feature-table_w_tax.txt`
 
 2. `Match_Taxonomy.R` Feed taxonomy from multiple sources through `taxize` to put into NCBI taxonomy tree
