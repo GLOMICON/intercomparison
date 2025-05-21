@@ -2,7 +2,9 @@
 
 ### Order of scripts and general purpose
 
-1. `GLOMICON_data_merge.ipynb` First script to merge individual GLOMICON datasets together. Input files:
+1. `GLOMICON_data_merge.ipynb` First script to merge individual GLOMICON datasets together.
+
+	input files:
 
 	> `NOAA/NOAA_GLOMICON_results/asv_taxa_sample_table.tsv`
 	
@@ -19,7 +21,15 @@
 	> `UDalhousie/UDalhousie_GLOMICON_data/GLOMICON_UDAL_f20_feature-table_w_tax.txt`
 	> `UDalhousie/UDalhousie_GLOMICON_data/GLOMICON_UDAL_f20_dna-sequences.fasta`
 
-2. `Match_Taxonomy.R` Feed taxonomy from multiple sources through `taxize` to put into NCBI taxonomy tree
+	output files:
+	> `Merged_Datasets/data/GLOMICON_asv_merged.csv` asv table
+	> `Merged_Datasets/data/GLOMICON_taxa_merged.csv` taxonomy table
+	> `Merged_Datasets/data/GLOMICON_seq_merged.csv` sequence table
+	> `Merged_Datasets/data/GLOMICON_meta_merged.csv` metadata table
+	> `Merged_Datasets/data/GLOMICON_merged.fasta` sequence fasta file
+	
+
+2. `Match_Taxonomy.R` Feed taxonomy from multiple sources through `R taxize` to put into NCBI taxonomy tree
 3. `Custom_blast_GLOMICON.sh` bash script to blastn all ASV sequences across projects to genbank NR and run through MEGAN LCA (run on virtual machine)
 4. `Check_Taxonomy.ipynb` [can remove - wanted to look at specific annotations for bugs]
 5. `RPCA_Genelli.ipynb` Run `gemelli` Robust PCA
