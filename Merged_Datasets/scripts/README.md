@@ -71,3 +71,6 @@
 	3. `barplot_overview_blastnr.R` Plot barplot overview of community composition using blastn genbank NR results
 	4. `barplot_overview_blastnr_phyto.R` Subset barplots to only phytoplankton groups from genbank NR data
 	5. `Limit_by_Taxonomy.ipynb` take blastn NR taxonomy and limit to eukaryotic phytoplankton. Export: `GLOMICON_asv_limitByTaxa.csv` `GLOMICON_taxa_limitByTaxa.csv`
+
+
+**NOTE: I ran a blastn of all ASVs against genbank NR (+MEGAN) and seperately the PR2 database (blastn only) - we may not use these results and only keep dada2 assigntaxonomy PR2 results to compare with original pipeline results from each institution. I also ran original taxonomy results through taxize to convert names to NCBI taxonomic concepts - since this adds additional bias through taxize being able to find IDs, can also remove this analysis.**
