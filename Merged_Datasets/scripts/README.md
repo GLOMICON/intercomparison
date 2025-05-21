@@ -2,7 +2,7 @@
 
 ### Order of scripts and general purpose
 
-1. `GLOMICON_data_merge.ipynb` First script to merge individual GLOMICON datasets together:
+1. `GLOMICON_data_merge.ipynb` First script to merge individual GLOMICON datasets together. Input files:
 
 	> `NOAA/NOAA_GLOMICON_results/asv_taxa_sample_table.tsv`
 	
@@ -12,8 +12,12 @@
 	
 	> `MBARI/Analysis_In_Progress/data/filtered_seq_data/GLOMICON_18S_otu_Filtered.csv`
 	> `MBARI/Analysis_In_Progress/data/filtered_seq_data/GLOMICON_18S_taxa_Filtered.csv`
+	> `MBARI/Analysis_In_Progress/data/filtered_seq_data/GLOMICON_18S_meta_Filtered.csv`
+	> `MBARI/Analysis_In_Progress/data/filtered_seq_data/GLOMICON_18S_seq_Filtered.csv`
+	
 	
 	> `UDalhousie/UDalhousie_GLOMICON_data/GLOMICON_UDAL_f20_feature-table_w_tax.txt`
+	> `UDalhousie/UDalhousie_GLOMICON_data/GLOMICON_UDAL_f20_dna-sequences.fasta`
 
 2. `Match_Taxonomy.R` Feed taxonomy from multiple sources through `taxize` to put into NCBI taxonomy tree
 3. `Custom_blast_GLOMICON.sh` bash script to blastn all ASV sequences across projects to genbank NR and run through MEGAN LCA (run on virtual machine)
