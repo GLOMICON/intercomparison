@@ -540,6 +540,11 @@ p <- df %>%
   labs(y='Number of Unique Annotations', x='taxonomic level') +
   theme(axis.text.x = element_text(angle=45, vjust= 1, hjust = 1))
 p  
+filename = paste(plot_dir, marker,'_unique_taxa_perlevel.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 8, width =8, units = 'in')
+
 
 # Unique taxa per upper level group per sample ----------------------------------
 
@@ -572,6 +577,7 @@ p <- df %>%
   geom_point() +
   geom_line(aes(group=interaction(Analyzing_Institute,site, replicateID)), alpha=0.5)+
   labs(y='Number of Unique Annotations', x='taxonomic level') +
+  ggtitle('Western Channel Alveolata') +
   theme(axis.text.x = element_text(angle=45, vjust= 1, hjust = 1))
 
 
@@ -705,6 +711,11 @@ p <- df %>%
 
 p 
 
+filename = paste(plot_dir, marker,'_unique_taxa_westernchannel_bydivision.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 8, width =8, units = 'in')
+
 p <- df %>%
   right_join(meta_tab) %>%
   filter(site %in% c('BLOOMMOCK', 'EVENMOCK')) %>%
@@ -723,7 +734,10 @@ p <- df %>%
 
 
 p 
-
+filename = paste(plot_dir, marker,'_unique_taxa_controls_bydivision.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 8, width =8, units = 'in')
 
 # Make Phyloseq Object ----------------------------------------------------
 
