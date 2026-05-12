@@ -5,14 +5,14 @@
 
 #locations to store files:
 #data files
-data_directory <- './Merged_Datasets/data/pr2_filtered/'
+data_directory <- './Merged_Datasets/data/pr2_reassigned/phytoplankton_only/'
 #figures
 plot_dir <- './Merged_Datasets/figures/barplot_overview_pr2_filtered/'
 
 # Potential order to plot:
 #sites <- c('EVENMOCK','BLOOMMOCK','Arctic','North Atlantic', 'English Channel', 'La Manche', 'Central California', 'Southern California')
 sites <- c('EVENMOCK','BLOOMMOCK','Fram Straight','Bedford Basin', 'Western Channel', 'Roscoff', 'Monterey Bay', 'Scripps Pier')
-institutes <- c('AWI', 'SBR', 'UDAL', 'MBARI', 'NOAA')
+institutes <- c('AWI', 'SBR', 'UDAL', 'MBARI', 'NOAA', 'PARADA')
 
 # Load Libraries -----------------------------------------------------------------
 
@@ -162,7 +162,7 @@ for (val in markers) {
     mutate(replicateID = row_number()) %>%
     ungroup()
   # create site names
-  meta_tab %<>%
+  meta_tab <- meta_tab %>%
     mutate(site = case_when(Collecting_Institute == 'AWI'~ 'Fram Straight',
                             Collecting_Institute == 'MBARI'~ 'Monterey Bay',
                             Collecting_Institute == 'NOAA'~ 'Scripps Pier',
@@ -326,7 +326,7 @@ for (val in markers) {
   
   if (marker =='18S') {
     print(marker)
-    phyla <- c('Dinophyceae', 'Syndiniales','Spirotrichea', 'Prymnesiophycaea', 'Mamiellophyceae', 'Mediophyceae')
+    phyla <- c('Dinophyceae', 'Syndiniales','Spirotrichea', 'Mamiellophyceae', 'Mediophyceae', 'Prymnesiophycaea')
   }
   
   # Limit to just taxa within division

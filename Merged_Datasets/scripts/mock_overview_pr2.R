@@ -5,14 +5,14 @@
 
 #locations to store files:
 #data files
-data_directory <- './Merged_Datasets/data/pr2_filtered/'
+data_directory <- './Merged_Datasets/data/pr2_reassigned/phytoplankton_only/'
 #figures
 plot_dir <- './Merged_Datasets/figures/mock_overview_pr2/'
 
 # Potential order to plot:
 #sites <- c('EVENMOCK','BLOOMMOCK','Arctic','North Atlantic', 'English Channel', 'La Manche', 'Central California', 'Southern California')
 sites <- c('EVENMOCK','BLOOMMOCK','Fram Straight','Bedford Basin', 'Western Channel', 'Roscoff', 'Monterey Bay', 'Scripps Pier')
-institutes <- c('AWI', 'SBR', 'UDAL', 'MBARI', 'NOAA')
+institutes <- c('AWI', 'SBR', 'UDAL', 'MBARI', 'NOAA', 'PARADA')
 
 # Load Libraries -----------------------------------------------------------------
 
@@ -156,7 +156,7 @@ meta_tab %<>%
   mutate(replicateID = row_number()) %>%
   ungroup()
 # create site names
-meta_tab %<>%
+meta_tab <- meta_tab %>%
   mutate(site = case_when(Collecting_Institute == 'AWI'~ 'Fram Straight',
                           Collecting_Institute == 'MBARI'~ 'Monterey Bay',
                           Collecting_Institute == 'NOAA'~ 'Scripps Pier',
@@ -185,9 +185,9 @@ species_label <- tax.c %>%
 # import mock community composition
 filepath = "/Users/kpitz/github/GLOMICON/intercomparison/Merged_Datasets/data/mock_composition/AWI_mock_community_composition_toPR2.csv"
 print(filepath)
-mockcc <- read_csv(filepath) %>%
-  rename(mock_species = `Total volume ~42 µl`) %>%
-  select(-`Total volume ~92 µl`)
+mockcc <- read_csv(filepath)#  %>%
+  # rename(mock_species = `Total volume ~42 µl`) %>%
+  # select(-`Total volume ~92 µl`)
 
 # taxa table
 tax_mockcc <- mockcc %>%
@@ -214,7 +214,7 @@ df<- potu.c %>%
 # plot at taxonomic levels:
 
 site_list <- c('EVENMOCK', 'BLOOMMOCK')
-institutes <- c('AWI', 'SBR', 'UDAL', 'MBARI', 'NOAA', 'Original_Concentration')
+institutes <- c('AWI', 'SBR', 'UDAL', 'MBARI', 'NOAA','PARADA', 'Original_Concentration')
 textcol <- 'grey'
 
 taxas <- c('division', 'subdivision','class', 'order')
@@ -232,7 +232,8 @@ for (val in taxas) {
     group_by(!!tax_level) %>%
     mutate(overall_abund = sum(per_tot)) %>%
     ungroup() %>%
-    filter(overall_abund >3) %>%
+    filter(overall_abund >4) %>%
+    #filter(overall_abund >3) %>%
     ggplot(aes(x = replicateID, y = per_tot)) +
     geom_bar(stat = "identity", aes(fill = !!tax_level))+
     facet_grid(fct_relevel(site, site_list) ~fct_relevel(Analyzing_Institute, institutes)) +

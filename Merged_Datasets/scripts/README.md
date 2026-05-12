@@ -21,6 +21,7 @@
 	> `UDalhousie/UDalhousie_GLOMICON_data/GLOMICON_UDAL_f20_feature-table_w_tax.txt`
 	> `UDalhousie/UDalhousie_GLOMICON_data/GLOMICON_UDAL_f20_dna-sequences.fasta`
 
+
 	output files:
 	> `Merged_Datasets/data/GLOMICON_asv_merged.csv` asv table
  	> 

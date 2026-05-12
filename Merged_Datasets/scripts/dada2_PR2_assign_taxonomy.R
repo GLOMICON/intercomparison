@@ -1,6 +1,8 @@
 # taxonomic assignment with PR2 and dada2
 # adapted from script by Daniel Vaulot
+# Run on deepedna2 at MBARI
 # KP 041525
+
 
 library(dada2); packageVersion("dada2")
 library(dplyr)
@@ -65,8 +67,8 @@ tax_levels <- c("domain", "supergroup", "division", "subdivision",
                 "class", "order", "family", "genus", "species") 
 
 # 13542 18S ASV sequences
-seq_file_name <- '/home/kpitz/GLOMICON/GLOMICON_seq_merged_unique.fasta'
-ref_file_name <- '/home/kpitz/ref_db/PR2/pr2_version_5.1.0_SSU_dada2.fasta'
+seq_file <- '/home/kpitz/GLOMICON/GLOMICON_seq_merged_unique.fasta'
+ref_file <- '/home/kpitz/ref_db/PR2/pr2_version_5.1.0_SSU_dada2.fasta'
 
 result <- dada2_assign(seq_file, ref_file, tax_levels)
 

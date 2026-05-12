@@ -31,9 +31,18 @@ plot_dir <- './Merged_Datasets/figures/diversity_phytoplankton/'
 site_list <- c('EVENMOCK','BLOOMMOCK','Fram Straight','Bedford Basin', 
            'Western Channel', 'Roscoff', 'Monterey Bay', 'Scripps Pier')
 #institutes <- c('AWI', 'SBR', 'UDAL', 'MBARI', 'NOAA')
-institutes <- c('AWI', 'SBR', 'UDAL', 'MBARI', 'AOML')
+institutes <- c('AWI', 'SBR', 'UDAL', 'MBARI', 'AOML', 'PARADA')
 
 # Functions ---------------------------------------------------------------
+
+vegan_otu <- function(physeq) {
+  OTU <- otu_table(physeq)
+  if (taxa_are_rows(OTU)) {
+    OTU <- t(OTU)
+  }
+  return(as(OTU, "matrix"))
+}
+
 
 make_compositional <- function(df) {
   df %<>%
@@ -110,12 +119,14 @@ barplot_by_site <- function(merged_top_df,taxa_level_value, site_list) {
 
 # asv table
 #filepath = paste(data_directory, prefix, '_asv_merged.csv', sep='')
-filepath = paste(data_directory, 'pr2_filtered/',prefix, '_asv_PR2_50_filtered.csv', sep='')
+filepath = paste(data_directory,'pr2_reassigned/phytoplankton_only/',prefix, '_asv_PR2_50_filtered.csv', sep='')
 otu.c <- read_csv(filepath) %>%
   rename_with(.cols = 1, ~"ASV")
 
 # metadata table
+#filepath = paste(data_directory,'merged_original_taxonomy/', prefix, '_meta_merged.csv', sep='')
 filepath = paste(data_directory, prefix, '_meta_merged.csv', sep='')
+
 meta_tab <- read_csv(filepath) %>%
   rename('SampleID' = 'sample_name') %>%
   # remove duplicate sequenced AWI samples with lower reads/diversity
@@ -143,7 +154,7 @@ meta_tab <- read_csv(filepath) %>%
 
 
 # pr2 taxonomy - unfiltered (includes metazoa and fungi)
-filepath = paste(data_directory, 'pr2_filtered/',prefix, '_taxa_PR2_50_filtered.csv', sep='')
+filepath = paste(data_directory, 'pr2_reassigned/phytoplankton_only/',prefix, '_taxa_PR2_50_filtered.csv', sep='')
 tax.c <-read_csv(filepath)
 
 #OTU table long format with percent total reads
@@ -748,17 +759,17 @@ library(phyloseq)
 
 #ASV table
 print('ASV table')
-asv_path = paste(data_directory,'pr2_filtered/', prefix, '_asv_PR2_50_filtered.csv', sep='')
+asv_path = paste(data_directory,'pr2_reassigned/phytoplankton_only/', prefix, '_asv_PR2_50_filtered.csv', sep='')
 print(asv_path)
 
 #taxa table
 print('taxa table')
-taxa_path = filepath = paste(data_directory, 'pr2_filtered/',prefix, '_taxa_PR2_50_filtered.csv', sep='')
+taxa_path = filepath = paste(data_directory, 'pr2_reassigned/phytoplankton_only/',prefix, '_taxa_PR2_50_filtered.csv', sep='')
 print(taxa_path)
 
 #metadata table
 print('metadata table')
-samp_path = paste(data_directory, prefix, '_meta_merged.csv', sep='')
+samp_path = paste(data_directory,'merged_original_taxonomy/', prefix, '_meta_merged.csv', sep='')
 print(samp_path)
 
 #Make phyloseq object
@@ -768,10 +779,18 @@ full_df <- merge_phyloseq(
   sample_data(read.csv(file = samp_path, row.names = 1)))
 full_df
  
+
+
 merged_df <- subset_samples(full_df, !(Collecting_Institute %in% c('BLOOMMOCK', 'EVENMOCK')) )
+# remove duplicate AWI samples
+merged_df <- subset_samples(merged_df, !grepl("0008", sample_names(merged_df)))
+# remove blank
+#blank_01_0049
+merged_df <- subset_samples(merged_df, !grepl("blank_01_0049", sample_names(merged_df)))
 NOC_only <- subset_samples(full_df, (Collecting_Institute %in% c('NOC')) )
 
-# rarefy
+## rarefy ---------------------------
+
 print(min(sample_sums(merged_df)))
 print(max(sample_sums(merged_df)))
 print(mean(sample_sums(merged_df)))
@@ -790,9 +809,27 @@ print(min(sample_sums(NOC_oBiom_r)))
 NOC_oBiom_r = rarefy_even_depth(NOC_only, sample.size = min(sample_sums(NOC_oBiom_r)), rngseed = 678, replace = FALSE, trimOTUs = TRUE, verbose = TRUE)
 print(NOC_oBiom_r)
 
+## save rarefied data ------------------
+#create matrices
+rvegan_matrix = vegan_otu(oBiom_r)
+rotu_tab = otu_table(oBiom_r)
+rtax_tab = tax_table(oBiom_r)
+# rsamp_dat = sample_data(oBiom_r)
+
+
+#save rarefied data
+#save to csv file
+file = paste(data_directory,'/pr2_reassigned/phytoplankton_only/rarefied_data/',marker,'_Rarefied_asv_table.csv', sep="")
+write.csv(rotu_tab, file)
+file = paste(data_directory,'/pr2_reassigned/phytoplankton_only/rarefied_data/',marker,'_Rarefied_taxa_table.csv', sep="")
+write.csv(rtax_tab, file)
+# file = paste(data_directory,'/pr2_reassigned/phytoplankton_only/rarefied_data/',marker,'_Rarefied_meta_table.csv', sep="")
+# write.csv(rsamp_dat_tibble, file)
+
+
 # diversity indices --------------------
 library(ggplot2)
-p_oBiom <- plot_richness(oBiom_r,x="Collecting_Institute", measures=c("Shannon", "Chao1", "Simpson"), nrow=1, color='Analyzing_Institute', shape='Analyzing_Institute') +
+p_oBiom <- plot_richness(oBiom_r,x="site", measures=c("Shannon", "Chao1", "Simpson"), nrow=1, color='Analyzing_Institute', shape='Analyzing_Institute') +
   theme(text = element_text(size=16), strip.text.x = element_text(size = 16), axis.text = element_text(size = rel(1), colour = "black")) +
   xlab("Site") + 
   ggtitle(paste("Community alpha diversity: ",marker,sep=""))+
@@ -804,6 +841,22 @@ filename = paste(plot_dir, marker,'_diversity_indices_phyloseq.png', sep='')
 #print('Plot of top 20 genus average by month:')
 print(filename)
 ggsave(filename,height = 5, width =8, units = 'in')
+
+p_oBiom <- plot_richness(oBiom_r,x="site", measures=c("Chao1"), nrow=1, color='Analyzing_Institute', shape='Analyzing_Institute') +
+  geom_boxplot() +
+  theme(text = element_text(size=16), strip.text.x = element_text(size = 16), axis.text = element_text(size = rel(1), colour = "black")) +
+  xlab("Site") + 
+  ggtitle(paste("Community alpha diversity: ",marker,sep=""))+
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  scale_fill_brewer(palette = "Spectral")+scale_color_brewer(palette = "Dark2")
+p_oBiom 
+filename = paste(plot_dir, marker,'_diversity_Chao1_phyloseq.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 5, width =8, units = 'in')
+
+
 
 # NOC only
 p_oBiom <- plot_richness(NOC_oBiom_r,x="Analyzing_Institute", measures=c("Shannon", "Chao1", "Simpson"), nrow=1, color='Analyzing_Institute', shape='Analyzing_Institute') +
@@ -837,3 +890,395 @@ filename = paste(plot_dir, marker,'_diversity_rarefaction_curves.png', sep='')
 #print('Plot of top 20 genus average by month:')
 print(filename)
 ggsave(filename,height = 5, width =12, units = 'in')
+
+### merge by taxonomy ----------------
+
+#### family 
+ps_taxglom <- tax_glom(physeq = merged_df, taxrank = "family")
+
+nmds_ordination <- ordinate(ps_taxglom, method = "NMDS", distance = "bray")
+p <- plot_ordination(ps_taxglom, nmds_ordination, color = "site", shape = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("Family-level NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_collecting_family.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+p <- plot_ordination(ps_taxglom, nmds_ordination, shape = "site", color = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("Family-level NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_analyzing_family.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+# Calculate distance matrix (e.g., Bray-Curtis)
+dist_matrix <- phyloseq::distance(ps_taxglom, method = "bray")
+metadata_df <- data.frame(sample_data(ps_taxglom))
+# Perform PERMANOVA using adonis2 from vegan
+# 'GroupVariable' is a categorical variable in your sample data
+permanova_result <- vegan::adonis2(dist_matrix ~ site + Analyzing_Institute, data = metadata_df, by = "terms")
+#permanova_result <- vegan::adonis2(dist_matrix ~ site, data = metadata_df, permutations = 99, strata = metadata_df$Analyzing_Institute)
+
+
+# View the results
+print(permanova_result)
+
+##### Jaccard_family
+
+# ps_taxglom <- tax_glom(physeq = merged_df, taxrank = "family")
+# jsd, gower, w, canberra, kulczynski
+nmds_ordination <- ordinate(ps_taxglom, method = "NMDS", distance = "jsd")
+p <- plot_ordination(ps_taxglom, nmds_ordination, color = "site", shape = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("Family-level NMDS Ordination with jsd") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_collecting_family_jsd.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+p <- plot_ordination(ps_taxglom, nmds_ordination, shape = "site", color = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("Family-level NMDS Ordination with jsd") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_analyzing_family_jsd.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+# Calculate distance matrix (e.g., Bray-Curtis)
+dist_matrix <- phyloseq::distance(ps_taxglom, method = "jsd")
+metadata_df <- data.frame(sample_data(ps_taxglom))
+# Perform PERMANOVA using adonis2 from vegan
+# 'GroupVariable' is a categorical variable in your sample data
+permanova_result <- vegan::adonis2(dist_matrix ~ site + Analyzing_Institute, data = metadata_df, by = "terms")
+#permanova_result <- vegan::adonis2(dist_matrix ~ site, data = metadata_df, permutations = 99, strata = metadata_df$Analyzing_Institute)
+
+
+# View the results
+print(permanova_result)
+
+
+#### order
+ps_taxglom <- tax_glom(physeq = merged_df, taxrank = "order")
+
+nmds_ordination <- ordinate(ps_taxglom, method = "NMDS", distance = "bray")
+p <- plot_ordination(ps_taxglom, nmds_ordination, color = "site", shape = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_collecting_order.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+p <- plot_ordination(ps_taxglom, nmds_ordination, shape = "site", color = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_analyzing_order.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+#### genus
+ps_taxglom <- tax_glom(physeq = merged_df, taxrank = "genus")
+
+nmds_ordination <- ordinate(ps_taxglom, method = "NMDS", distance = "bray")
+p <- plot_ordination(ps_taxglom, nmds_ordination, color = "site", shape = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_collecting_genus.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+p <- plot_ordination(ps_taxglom, nmds_ordination, shape = "site", color = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_analyzing_genus.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+nmds_ordination <- ordinate(ps_taxglom, method = "NMDS", distance = "jaccard")
+p <- plot_ordination(ps_taxglom, nmds_ordination, color = "site", shape = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_collecting_genus_jaccard.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+p <- plot_ordination(ps_taxglom, nmds_ordination, shape = "site", color = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_analyzing_genus_jaccard.png', sep='')
+#print('Plot of top 20 genus average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+#### species
+ps_taxglom <- tax_glom(physeq = merged_df, taxrank = "species")
+
+nmds_ordination <- ordinate(ps_taxglom, method = "NMDS", distance = "bray")
+p <- plot_ordination(ps_taxglom, nmds_ordination, color = "site", shape = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_collecting_species.png', sep='')
+#print('Plot of top 20 species average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+p <- plot_ordination(ps_taxglom, nmds_ordination, shape = "site", color = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_analyzing_species.png', sep='')
+#print('Plot of top 20 species average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+nmds_ordination <- ordinate(ps_taxglom, method = "NMDS", distance = "jaccard")
+p <- plot_ordination(ps_taxglom, nmds_ordination, color = "site", shape = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_collecting_species_jaccard.png', sep='')
+#print('Plot of top 20 species average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+p <- plot_ordination(ps_taxglom, nmds_ordination, shape = "site", color = "Analyzing_Institute") +
+  geom_point(size = 3) + # Adjust point size for better visualization
+  stat_ellipse() + # Add ellipses to group samples by categories
+  ggtitle("NMDS Ordination with Bray-Curtis Dissimilarity") +
+  theme_bw() # Use a clean black and white theme
+
+p
+filename = paste(plot_dir, marker,'_nmds_color_analyzing_species_jaccard.png', sep='')
+#print('Plot of top 20 species average by month:')
+print(filename)
+ggsave(filename,height = 6.5, width =8, units = 'in')
+
+## upset plot by group ---------------
+library(UpSetR)
+
+tibb_rotu <-tibble::rownames_to_column(as.data.frame(rotu_tab), var = "ASV")
+tibb_rotu <- tibble::as_tibble(tibb_rotu)
+# convert to long format:
+tibb_rotu %<>%
+  tidyr::pivot_longer( -ASV, names_to ='SampleID',values_to = 'reads' ) %>%
+  group_by(SampleID) %>%
+  mutate(per_tot = reads / sum(reads, na.rm=TRUE) *100) %>%
+  ungroup() %>%
+  arrange(-reads)
+
+# environmental data - rarefied
+env_data <- inner_join(meta_tab, tibb_rotu, by = c("SampleID")) %>% 
+  left_join(species_label)
+
+env_data 
+
+
+#plot by plate
+p1 <- tibb_rotu %>%
+  left_join(meta_tab %>% select(SampleID, Analyzing_Institute, Collecting_Institute, site)) %>%
+  left_join(species_label) %>%
+  filter(Collecting_Institute == 'NOC') %>%
+  # filter(depth <=300) %>%  # try to remove depth effects
+  # filter(reads >0) %>%
+  # filter(Phylum == 'Chordata') %>%
+  # filter(Class == 'Actinopteri') %>%
+  group_by(Analyzing_Institute, species_join) %>%
+  mutate(reads=sum(reads)) %>%
+  ungroup() %>%
+  distinct(Analyzing_Institute, reads, species_join) %>%
+  # Put a read limit in by taxa:
+  group_by(Analyzing_Institute,species_join) %>%
+  mutate(Total = sum(reads)) %>%
+  ungroup() %>%
+  filter(Total >0) %>%
+  mutate(count = 1) %>%
+  #filter(reads >50) %>%
+  #unite(taxa,Kingdom, Phylum, Class, Order, Family, Genus, 
+  #     Species) %>%
+  #group_by(PlateID, taxa) %>%
+  #count(taxa) %>%
+  pivot_wider(
+    #id_cols = taxa,
+    id_cols = c(species_join),
+    names_from = Analyzing_Institute,
+    values_from = count,
+    values_fill = list(count = 0)
+  ) %>%
+  data.frame()
+
+upset(p1)
+
+#plot by plate - genus
+p1 <- tibb_rotu %>%
+  left_join(meta_tab %>% select(SampleID, Analyzing_Institute, Collecting_Institute, site)) %>%
+  left_join(species_label) %>%
+  filter(Collecting_Institute == 'NOC') %>%
+  group_by(Analyzing_Institute, genus_join) %>%
+  mutate(reads=sum(reads)) %>%
+  ungroup() %>%
+  distinct(Analyzing_Institute, reads, genus_join) %>%
+  # Put a read limit in by taxa:
+  group_by(Analyzing_Institute,genus_join) %>%
+  mutate(Total = sum(reads)) %>%
+  ungroup() %>%
+  filter(Total >0) %>%
+  mutate(count = 1) %>%
+  pivot_wider(
+    id_cols = c(genus_join),
+    names_from = Analyzing_Institute,
+    values_from = count,
+    values_fill = list(count = 0)
+  ) %>%
+  data.frame()
+
+upset(p1)
+
+# upset - family - complex --------
+library(ComplexUpset)
+
+p1 <- tibb_rotu %>%
+  left_join(meta_tab %>% select(SampleID, Analyzing_Institute, Collecting_Institute, site)) %>%
+  left_join(species_label) %>%
+  filter(Collecting_Institute == 'NOC') %>%
+  group_by(Analyzing_Institute, division, family_join) %>%
+  mutate(reads=sum(reads)) %>%
+  ungroup() %>%
+  distinct(Analyzing_Institute, division, reads, family_join) %>%
+  # # Put a read limit in by taxa:
+  # group_by(Analyzing_Institute,family_join) %>%
+  # mutate(Total = sum(reads)) %>%
+  # ungroup() %>%
+  filter(reads >0) %>%
+  mutate(count = 1) %>%
+  pivot_wider(
+    id_cols = c(family_join, division),
+    names_from = Analyzing_Institute,
+    values_from = count,
+    values_fill = list(count = 0)
+  ) %>%
+  data.frame()
+
+insts <- c('SBR', 'MBARI', 'UDAL', 'AOML', 'AWI')
+# p <- ComplexUpset::upset(p1, intersect=insts)
+
+p <- ComplexUpset::upset(
+  p1,
+  insts,
+  base_annotations=list(
+    'Intersection size'=intersection_size(
+      counts=FALSE,
+      mapping=aes(fill=division)
+    ) + scale_fill_tableau(palette = "Tableau 20", type = c("regular"), direction = 1)
+  ),
+  width_ratio=0.1
+)
+
+
+filename = paste(plot_dir, marker,'_upset_family.png', sep='')
+#print('Plot of top 20 species average by month:')
+print(filename)
+ggsave(filename,height = 8, width =12, units = 'in')
+
+# upset - genus - complex --------
+# library(ComplexUpset)
+
+p1 <- tibb_rotu %>%
+  left_join(meta_tab %>% select(SampleID, Analyzing_Institute, Collecting_Institute, site)) %>%
+  left_join(species_label) %>%
+  filter(Collecting_Institute == 'NOC') %>%
+  group_by(Analyzing_Institute, division, family_join) %>%
+  mutate(reads=sum(reads)) %>%
+  ungroup() %>%
+  distinct(Analyzing_Institute, division, reads, family_join) %>%
+  # # Put a read limit in by taxa:
+  # group_by(Analyzing_Institute,family_join) %>%
+  # mutate(Total = sum(reads)) %>%
+  # ungroup() %>%
+  filter(reads >0) %>%
+  mutate(count = 1) %>%
+  pivot_wider(
+    id_cols = c(family_join, division),
+    names_from = Analyzing_Institute,
+    values_from = count,
+    values_fill = list(count = 0)
+  ) %>%
+  data.frame()
+
+insts <- c('SBR', 'MBARI', 'UDAL', 'AOML', 'AWI')
+# p <- ComplexUpset::upset(p1, intersect=insts)
+
+p <- ComplexUpset::upset(
+  p1,
+  insts,
+  base_annotations=list(
+    'Intersection size'=intersection_size(
+      counts=FALSE,
+      mapping=aes(fill=division)
+    ) + scale_fill_tableau(palette = "Tableau 20", type = c("regular"), direction = 1)
+  ),
+  width_ratio=0.1
+)
+
+
+filename = paste(plot_dir, marker,'_upset_family.png', sep='')
+#print('Plot of top 20 species average by month:')
+print(filename)
+ggsave(filename,height = 8, width =14, units = 'in')
+
+

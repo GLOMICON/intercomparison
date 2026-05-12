@@ -6,7 +6,9 @@
 
 # makeblastdb -in pr2_version_5.1.0_SSU_taxo_long.fasta -dbtype nucl
 
-blastn -query GLOMICON_seq_merged_unique.fasta -db /home/kpitz/ref_db/PR2/pr2_version_5.1.0_SSU_taxo_long.fasta -outfmt 5 -out ./GLOMICON_PR2_blastn_041025.xml
+blastn -query GLOMICON_seq_merged_unique.fasta -db /home/kpitz/ref_db/PR2/pr2_version_5.1.0_SSU_taxo_long.fasta -outfmt 5 -out ./GLOMICON_PR2_version_5.1.0_blastn_041025.xml
+
+
 
 
 
@@ -47,3 +49,20 @@ Error: (803.7) [makeblastdb] Blast-def-line-set.E.title
 Bad char [0xA0] in string at byte 166
 MF093915.1.1767_U|18S_rRNA|nucleus||Eukaryota|Archaeplastida|Rhodophyta|Eurhodophytina|Florideophyceae|Ceramiales|Rhodomelaceae|Alsidium|Alsidium_seaforthii 
 Adding sequences from FASTA; added 240200 sequences in 3.39892 seconds.
+
+
+# blastn commands
+# 102025
+# blast all ASVs to each other
+
+makeblastdb -in GLOMICON_seq_merged_unique.fasta -dbtype nucl
+
+Building a new DB, current time: 10/20/2025 11:38:10
+New DB name:   /home/kpitz/GLOMICON/blastn_all/GLOMICON_seq_merged_unique.fasta
+New DB title:  GLOMICON_seq_merged_unique.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 13542 sequences in 0.106783 seconds.
+
+blastn -query GLOMICON_seq_merged_unique.fasta -db GLOMICON_seq_merged_unique.fasta -outfmt 5 -out ./GLOMICON_blastn_all_102025.xml
